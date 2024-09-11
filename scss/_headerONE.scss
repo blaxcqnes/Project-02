@@ -1,0 +1,120 @@
+#headerONE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.5em 2em 0 2em;
+  align-items: center;
+  z-index: 0;
+
+  #conANDloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    #first {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline rgb(243, 85, 37);
+
+        #one {
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      #pic {
+        background-image: url('../images/svgs/email.svg');
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5em;
+      }
+
+      #one {
+        color: bisque;
+      }
+    }
+
+    #sec {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 2em;
+
+      #pic {
+        background-image: url('../images/svgs/map.svg');
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5em;
+      }
+
+      #one {
+        color: bisque;
+      }
+    }
+  }
+
+  #media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    #insta {
+      background-image: url('../images/svgs/instagram.svg');
+      width: 18px;
+      height: 18px;
+      margin-right: 1.5em;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../images/svgs/fades/instagram.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    #x {
+      background-image: url('../images/svgs/x.svg');
+      width: 18px;
+      height: 18px;
+      margin-right: 1.5em;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../images/svgs/fades/x.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    #youtube {
+      background-image: url('../images/svgs/youtube.svg');
+      width: 18px;
+      height: 18px;
+      margin-right: 1.5em;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../images/svgs/fades/youtube.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    #telegram {
+      background-image: url('../images/svgs/telegram.svg');
+      width: 18px;
+      height: 18px;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../images/svgs/fades/telegram.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

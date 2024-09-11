@@ -1,0 +1,125 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+#headerONE {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.5em 2em 0 2em;
+  align-items: center;
+  z-index: 0;
+}
+#headerONE #conANDloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#headerONE #conANDloc #first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#headerONE #conANDloc #first:hover {
+  cursor: pointer;
+  -webkit-text-decoration: underline rgb(243, 85, 37);
+          text-decoration: underline rgb(243, 85, 37);
+}
+#headerONE #conANDloc #first:hover #one {
+  color: rgb(255, 255, 255);
+}
+#headerONE #conANDloc #first #pic {
+  background-image: url("../images/svgs/email.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+#headerONE #conANDloc #first #one {
+  color: bisque;
+}
+#headerONE #conANDloc #sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2em;
+}
+#headerONE #conANDloc #sec #pic {
+  background-image: url("../images/svgs/map.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+#headerONE #conANDloc #sec #one {
+  color: bisque;
+}
+#headerONE #media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#headerONE #media #insta {
+  background-image: url("../images/svgs/instagram.svg");
+  width: 18px;
+  height: 18px;
+  margin-right: 1.5em;
+}
+#headerONE #media #insta:hover {
+  cursor: pointer;
+  background-image: url("../images/svgs/fades/instagram.svg");
+  width: 18px;
+  height: 18px;
+}
+#headerONE #media #x {
+  background-image: url("../images/svgs/x.svg");
+  width: 18px;
+  height: 18px;
+  margin-right: 1.5em;
+}
+#headerONE #media #x:hover {
+  cursor: pointer;
+  background-image: url("../images/svgs/fades/x.svg");
+  width: 18px;
+  height: 18px;
+}
+#headerONE #media #youtube {
+  background-image: url("../images/svgs/youtube.svg");
+  width: 18px;
+  height: 18px;
+  margin-right: 1.5em;
+}
+#headerONE #media #youtube:hover {
+  cursor: pointer;
+  background-image: url("../images/svgs/fades/youtube.svg");
+  width: 18px;
+  height: 18px;
+}
+#headerONE #media #telegram {
+  background-image: url("../images/svgs/telegram.svg");
+  width: 18px;
+  height: 18px;
+}
+#headerONE #media #telegram:hover {
+  cursor: pointer;
+  background-image: url("../images/svgs/fades/telegram.svg");
+  width: 18px;
+  height: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: rgb(30, 30, 30);
+}/*# sourceMappingURL=main.css.map */
