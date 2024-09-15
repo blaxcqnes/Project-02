@@ -1,5 +1,6 @@
-@import '../scss/container.scss';
-@import '../scss/headerONE.scss';
+@import '../scss/_container.scss';
+@import '../scss/_toggle.scss';
+@import '../scss/_headerONE.scss';
 
 * {
   margin: 0;
@@ -12,5 +13,6 @@
 body {
   width: 100%;
   height: auto;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(25, 25, 25);
+  transition: all 0.3s ease;
 }

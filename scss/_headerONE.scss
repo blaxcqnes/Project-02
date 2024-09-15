@@ -1,4 +1,4 @@
-#headerONE {
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -6,13 +6,13 @@
   align-items: center;
   z-index: 0;
 
-  #conANDloc {
+  #headerContAndLoc {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    #first {
+    #headerCont {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -20,98 +20,96 @@
       &:hover {
         cursor: pointer;
         text-decoration: underline rgb(243, 85, 37);
-
-        #one {
-          color: rgb(255, 255, 255);
-        }
       }
 
-      #pic {
-        background-image: url('../images/svgs/email.svg');
+      #headerPicOne {
+        background-image: url('../images/svgs/headerContAndLoc/email.svg');
         width: 20px;
         height: 20px;
         margin-right: 0.5em;
       }
 
-      #one {
-        color: bisque;
+      #pCont {
+        color: rgb(255, 228, 196);
+        transition: all 0.2s ease;
       }
     }
 
-    #sec {
+    #headerLoc {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-left: 2em;
 
-      #pic {
-        background-image: url('../images/svgs/map.svg');
+      #headerPicTwo {
+        background-image: url('../images/svgs/headerContAndLoc/map.svg');
         width: 20px;
         height: 20px;
         margin-right: 0.5em;
       }
 
-      #one {
-        color: bisque;
+      #pLoc {
+        color: rgb(255, 228, 196);
+        transition: all 0.2s ease;
       }
     }
   }
 
-  #media {
+  #headerSocialMedia {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    #insta {
-      background-image: url('../images/svgs/instagram.svg');
+    #headerInsta {
+      background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
 
       &:hover {
         cursor: pointer;
-        background-image: url('../images/svgs/fades/instagram.svg');
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerInsta.svg');
         width: 18px;
         height: 18px;
       }
     }
 
-    #x {
-      background-image: url('../images/svgs/x.svg');
+    #headerTelegram {
+      background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
+      width: 18px;
+      height: 18px;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    #headerX {
+      background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
 
       &:hover {
         cursor: pointer;
-        background-image: url('../images/svgs/fades/x.svg');
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerX.svg');
         width: 18px;
         height: 18px;
       }
     }
 
-    #youtube {
-      background-image: url('../images/svgs/youtube.svg');
+    #headerYouTube {
+      background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
 
       &:hover {
         cursor: pointer;
-        background-image: url('../images/svgs/fades/youtube.svg');
-        width: 18px;
-        height: 18px;
-      }
-    }
-
-    #telegram {
-      background-image: url('../images/svgs/telegram.svg');
-      width: 18px;
-      height: 18px;
-
-      &:hover {
-        cursor: pointer;
-        background-image: url('../images/svgs/fades/telegram.svg');
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerYouTube.svg');
         width: 18px;
         height: 18px;
       }
