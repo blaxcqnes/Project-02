@@ -2,20 +2,21 @@
   display: flex;
   flex-direction: column;
   width: inherit;
+  height: 250lvh;
   transition: all 0.3s ease;
 }
 
-#toggle {
+#toggleOne {
   display: flex;
   flex-direction: row;
   margin: 2em 0 0 2em;
 }
-#toggle #lightMode {
+#toggleOne #lightModeOne {
   width: 0;
   height: 0;
   visibility: hidden;
 }
-#toggle label {
+#toggleOne label {
   display: block;
   width: 65px;
   height: 30px;
@@ -26,7 +27,7 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-#toggle label::after {
+#toggleOne label::after {
   content: "";
   width: 26px;
   height: 26px;
@@ -38,18 +39,18 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
 }
-#toggle #lightMode:checked + label {
+#toggleOne #lightModeOne:checked + label {
   background-color: rgb(255, 255, 255);
   box-shadow: inset 0 5px 15px rgba(97, 97, 97, 0.4), inset 0 -5px 15px rgba(146, 146, 146, 0.4);
   cursor: pointer;
 }
-#toggle #lightMode:checked + label::after {
+#toggleOne #lightModeOne:checked + label::after {
   top: 2px;
   left: 63px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, rgb(255, 255, 255), rgb(219, 219, 219));
 }
-#toggle label:active::after {
+#toggleOne label:active::after {
   width: 35px;
 }
 
@@ -58,8 +59,11 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 1.5em 2em 0 2em;
+  padding-bottom: 15px;
   align-items: center;
   z-index: 0;
+  border-bottom: 0.5px solid rgb(95, 95, 95);
+  transition: all 0.2s ease;
 }
 #header #headerContAndLoc {
   display: flex;
@@ -84,7 +88,7 @@
   margin-right: 0.5em;
 }
 #header #headerContAndLoc #headerCont #pCont {
-  color: rgb(255, 228, 196);
+  color: rgb(150, 150, 150);
   transition: all 0.2s ease;
 }
 #header #headerContAndLoc #headerLoc {
@@ -100,7 +104,7 @@
   margin-right: 0.5em;
 }
 #header #headerContAndLoc #headerLoc #pLoc {
-  color: rgb(255, 228, 196);
+  color: rgb(150, 150, 150);
   transition: all 0.2s ease;
 }
 #header #headerSocialMedia {
@@ -154,6 +158,67 @@
   background-image: url("../images/svgs/headerSocialMedia/hover/headerYouTube.svg");
   width: 18px;
   height: 18px;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  margin: 1.5em 0 0 2em;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+#navBar #logo {
+  color: rgb(130, 130, 130);
+  font-size: 25px;
+  font-weight: 700;
+}
+#navBar #toggleTwo {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+}
+#navBar #toggleTwo #lightModeTwo {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#navBar #toggleTwo label {
+  display: block;
+  width: 65px;
+  height: 30px;
+  position: relative;
+  background-color: rgb(65, 65, 65);
+  border-radius: 200px;
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4), inset 0 -5px 15px rgba(107, 107, 107, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#navBar #toggleTwo label::after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: linear-gradient(180deg, rgb(35, 35, 35), rgb(30, 30, 30));
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+#navBar #toggleTwo #lightModeTwo:checked + label {
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 5px 15px rgba(97, 97, 97, 0.4), inset 0 -5px 15px rgba(146, 146, 146, 0.4);
+  cursor: pointer;
+}
+#navBar #toggleTwo #lightModeTwo:checked + label::after {
+  top: 2px;
+  left: 63px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, rgb(255, 255, 255), rgb(219, 219, 219));
+}
+#navBar #toggleTwo label:active::after {
+  width: 35px;
 }
 
 * {
