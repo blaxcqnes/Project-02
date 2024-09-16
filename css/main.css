@@ -17,11 +17,27 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #header {
+    flex-direction: column;
+    position: relative;
+    margin: 25px 0 0 25px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease-out;
+  }
+}
 #header #headerContAndLoc {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc {
+    flex-direction: column;
+    align-self: start;
+    align-items: start;
+  }
 }
 #header #headerContAndLoc #headerCont {
   display: flex;
@@ -38,10 +54,27 @@
   height: 20px;
   margin-right: 0.5em;
   background-image: url("../images/svgs/headerContAndLoc/email.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerCont #picHeaderOne {
+    width: 18px;
+    height: 18px;
+  }
 }
 #header #headerContAndLoc #headerCont #pHeaderCont {
   color: rgb(150, 150, 150);
   transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc #headerCont #pHeaderCont {
+    font-size: 13px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerCont #pHeaderCont {
+    font-size: 14px;
+  }
 }
 #header #headerContAndLoc #headerLoc {
   display: flex;
@@ -49,67 +82,287 @@
   align-items: center;
   margin-left: 2em;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc #headerLoc {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
 #header #headerContAndLoc #headerLoc #picHeaderTwo {
   width: 20px;
   height: 20px;
   margin-right: 0.5em;
   background-image: url("../images/svgs/headerContAndLoc/map.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerLoc #picHeaderTwo {
+    width: 18px;
+    height: 18px;
+  }
 }
 #header #headerContAndLoc #headerLoc #pHeaderLoc {
   color: rgb(150, 150, 150);
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc #headerLoc #pHeaderLoc {
+    font-size: 13px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerLoc #pHeaderLoc {
+    font-size: 14px;
+  }
+}
+#header #headerSchedule {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  width: 210px;
+  height: 45px;
+  position: relative;
+  margin-right: 20px;
+  padding: 0 20px 0 20px;
+  border-radius: 50px;
+  background-color: rgb(35, 35, 35);
+  align-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSchedule {
+    display: flex;
+    width: 177px;
+    height: 42px;
+    padding: 0 20px 0 8px;
+    margin: 22px 10px 0px 0;
+    align-self: start;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSchedule {
+    width: 172px;
+    height: 45px;
+    padding: 0;
+  }
+}
+#header #headerSchedule #holderHeaderSchedule {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  background-color: rgb(52, 52, 52);
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSchedule #holderHeaderSchedule {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSchedule #holderHeaderSchedule {
+    width: 43px;
+    height: 43px;
+  }
+}
+#header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-image: url("../images/svgs/navBar/calendar.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
+    width: 22px;
+    height: 22px;
+    top: 9.5px;
+    left: 10px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
+    width: 23px;
+    height: 23px;
+    top: 9.5px;
+    left: 10px;
+  }
+}
+#header #headerSchedule #pHeaderSchedule {
+  margin-left: 55px;
+  font-size: 14px;
+  color: rgb(180, 180, 180);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSchedule #pHeaderSchedule {
+    font-size: 12px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSchedule #pHeaderSchedule {
+    font-size: 12px;
+  }
+}
 #header #headerSocialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia {
+    margin-top: 25px;
+    align-self: center;
+  }
 }
 #header #headerSocialMedia #headerInsta {
   width: 18px;
   height: 18px;
   margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerInsta.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerInsta {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerInsta {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerInsta:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerInsta.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerInsta:hover {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerInsta:hover {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerTelegram {
   width: 18px;
   height: 18px;
   background-image: url("../images/svgs/headerSocialMedia/headerTelegram.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerTelegram {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerTelegram {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerTelegram:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerTelegram.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerTelegram:hover {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerTelegram:hover {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerX {
   width: 18px;
   height: 18px;
   margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerX.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerX {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerX {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerX:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerX.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerX:hover {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerX:hover {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerYouTube {
   width: 18px;
   height: 18px;
   margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerYouTube.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerYouTube {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerYouTube {
+    width: 16px;
+    height: 16px;
+  }
 }
 #header #headerSocialMedia #headerYouTube:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerYouTube.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerYouTube:hover {
+    transition: all 0.2s ease-out;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerSocialMedia #headerYouTube:hover {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 #navBar {
@@ -122,6 +375,13 @@
   overflow: hidden;
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-flow: column wrap;
+  }
+}
 #navBar #toggle {
   display: flex;
   flex-direction: row;
@@ -129,12 +389,30 @@
   width: fit-content;
   margin: 0 20px;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle {
+    align-self: start;
+    margin: 25px 0 20px 20px;
+  }
+}
 #navBar #toggle #logo {
   margin-right: 1em;
   color: rgb(130, 130, 130);
   font-size: 25px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle #logo {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle #logo {
+    font-size: 22px;
+  }
 }
 #navBar #toggle #lightMode {
   width: 0;
@@ -164,6 +442,30 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle label::after {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle label::after {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle label {
+    width: 70px;
+    height: 30px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle label {
+    width: 70px;
+    height: 30px;
+  }
+}
 #navBar #toggle label #moon {
   width: 14px;
   height: 14px;
@@ -172,6 +474,23 @@
   left: 10px;
   z-index: 1;
   background-image: url("../images/svgs/navBar/moon.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle label #moon {
+    width: 13.5px;
+    height: 13.5px;
+    top: 8.5px;
+    left: 8px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle label #moon {
+    width: 13.5px;
+    height: 13.5px;
+    top: 8.5px;
+    left: 8px;
+  }
 }
 #navBar #toggle label #sun {
   width: 18px;
@@ -181,6 +500,23 @@
   left: 50px;
   z-index: 1;
   background-image: url("../images/svgs/navBar/sun.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle label #sun {
+    width: 16px;
+    height: 16px;
+    top: 7.5px;
+    left: 47.8px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle label #sun {
+    width: 16px;
+    height: 16px;
+    top: 7.5px;
+    left: 47.8px;
+  }
 }
 #navBar #toggle #lightMode:checked + label {
   background-color: rgb(255, 255, 255);
@@ -192,6 +528,19 @@
   left: 71px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, rgb(255, 255, 255), rgb(219, 219, 219));
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle #lightMode:checked + label::after {
+    top: 4.3px;
+    left: 66.5px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #toggle #lightMode:checked + label::after {
+    top: 4.3px;
+    left: 66.5px;
+  }
 }
 #navBar #toggle label:active::after {
   width: 35px;
@@ -204,6 +553,11 @@
   width: fit-content;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule {
+    align-self: end;
+  }
+}
 #navBar #navBarJumpingListsAndSchedule #navBarUl {
   display: flex;
   flex-direction: row;
@@ -211,14 +565,38 @@
   margin-right: 20px;
   align-items: center;
   list-style: none;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl {
+    margin-right: 0;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl li {
   margin-right: 30px;
   color: rgb(150, 150, 150);
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl li {
+    margin-right: 25px;
+    font-size: 14px;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
   margin-right: 20px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
+    font-size: 14px;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
   display: flex;
@@ -228,11 +606,24 @@
   height: 45px;
   position: relative;
   margin-right: 20px;
-  padding: 0 20px;
+  padding: 0 20px 0 20px;
   border-radius: 50px;
   background-color: rgb(35, 35, 35);
   align-content: center;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    width: 172px;
+    height: 45px;
+    padding: 0;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
   width: 45px;
@@ -241,6 +632,13 @@
   left: 0;
   background-color: rgb(52, 52, 52);
   border-radius: 50px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
+    width: 43px;
+    height: 43px;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule #picNavBarSchedule {
   width: 25px;
@@ -249,11 +647,26 @@
   top: 10px;
   left: 10px;
   background-image: url("../images/svgs/navBar/calendar.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule #picNavBarSchedule {
+    width: 23px;
+    height: 23px;
+    top: 9.5px;
+    left: 10px;
+  }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #pNavBarSchedule {
   margin-left: 55px;
   font-size: 14px;
   color: rgb(180, 180, 180);
+  transition: all 0.2s ease;
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #pNavBarSchedule {
+    font-size: 12px;
+  }
 }
 
 * {

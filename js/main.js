@@ -37,13 +37,46 @@ lightModeToggle.addEventListener('click', function () {
       : '0.5px solid rgb(200, 200, 200)';
 });
 
+lightModeToggle.addEventListener('click', function () {
+  let = headerScheduleLight =
+    document.querySelector('#headerSchedule').style.backgroundColor;
+
+  document.querySelector('#headerSchedule').style.backgroundColor =
+    headerScheduleLight === 'rgb(207, 207, 207)'
+      ? 'rgb(35, 35, 35)'
+      : 'rgb(207, 207, 207)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let = holderHeaderScheduleLight = document.querySelector(
+    '#holderHeaderSchedule'
+  ).style.backgroundColor;
+
+  document.querySelector('#holderHeaderSchedule').style.backgroundColor =
+    holderHeaderScheduleLight === 'rgb(175, 175, 175)'
+      ? 'rgb(52, 52, 52)'
+      : 'rgb(175, 175, 175)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pHeaderScheduleLight =
+    document.querySelector('#pHeaderSchedule').style.color;
+
+  document.querySelector('#pHeaderSchedule').style.color =
+    pHeaderScheduleLight === 'rgb(110, 110, 110)'
+      ? 'rgb(180, 180, 180)'
+      : 'rgb(110, 110, 110)';
+});
+
 window.addEventListener('scroll', function () {
   if (window.scrollY >= 63) {
+    header.style.opacity = '0';
     header.style.visibility = 'hidden';
     navBar.style.width = 'inherit';
     navBar.style.position = 'fixed';
     navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
   } else {
+    header.style.opacity = '1';
     header.style.visibility = 'visible';
     navBar.style.width = 'auto';
     navBar.style.position = 'unset';

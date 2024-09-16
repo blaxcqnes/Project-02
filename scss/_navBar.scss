@@ -8,7 +8,10 @@
   overflow: hidden;
   transition: all 0.2s ease;
 
-  // 875 things start wrapping
+  @include breakPoints(small) {
+    height: fit-content;
+    flex-flow: column wrap;
+  }
 
   #toggle {
     display: flex;
@@ -16,12 +19,27 @@
     width: fit-content;
     margin: 0 20px;
 
+    @include breakPoints(small) {
+      align-self: start;
+      margin: 25px 0 20px 20px;
+    }
+
     #logo {
       margin-right: 1em;
       color: rgb(130, 130, 130);
       font-size: 25px;
       font-weight: 700;
       cursor: pointer;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        margin-right: 20px;
+        font-size: 20px;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        font-size: 22px;
+      }
     }
 
     #lightMode {
@@ -53,6 +71,26 @@
         border-radius: 20px;
         box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
         transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 22px;
+          height: 22px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      @include breakPoints(small) {
+        width: 70px;
+        height: 30px;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 70px;
+        height: 30px;
       }
 
       #moon {
@@ -63,6 +101,21 @@
         left: 10px;
         z-index: 1;
         background-image: url('../images/svgs/navBar/moon.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 13.5px;
+          height: 13.5px;
+          top: 8.5px;
+          left: 8px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 13.5px;
+          height: 13.5px;
+          top: 8.5px;
+          left: 8px;
+        }
       }
 
       #sun {
@@ -73,6 +126,21 @@
         left: 50px;
         z-index: 1;
         background-image: url('../images/svgs/navBar/sun.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 16px;
+          height: 16px;
+          top: 7.5px;
+          left: 47.8px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 16px;
+          height: 16px;
+          top: 7.5px;
+          left: 47.8px;
+        }
       }
     }
 
@@ -92,6 +160,17 @@
         rgb(255, 255, 255),
         rgb(219, 219, 219)
       );
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        top: 4.3px;
+        left: 66.5px;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        top: 4.3px;
+        left: 66.5px;
+      }
     }
 
     label:active::after {
@@ -106,6 +185,10 @@
     width: fit-content;
     align-items: center;
 
+    @include breakPoints(small) {
+      align-self: end;
+    }
+
     #navBarUl {
       display: flex;
       flex-direction: row;
@@ -113,15 +196,35 @@
       margin-right: 20px;
       align-items: center;
       list-style: none;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        margin-right: 0;
+      }
 
       li {
         margin-right: 30px;
         color: rgb(150, 150, 150);
         cursor: pointer;
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          margin-right: 25px;
+          font-size: 14px;
+        }
       }
 
       #navBarLiFour {
         margin-right: 20px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -133,11 +236,22 @@
       height: 45px;
       position: relative;
       margin-right: 20px;
-      padding: 0 20px;
+      padding: 0 20px 0 20px;
       border-radius: 50px;
       background-color: rgb(35, 35, 35);
       align-content: center;
       cursor: pointer;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        display: none;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 172px;
+        height: 45px;
+        padding: 0;
+      }
 
       #holderNavBarSchedule {
         width: 45px;
@@ -146,6 +260,12 @@
         left: 0;
         background-color: rgb(52, 52, 52);
         border-radius: 50px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 43px;
+          height: 43px;
+        }
 
         #picNavBarSchedule {
           width: 25px;
@@ -154,6 +274,14 @@
           top: 10px;
           left: 10px;
           background-image: url('../images/svgs/navBar/calendar.svg');
+          transition: all 0.2s ease;
+
+          @media (min-width: 767px) and (max-width: 876px) {
+            width: 23px;
+            height: 23px;
+            top: 9.5px;
+            left: 10px;
+          }
         }
       }
 
@@ -161,6 +289,11 @@
         margin-left: 55px;
         font-size: 14px;
         color: rgb(180, 180, 180);
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 12px;
+        }
       }
     }
   }

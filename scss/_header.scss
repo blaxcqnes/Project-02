@@ -9,11 +9,25 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 
+  @include breakPoints(small) {
+    flex-direction: column;
+    position: relative;
+    margin: 25px 0 0 25px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease-out;
+  }
+
   #headerContAndLoc {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
+    @include breakPoints(small) {
+      flex-direction: column;
+      align-self: start;
+      align-items: start;
+    }
 
     #headerCont {
       display: flex;
@@ -30,11 +44,25 @@
         height: 20px;
         margin-right: 0.5em;
         background-image: url('../images/svgs/headerContAndLoc/email.svg');
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 18px;
+          height: 18px;
+        }
       }
 
       #pHeaderCont {
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -44,16 +72,125 @@
       align-items: center;
       margin-left: 2em;
 
+      @include breakPoints(small) {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+
       #picHeaderTwo {
         width: 20px;
         height: 20px;
         margin-right: 0.5em;
         background-image: url('../images/svgs/headerContAndLoc/map.svg');
+        transition: all 0.2s ease;
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 18px;
+          height: 18px;
+        }
       }
 
       #pHeaderLoc {
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          font-size: 13px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #headerSchedule {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 210px;
+    height: 45px;
+    position: relative;
+    margin-right: 20px;
+    padding: 0 20px 0 20px;
+    border-radius: 50px;
+    background-color: rgb(35, 35, 35);
+    align-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    @include breakPoints(small) {
+      display: flex;
+      width: 177px;
+      height: 42px;
+      padding: 0 20px 0 8px;
+      margin: 22px 10px 0px 0;
+      align-self: start;
+    }
+
+    @media (min-width: 767px) and (max-width: 876px) {
+      width: 172px;
+      height: 45px;
+      padding: 0;
+    }
+
+    #holderHeaderSchedule {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      left: 0;
+      background-color: rgb(52, 52, 52);
+      border-radius: 50px;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        width: 42px;
+        height: 42px;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 43px;
+        height: 43px;
+      }
+
+      #picHeaderSchedule {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url('../images/svgs/navBar/calendar.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 22px;
+          height: 22px;
+          top: 9.5px;
+          left: 10px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 23px;
+          height: 23px;
+          top: 9.5px;
+          left: 10px;
+        }
+      }
+    }
+
+    #pHeaderSchedule {
+      margin-left: 55px;
+      font-size: 14px;
+      color: rgb(180, 180, 180);
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        font-size: 12px;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        font-size: 12px;
       }
     }
   }
@@ -62,18 +199,44 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: all 0.2s ease;
+
+    @include breakPoints(small) {
+      margin-top: 25px;
+      align-self: center;
+    }
 
     #headerInsta {
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
       background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        transition: all 0.2s ease-out;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 16px;
+        height: 16px;
+      }
 
       &:hover {
         width: 18px;
         height: 18px;
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerInsta.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          transition: all 0.2s ease-out;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
 
@@ -81,12 +244,32 @@
       width: 18px;
       height: 18px;
       background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        transition: all 0.2s ease-out;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 16px;
+        height: 16px;
+      }
 
       &:hover {
         width: 18px;
         height: 18px;
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          transition: all 0.2s ease-out;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
 
@@ -95,12 +278,32 @@
       height: 18px;
       margin-right: 1.5em;
       background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        transition: all 0.2s ease-out;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 16px;
+        height: 16px;
+      }
 
       &:hover {
         width: 18px;
         height: 18px;
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerX.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          transition: all 0.2s ease-out;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
 
@@ -109,12 +312,32 @@
       height: 18px;
       margin-right: 1.5em;
       background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        transition: all 0.2s ease-out;
+      }
+
+      @media (min-width: 767px) and (max-width: 876px) {
+        width: 16px;
+        height: 16px;
+      }
 
       &:hover {
         width: 18px;
         height: 18px;
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerYouTube.svg');
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          transition: all 0.2s ease-out;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }
