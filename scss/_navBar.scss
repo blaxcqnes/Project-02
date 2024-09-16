@@ -1,23 +1,30 @@
 #navBar {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   height: 80px;
-  margin: 1.5em 0 0 2em;
   align-items: center;
+  overflow: hidden;
   transition: all 0.2s ease;
 
-  #logo {
-    color: rgb(130, 130, 130);
-    font-size: 25px;
-    font-weight: 700;
-  }
+  // 875 things start wrapping
 
-  #toggleTwo {
+  #toggle {
     display: flex;
     flex-direction: row;
-    margin-left: 2em;
+    width: fit-content;
+    margin: 0 20px;
 
-    #lightModeTwo {
+    #logo {
+      margin-right: 1em;
+      color: rgb(130, 130, 130);
+      font-size: 25px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    #lightMode {
       width: 0;
       height: 0;
       visibility: hidden;
@@ -25,8 +32,8 @@
 
     label {
       display: block;
-      width: 65px;
-      height: 30px;
+      width: 75px;
+      height: 35px;
       position: relative;
       background-color: rgb(65, 65, 65);
       border-radius: 200px;
@@ -40,25 +47,45 @@
         width: 26px;
         height: 26px;
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 4.5px;
+        left: 3px;
         background: linear-gradient(180deg, rgb(35, 35, 35), rgb(30, 30, 30));
         border-radius: 20px;
         box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
         transition: all 0.2s ease;
       }
+
+      #moon {
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+        background-image: url('../images/svgs/navBar/moon.svg');
+      }
+
+      #sun {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 8px;
+        left: 50px;
+        z-index: 1;
+        background-image: url('../images/svgs/navBar/sun.svg');
+      }
     }
 
-    #lightModeTwo:checked + label {
+    #lightMode:checked + label {
       background-color: rgb(255, 255, 255);
       box-shadow: inset 0 5px 15px rgb(97, 97, 97, 0.4),
         inset 0 -5px 15px rgb(146, 146, 146, 0.4);
       cursor: pointer;
     }
 
-    #lightModeTwo:checked + label::after {
-      top: 2px;
-      left: 63px;
+    #lightMode:checked + label::after {
+      top: 4.5px;
+      left: 71px;
       transform: translateX(-100%);
       background: linear-gradient(
         180deg,
@@ -69,6 +96,72 @@
 
     label:active::after {
       width: 35px;
+    }
+  }
+
+  #navBarJumpingListsAndSchedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: fit-content;
+    align-items: center;
+
+    #navBarUl {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-right: 20px;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin-right: 30px;
+        color: rgb(150, 150, 150);
+        cursor: pointer;
+      }
+
+      #navBarLiFour {
+        margin-right: 20px;
+      }
+    }
+
+    #navBarSchedule {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 210px;
+      height: 45px;
+      position: relative;
+      margin-right: 20px;
+      padding: 0 20px;
+      border-radius: 50px;
+      background-color: rgb(35, 35, 35);
+      align-content: center;
+      cursor: pointer;
+
+      #holderNavBarSchedule {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        left: 0;
+        background-color: rgb(52, 52, 52);
+        border-radius: 50px;
+
+        #picNavBarSchedule {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-image: url('../images/svgs/navBar/calendar.svg');
+        }
+      }
+
+      #pNavBarSchedule {
+        margin-left: 55px;
+        font-size: 14px;
+        color: rgb(180, 180, 180);
+      }
     }
   }
 }

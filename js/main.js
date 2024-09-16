@@ -1,93 +1,123 @@
-let toggleOne = document.querySelector('#toggleOne');
-let lightModeToggleOne = document.querySelector('#lightModeOne');
-let lightModeToggleTwo = document.querySelector('#lightModeTwo');
+let lightModeToggle = document.querySelector('#lightMode');
 let header = document.querySelector('#header');
 let navBar = document.querySelector('#navBar');
 
-lightModeToggleOne.addEventListener('click', function () {
+lightModeToggle.addEventListener('click', function () {
   let light = document.querySelector('body').style.backgroundColor;
 
   document.querySelector('body').style.backgroundColor =
     light === 'rgb(235, 235, 235)' ? 'rgb(25, 25, 25)' : 'rgb(235, 235, 235)';
 });
 
-lightModeToggleOne.addEventListener('click', function () {
-  let pContLight = document.querySelector('#pCont').style.color;
+lightModeToggle.addEventListener('click', function () {
+  let pHeaderContLight = document.querySelector('#pHeaderCont').style.color;
 
-  document.querySelector('#pCont').style.color =
-    pContLight === 'rgb(130, 130, 130)'
+  document.querySelector('#pHeaderCont').style.color =
+    pHeaderContLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
-      : 'rgb(130, 130, 130)';
+      : 'rgb(110, 110, 110)';
 });
 
-lightModeToggleOne.addEventListener('click', function () {
-  let pLocLight = document.querySelector('#pLoc').style.color;
+lightModeToggle.addEventListener('click', function () {
+  let pHeaderLocLight = document.querySelector('#pHeaderLoc').style.color;
 
-  document.querySelector('#pLoc').style.color =
-    pLocLight === 'rgb(130, 130, 130)'
+  document.querySelector('#pHeaderLoc').style.color =
+    pHeaderLocLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
-      : 'rgb(130, 130, 130)';
+      : 'rgb(110, 110, 110)';
 });
 
-lightModeToggleOne.addEventListener('click', function () {
+lightModeToggle.addEventListener('click', function () {
   let headerBottomBorderLight =
     document.querySelector('#header').style.borderBottom;
 
   document.querySelector('#header').style.borderBottom =
     headerBottomBorderLight === '0.5px solid rgb(200, 200, 200)'
-      ? '0.5px solid rgb(95, 95, 95)'
-      : '0.5px solid rgb(200, 200, 200)';
-});
-
-lightModeToggleTwo.addEventListener('click', function () {
-  let light = document.querySelector('body').style.backgroundColor;
-
-  document.querySelector('body').style.backgroundColor =
-    light === 'rgb(235, 235, 235)' ? 'rgb(25, 25, 25)' : 'rgb(235, 235, 235)';
-});
-
-lightModeToggleTwo.addEventListener('click', function () {
-  let pContLight = document.querySelector('#pCont').style.color;
-
-  document.querySelector('#pCont').style.color =
-    pContLight === 'rgb(130, 130, 130)'
-      ? 'rgb(150, 150, 150)'
-      : 'rgb(130, 130, 130)';
-});
-
-lightModeToggleTwo.addEventListener('click', function () {
-  let pLocLight = document.querySelector('#pLoc').style.color;
-
-  document.querySelector('#pLoc').style.color =
-    pLocLight === 'rgb(130, 130, 130)'
-      ? 'rgb(150, 150, 150)'
-      : 'rgb(130, 130, 130)';
-});
-
-lightModeToggleTwo.addEventListener('click', function () {
-  let headerBottomBorderLight =
-    document.querySelector('#header').style.borderBottom;
-
-  document.querySelector('#header').style.borderBottom =
-    headerBottomBorderLight === '0.5px solid rgb(200, 200, 200)'
-      ? '0.5px solid rgb(95, 95, 95)'
+      ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
 });
 
 window.addEventListener('scroll', function () {
-  if (window.scrollY > 63) {
-    header.style.display = 'none';
-    navBar.style.width = '100%';
+  if (window.scrollY >= 63) {
+    header.style.visibility = 'hidden';
+    navBar.style.width = 'inherit';
     navBar.style.position = 'fixed';
-    navBar.style.padding = '0 2em';
-    navBar.style.margin = '0';
+    navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
   } else {
-    header.style.display = 'flex';
-    navBar.style.width = 'unset';
+    header.style.visibility = 'visible';
+    navBar.style.width = 'auto';
     navBar.style.position = 'unset';
-    navBar.style.padding = 'unset';
-    navBar.style.margin = '1.5em 0 0 2em';
+    navBar.style.borderBottom = 'unset';
   }
 });
 
-toggleOne.style.display = 'none'; //Remeber to remove when the final design is clear
+lightModeToggle.addEventListener('click', function () {
+  let navBarBbLight = document.querySelector('#navBar').style.borderBottom;
+
+  document.querySelector('#navBar').style.borderBottom =
+    navBarBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  if (window.scrollY < 63) {
+    navBar.style.borderBottom = 'unset';
+  }
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let navBarLiOneLight = document.querySelector('#navBarLiOne').style.color;
+  let navBarLiTwoLight = document.querySelector('#navBarLiTwo').style.color;
+  let navBarLiThreeLight = document.querySelector('#navBarLiThree').style.color;
+  let navBarLiFourLight = document.querySelector('#navBarLiFour').style.color;
+
+  document.querySelector('#navBarLiOne').style.color =
+    navBarLiOneLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#navBarLiTwo').style.color =
+    navBarLiTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#navBarLiThree').style.color =
+    navBarLiThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#navBarLiFour').style.color =
+    navBarLiFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let = navBarScheduleLight =
+    document.querySelector('#navBarSchedule').style.backgroundColor;
+
+  document.querySelector('#navBarSchedule').style.backgroundColor =
+    navBarScheduleLight === 'rgb(207, 207, 207)'
+      ? 'rgb(35, 35, 35)'
+      : 'rgb(207, 207, 207)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let = holderNavBarScheduleLight = document.querySelector(
+    '#holderNavBarSchedule'
+  ).style.backgroundColor;
+
+  document.querySelector('#holderNavBarSchedule').style.backgroundColor =
+    holderNavBarScheduleLight === 'rgb(175, 175, 175)'
+      ? 'rgb(52, 52, 52)'
+      : 'rgb(175, 175, 175)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pNavBarScheduleLight =
+    document.querySelector('#pNavBarSchedule').style.color;
+
+  document.querySelector('#pNavBarSchedule').style.color =
+    pNavBarScheduleLight === 'rgb(110, 110, 110)'
+      ? 'rgb(180, 180, 180)'
+      : 'rgb(110, 110, 110)';
+});

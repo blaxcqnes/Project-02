@@ -1,5 +1,4 @@
 @import '../scss/_container.scss';
-@import '../scss/_toggleOne.scss';
 @import '../scss/_header.scss';
 @import '../scss/_navBar.scss';
 
@@ -9,6 +8,10 @@
   box-sizing: border-box;
   user-select: none;
   font-family: 'Poppins';
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

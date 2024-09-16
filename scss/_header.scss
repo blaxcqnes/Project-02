@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1.5em 2em 0 2em;
+  margin: 1.5em 2em 1.5em 2em;
   padding-bottom: 15px;
   align-items: center;
   z-index: 0;
-  border-bottom: 0.5px solid rgb(95, 95, 95);
+  border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 
   #headerContAndLoc {
@@ -25,14 +25,14 @@
         text-decoration: underline rgb(243, 85, 37);
       }
 
-      #headerPicOne {
-        background-image: url('../images/svgs/headerContAndLoc/email.svg');
+      #picHeaderOne {
         width: 20px;
         height: 20px;
         margin-right: 0.5em;
+        background-image: url('../images/svgs/headerContAndLoc/email.svg');
       }
 
-      #pCont {
+      #pHeaderCont {
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
       }
@@ -44,14 +44,14 @@
       align-items: center;
       margin-left: 2em;
 
-      #headerPicTwo {
-        background-image: url('../images/svgs/headerContAndLoc/map.svg');
+      #picHeaderTwo {
         width: 20px;
         height: 20px;
         margin-right: 0.5em;
+        background-image: url('../images/svgs/headerContAndLoc/map.svg');
       }
 
-      #pLoc {
+      #pHeaderLoc {
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
       }
@@ -64,57 +64,57 @@
     align-items: center;
 
     #headerInsta {
-      background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
+      background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
 
       &:hover {
-        cursor: pointer;
-        background-image: url('../images/svgs/headerSocialMedia/hover/headerInsta.svg');
         width: 18px;
         height: 18px;
+        cursor: pointer;
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerInsta.svg');
       }
     }
 
     #headerTelegram {
-      background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
       width: 18px;
       height: 18px;
+      background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
 
       &:hover {
-        cursor: pointer;
-        background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
         width: 18px;
         height: 18px;
+        cursor: pointer;
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
       }
     }
 
     #headerX {
-      background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
+      background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
 
       &:hover {
-        cursor: pointer;
-        background-image: url('../images/svgs/headerSocialMedia/hover/headerX.svg');
         width: 18px;
         height: 18px;
+        cursor: pointer;
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerX.svg');
       }
     }
 
     #headerYouTube {
-      background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
+      background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
 
       &:hover {
-        cursor: pointer;
-        background-image: url('../images/svgs/headerSocialMedia/hover/headerYouTube.svg');
         width: 18px;
         height: 18px;
+        cursor: pointer;
+        background-image: url('../images/svgs/headerSocialMedia/hover/headerYouTube.svg');
       }
     }
   }
