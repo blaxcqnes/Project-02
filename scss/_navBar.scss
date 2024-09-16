@@ -13,13 +13,18 @@
     flex-flow: column wrap;
   }
 
+  @include breakPoints(mobile) {
+    height: fit-content;
+    flex-flow: column wrap;
+  }
+
   #toggle {
     display: flex;
     flex-direction: row;
     width: fit-content;
     margin: 0 20px;
 
-    @include breakPoints(small) {
+    @media (min-width: 300px) and (max-width: 767px) {
       align-self: start;
       margin: 25px 0 20px 20px;
     }
@@ -32,9 +37,9 @@
       cursor: pointer;
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 767px) {
         margin-right: 20px;
-        font-size: 20px;
+        font-size: 21px;
       }
 
       @media (min-width: 767px) and (max-width: 876px) {
@@ -72,23 +77,13 @@
         box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
         transition: all 0.2s ease;
 
-        @include breakPoints(small) {
-          width: 22px;
-          height: 22px;
-        }
-
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 876px) {
           width: 22px;
           height: 22px;
         }
       }
 
-      @include breakPoints(small) {
-        width: 70px;
-        height: 30px;
-      }
-
-      @media (min-width: 767px) and (max-width: 876px) {
+      @media (min-width: 300px) and (max-width: 876px) {
         width: 70px;
         height: 30px;
       }
@@ -103,14 +98,7 @@
         background-image: url('../images/svgs/navBar/moon.svg');
         transition: all 0.2s ease;
 
-        @include breakPoints(small) {
-          width: 13.5px;
-          height: 13.5px;
-          top: 8.5px;
-          left: 8px;
-        }
-
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 876px) {
           width: 13.5px;
           height: 13.5px;
           top: 8.5px;
@@ -128,14 +116,7 @@
         background-image: url('../images/svgs/navBar/sun.svg');
         transition: all 0.2s ease;
 
-        @include breakPoints(small) {
-          width: 16px;
-          height: 16px;
-          top: 7.5px;
-          left: 47.8px;
-        }
-
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 876px) {
           width: 16px;
           height: 16px;
           top: 7.5px;
@@ -162,12 +143,7 @@
       );
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
-        top: 4.3px;
-        left: 66.5px;
-      }
-
-      @media (min-width: 767px) and (max-width: 876px) {
+      @media (min-width: 300px) and (max-width: 876px) {
         top: 4.3px;
         left: 66.5px;
       }
@@ -185,7 +161,7 @@
     width: fit-content;
     align-items: center;
 
-    @include breakPoints(small) {
+    @media (min-width: 300px) and (max-width: 767px) {
       align-self: end;
     }
 
@@ -198,7 +174,7 @@
       list-style: none;
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 767px) {
         display: none;
       }
 
@@ -244,6 +220,10 @@
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
+        display: none;
+      }
+
+      @include breakPoints(mobile) {
         display: none;
       }
 

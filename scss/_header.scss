@@ -17,6 +17,14 @@
     transition: all 0.2s ease-out;
   }
 
+  @include breakPoints(mobile) {
+    flex-direction: column;
+    position: relative;
+    margin: 25px 0 0 25px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease-out;
+  }
+
   #headerContAndLoc {
     display: flex;
     flex-direction: row;
@@ -24,6 +32,12 @@
     align-items: center;
 
     @include breakPoints(small) {
+      flex-direction: column;
+      align-self: start;
+      align-items: start;
+    }
+
+    @include breakPoints(mobile) {
       flex-direction: column;
       align-self: start;
       align-items: start;
@@ -60,8 +74,16 @@
           font-size: 13px;
         }
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 399px) and (max-width: 550px) {
+          font-size: 13px;
+        }
+
+        @media (min-width: 550px) and (max-width: 767px) {
           font-size: 14px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 15px;
         }
       }
     }
@@ -73,6 +95,11 @@
       margin-left: 2em;
 
       @include breakPoints(small) {
+        margin-top: 15px;
+        margin-left: 0;
+      }
+
+      @include breakPoints(mobile) {
         margin-top: 15px;
         margin-left: 0;
       }
@@ -98,8 +125,16 @@
           font-size: 13px;
         }
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 399px) and (max-width: 550px) {
+          font-size: 13px;
+        }
+
+        @media (min-width: 550px) and (max-width: 767px) {
           font-size: 14px;
+        }
+
+        @media (min-width: 767px) and (max-width: 876px) {
+          font-size: 15px;
         }
       }
     }
@@ -129,10 +164,13 @@
       align-self: start;
     }
 
-    @media (min-width: 767px) and (max-width: 876px) {
-      width: 172px;
+    @include breakPoints(mobile) {
+      display: flex;
+      width: 185px;
       height: 45px;
-      padding: 0;
+      padding: 0 20px 0 8px;
+      margin: 22px 10px 0px 0;
+      align-self: start;
     }
 
     #holderHeaderSchedule {
@@ -149,11 +187,6 @@
         height: 42px;
       }
 
-      @media (min-width: 767px) and (max-width: 876px) {
-        width: 43px;
-        height: 43px;
-      }
-
       #picHeaderSchedule {
         width: 25px;
         height: 25px;
@@ -166,15 +199,15 @@
         @include breakPoints(small) {
           width: 22px;
           height: 22px;
-          top: 9.5px;
+          top: 10px;
           left: 10px;
         }
 
-        @media (min-width: 767px) and (max-width: 876px) {
-          width: 23px;
-          height: 23px;
-          top: 9.5px;
-          left: 10px;
+        @include breakPoints(mobile) {
+          width: 22px;
+          height: 22px;
+          top: 11px;
+          left: 11px;
         }
       }
     }
@@ -189,8 +222,8 @@
         font-size: 12px;
       }
 
-      @media (min-width: 767px) and (max-width: 876px) {
-        font-size: 12px;
+      @include breakPoints(mobile) {
+        font-size: 13px;
       }
     }
   }
@@ -206,16 +239,17 @@
       align-self: center;
     }
 
+    @include breakPoints(mobile) {
+      margin-top: 23px;
+      align-self: center;
+    }
+
     #headerInsta {
       width: 18px;
       height: 18px;
       margin-right: 1.5em;
       background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
       transition: all 0.2s ease;
-
-      @include breakPoints(small) {
-        transition: all 0.2s ease-out;
-      }
 
       @media (min-width: 767px) and (max-width: 876px) {
         width: 16px;
@@ -228,10 +262,6 @@
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerInsta.svg');
         transition: all 0.2s ease;
-
-        @include breakPoints(small) {
-          transition: all 0.2s ease-out;
-        }
 
         @media (min-width: 767px) and (max-width: 876px) {
           width: 16px;
@@ -246,10 +276,6 @@
       background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
-        transition: all 0.2s ease-out;
-      }
-
       @media (min-width: 767px) and (max-width: 876px) {
         width: 16px;
         height: 16px;
@@ -261,10 +287,6 @@
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
         transition: all 0.2s ease;
-
-        @include breakPoints(small) {
-          transition: all 0.2s ease-out;
-        }
 
         @media (min-width: 767px) and (max-width: 876px) {
           width: 16px;
@@ -280,10 +302,6 @@
       background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
-        transition: all 0.2s ease-out;
-      }
-
       @media (min-width: 767px) and (max-width: 876px) {
         width: 16px;
         height: 16px;
@@ -295,10 +313,6 @@
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerX.svg');
         transition: all 0.2s ease;
-
-        @include breakPoints(small) {
-          transition: all 0.2s ease-out;
-        }
 
         @media (min-width: 767px) and (max-width: 876px) {
           width: 16px;
@@ -314,10 +328,6 @@
       background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
-        transition: all 0.2s ease-out;
-      }
-
       @media (min-width: 767px) and (max-width: 876px) {
         width: 16px;
         height: 16px;
@@ -329,10 +339,6 @@
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerYouTube.svg');
         transition: all 0.2s ease;
-
-        @include breakPoints(small) {
-          transition: all 0.2s ease-out;
-        }
 
         @media (min-width: 767px) and (max-width: 876px) {
           width: 16px;

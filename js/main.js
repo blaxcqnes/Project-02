@@ -74,26 +74,11 @@ window.addEventListener('scroll', function () {
     header.style.visibility = 'hidden';
     navBar.style.width = 'inherit';
     navBar.style.position = 'fixed';
-    navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
   } else {
     header.style.opacity = '1';
     header.style.visibility = 'visible';
     navBar.style.width = 'auto';
     navBar.style.position = 'unset';
-    navBar.style.borderBottom = 'unset';
-  }
-});
-
-lightModeToggle.addEventListener('click', function () {
-  let navBarBbLight = document.querySelector('#navBar').style.borderBottom;
-
-  document.querySelector('#navBar').style.borderBottom =
-    navBarBbLight === '0.5px solid rgb(200, 200, 200)'
-      ? '0.5px solid rgb(55, 55, 55)'
-      : '0.5px solid rgb(200, 200, 200)';
-
-  if (window.scrollY < 63) {
-    navBar.style.borderBottom = 'unset';
   }
 });
 

@@ -26,6 +26,15 @@
     transition: all 0.2s ease-out;
   }
 }
+@media (min-width: 399px) and (max-width: 767px) {
+  #header {
+    flex-direction: column;
+    position: relative;
+    margin: 25px 0 0 25px;
+    padding-bottom: 20px;
+    transition: all 0.2s ease-out;
+  }
+}
 #header #headerContAndLoc {
   display: flex;
   flex-direction: row;
@@ -33,6 +42,13 @@
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc {
+    flex-direction: column;
+    align-self: start;
+    align-items: start;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
   #header #headerContAndLoc {
     flex-direction: column;
     align-self: start;
@@ -71,9 +87,19 @@
     font-size: 13px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 399px) and (max-width: 550px) {
+  #header #headerContAndLoc #headerCont #pHeaderCont {
+    font-size: 13px;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
   #header #headerContAndLoc #headerCont #pHeaderCont {
     font-size: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerCont #pHeaderCont {
+    font-size: 15px;
   }
 }
 #header #headerContAndLoc #headerLoc {
@@ -83,6 +109,12 @@
   margin-left: 2em;
 }
 @media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc #headerLoc {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
   #header #headerContAndLoc #headerLoc {
     margin-top: 15px;
     margin-left: 0;
@@ -110,9 +142,19 @@
     font-size: 13px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 399px) and (max-width: 550px) {
+  #header #headerContAndLoc #headerLoc #pHeaderLoc {
+    font-size: 13px;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
   #header #headerContAndLoc #headerLoc #pHeaderLoc {
     font-size: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 876px) {
+  #header #headerContAndLoc #headerLoc #pHeaderLoc {
+    font-size: 15px;
   }
 }
 #header #headerSchedule {
@@ -140,11 +182,14 @@
     align-self: start;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 399px) and (max-width: 767px) {
   #header #headerSchedule {
-    width: 172px;
+    display: flex;
+    width: 185px;
     height: 45px;
-    padding: 0;
+    padding: 0 20px 0 8px;
+    margin: 22px 10px 0px 0;
+    align-self: start;
   }
 }
 #header #headerSchedule #holderHeaderSchedule {
@@ -162,12 +207,6 @@
     height: 42px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSchedule #holderHeaderSchedule {
-    width: 43px;
-    height: 43px;
-  }
-}
 #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
   width: 25px;
   height: 25px;
@@ -181,16 +220,16 @@
   #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
     width: 22px;
     height: 22px;
-    top: 9.5px;
+    top: 10px;
     left: 10px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 399px) and (max-width: 767px) {
   #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
-    width: 23px;
-    height: 23px;
-    top: 9.5px;
-    left: 10px;
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
   }
 }
 #header #headerSchedule #pHeaderSchedule {
@@ -204,9 +243,9 @@
     font-size: 12px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 399px) and (max-width: 767px) {
   #header #headerSchedule #pHeaderSchedule {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 #header #headerSocialMedia {
@@ -221,17 +260,18 @@
     align-self: center;
   }
 }
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerSocialMedia {
+    margin-top: 23px;
+    align-self: center;
+  }
+}
 #header #headerSocialMedia #headerInsta {
   width: 18px;
   height: 18px;
   margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerInsta.svg");
   transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerInsta {
-    transition: all 0.2s ease-out;
-  }
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerInsta {
@@ -246,11 +286,6 @@
   background-image: url("../images/svgs/headerSocialMedia/hover/headerInsta.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerInsta:hover {
-    transition: all 0.2s ease-out;
-  }
-}
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerInsta:hover {
     width: 16px;
@@ -262,11 +297,6 @@
   height: 18px;
   background-image: url("../images/svgs/headerSocialMedia/headerTelegram.svg");
   transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerTelegram {
-    transition: all 0.2s ease-out;
-  }
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerTelegram {
@@ -281,11 +311,6 @@
   background-image: url("../images/svgs/headerSocialMedia/hover/headerTelegram.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerTelegram:hover {
-    transition: all 0.2s ease-out;
-  }
-}
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerTelegram:hover {
     width: 16px;
@@ -298,11 +323,6 @@
   margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerX.svg");
   transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerX {
-    transition: all 0.2s ease-out;
-  }
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerX {
@@ -317,11 +337,6 @@
   background-image: url("../images/svgs/headerSocialMedia/hover/headerX.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerX:hover {
-    transition: all 0.2s ease-out;
-  }
-}
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerX:hover {
     width: 16px;
@@ -335,11 +350,6 @@
   background-image: url("../images/svgs/headerSocialMedia/headerYouTube.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerYouTube {
-    transition: all 0.2s ease-out;
-  }
-}
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerYouTube {
     width: 16px;
@@ -352,11 +362,6 @@
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerYouTube.svg");
   transition: all 0.2s ease;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #header #headerSocialMedia #headerYouTube:hover {
-    transition: all 0.2s ease-out;
-  }
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerSocialMedia #headerYouTube:hover {
@@ -382,6 +387,13 @@
     flex-flow: column wrap;
   }
 }
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-flow: column wrap;
+  }
+}
 #navBar #toggle {
   display: flex;
   flex-direction: row;
@@ -389,7 +401,7 @@
   width: fit-content;
   margin: 0 20px;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #navBar #toggle {
     align-self: start;
     margin: 25px 0 20px 20px;
@@ -403,10 +415,10 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #navBar #toggle #logo {
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 21px;
   }
 }
 @media (min-width: 767px) and (max-width: 876px) {
@@ -442,25 +454,13 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 876px) {
   #navBar #toggle label::after {
     width: 22px;
     height: 22px;
   }
 }
-@media (min-width: 767px) and (max-width: 876px) {
-  #navBar #toggle label::after {
-    width: 22px;
-    height: 22px;
-  }
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #navBar #toggle label {
-    width: 70px;
-    height: 30px;
-  }
-}
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 300px) and (max-width: 876px) {
   #navBar #toggle label {
     width: 70px;
     height: 30px;
@@ -476,15 +476,7 @@
   background-image: url("../images/svgs/navBar/moon.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #navBar #toggle label #moon {
-    width: 13.5px;
-    height: 13.5px;
-    top: 8.5px;
-    left: 8px;
-  }
-}
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 300px) and (max-width: 876px) {
   #navBar #toggle label #moon {
     width: 13.5px;
     height: 13.5px;
@@ -502,15 +494,7 @@
   background-image: url("../images/svgs/navBar/sun.svg");
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #navBar #toggle label #sun {
-    width: 16px;
-    height: 16px;
-    top: 7.5px;
-    left: 47.8px;
-  }
-}
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 300px) and (max-width: 876px) {
   #navBar #toggle label #sun {
     width: 16px;
     height: 16px;
@@ -530,13 +514,7 @@
   background: linear-gradient(180deg, rgb(255, 255, 255), rgb(219, 219, 219));
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #navBar #toggle #lightMode:checked + label::after {
-    top: 4.3px;
-    left: 66.5px;
-  }
-}
-@media (min-width: 767px) and (max-width: 876px) {
+@media (min-width: 300px) and (max-width: 876px) {
   #navBar #toggle #lightMode:checked + label::after {
     top: 4.3px;
     left: 66.5px;
@@ -553,7 +531,7 @@
   width: fit-content;
   align-items: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule {
     align-self: end;
   }
@@ -567,7 +545,7 @@
   list-style: none;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl {
     display: none;
   }
@@ -614,6 +592,11 @@
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    display: none;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
     display: none;
   }
