@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1.5em 2em 1.5em 2em;
+  margin: 23px 30px 23px 30px;
   padding-bottom: 15px;
   align-items: center;
   z-index: 0;
@@ -56,7 +56,7 @@
       #picHeaderOne {
         width: 20px;
         height: 20px;
-        margin-right: 0.5em;
+        margin-right: 7px;
         background-image: url('../images/svgs/headerContAndLoc/email.svg');
         transition: all 0.2s ease;
 
@@ -92,7 +92,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 2em;
+      margin-left: 30px;
 
       @include breakPoints(small) {
         margin-top: 15px;
@@ -107,7 +107,7 @@
       #picHeaderTwo {
         width: 20px;
         height: 20px;
-        margin-right: 0.5em;
+        margin-right: 7px;
         background-image: url('../images/svgs/headerContAndLoc/map.svg');
         transition: all 0.2s ease;
 
@@ -247,7 +247,7 @@
     #headerInsta {
       width: 18px;
       height: 18px;
-      margin-right: 1.5em;
+      margin-right: 22px;
       background-image: url('../images/svgs/headerSocialMedia/headerInsta.svg');
       transition: all 0.2s ease;
 
@@ -273,6 +273,7 @@
     #headerTelegram {
       width: 18px;
       height: 18px;
+      margin-right: 22px;
       background-image: url('../images/svgs/headerSocialMedia/headerTelegram.svg');
       transition: all 0.2s ease;
 
@@ -284,6 +285,7 @@
       &:hover {
         width: 18px;
         height: 18px;
+        margin-right: 22px;
         cursor: pointer;
         background-image: url('../images/svgs/headerSocialMedia/hover/headerTelegram.svg');
         transition: all 0.2s ease;
@@ -298,7 +300,7 @@
     #headerX {
       width: 18px;
       height: 18px;
-      margin-right: 1.5em;
+      margin-right: 22px;
       background-image: url('../images/svgs/headerSocialMedia/headerX.svg');
       transition: all 0.2s ease;
 
@@ -324,7 +326,6 @@
     #headerYouTube {
       width: 18px;
       height: 18px;
-      margin-right: 1.5em;
       background-image: url('../images/svgs/headerSocialMedia/headerYouTube.svg');
       transition: all 0.2s ease;
 

@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 1.5em 2em 1.5em 2em;
+  margin: 23px 30px 23px 30px;
   padding-bottom: 15px;
   align-items: center;
   z-index: 0;
@@ -68,7 +68,7 @@
 #header #headerContAndLoc #headerCont #picHeaderOne {
   width: 20px;
   height: 20px;
-  margin-right: 0.5em;
+  margin-right: 7px;
   background-image: url("../images/svgs/headerContAndLoc/email.svg");
   transition: all 0.2s ease;
 }
@@ -106,7 +106,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 2em;
+  margin-left: 30px;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #header #headerContAndLoc #headerLoc {
@@ -123,7 +123,7 @@
 #header #headerContAndLoc #headerLoc #picHeaderTwo {
   width: 20px;
   height: 20px;
-  margin-right: 0.5em;
+  margin-right: 7px;
   background-image: url("../images/svgs/headerContAndLoc/map.svg");
   transition: all 0.2s ease;
 }
@@ -269,7 +269,7 @@
 #header #headerSocialMedia #headerInsta {
   width: 18px;
   height: 18px;
-  margin-right: 1.5em;
+  margin-right: 22px;
   background-image: url("../images/svgs/headerSocialMedia/headerInsta.svg");
   transition: all 0.2s ease;
 }
@@ -295,6 +295,7 @@
 #header #headerSocialMedia #headerTelegram {
   width: 18px;
   height: 18px;
+  margin-right: 22px;
   background-image: url("../images/svgs/headerSocialMedia/headerTelegram.svg");
   transition: all 0.2s ease;
 }
@@ -307,6 +308,7 @@
 #header #headerSocialMedia #headerTelegram:hover {
   width: 18px;
   height: 18px;
+  margin-right: 22px;
   cursor: pointer;
   background-image: url("../images/svgs/headerSocialMedia/hover/headerTelegram.svg");
   transition: all 0.2s ease;
@@ -320,7 +322,7 @@
 #header #headerSocialMedia #headerX {
   width: 18px;
   height: 18px;
-  margin-right: 1.5em;
+  margin-right: 22px;
   background-image: url("../images/svgs/headerSocialMedia/headerX.svg");
   transition: all 0.2s ease;
 }
@@ -346,7 +348,6 @@
 #header #headerSocialMedia #headerYouTube {
   width: 18px;
   height: 18px;
-  margin-right: 1.5em;
   background-image: url("../images/svgs/headerSocialMedia/headerYouTube.svg");
   transition: all 0.2s ease;
 }
@@ -408,7 +409,7 @@
   }
 }
 #navBar #toggle #logo {
-  margin-right: 1em;
+  margin-right: 25px;
   color: rgb(130, 130, 130);
   font-size: 25px;
   font-weight: 700;

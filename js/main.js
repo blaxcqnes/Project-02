@@ -1,3 +1,4 @@
+let body = document.querySelector('body');
 let lightModeToggle = document.querySelector('#lightMode');
 let header = document.querySelector('#header');
 let navBar = document.querySelector('#navBar');
@@ -68,6 +69,38 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(110, 110, 110)';
 });
 
+// window.addEventListener('scroll', function () {
+//   if (
+//     (window.scrollY >= 63, body.style.backgroundColor == 'rgb(235, 235, 235)')
+//   ) {
+//     navBar.style.borderBottom = '0.5px solid rgb(200, 200, 200)';
+//   } else {
+//     navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
+//   }
+// });
+
+window.addEventListener('scroll', function () {
+  if (
+    (window.scrollY >= 63, body.style.backgroundColor == 'rgb(235, 235, 235)')
+  ) {
+    navBar.style.backgroundColor = 'rgb(228, 228, 228)';
+  } else {
+    navBar.style.backgroundColor = 'rgb(28, 28, 28)';
+  }
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let navBarBgLight = document.querySelector('#navBar').style.backgroundColor;
+
+  if (window.scrollY >= 63) {
+    if (body.style.backgroundColor == 'rgb(235, 235, 235)') {
+      navBar.style.backgroundColor = 'rgb(228, 228, 228)';
+    } else {
+      navBar.style.backgroundColor = 'rgb(28, 28, 28)';
+    }
+  }
+});
+
 window.addEventListener('scroll', function () {
   if (window.scrollY >= 63) {
     header.style.opacity = '0';
@@ -79,6 +112,7 @@ window.addEventListener('scroll', function () {
     header.style.visibility = 'visible';
     navBar.style.width = 'auto';
     navBar.style.position = 'unset';
+    navBar.style.backgroundColor = 'unset';
   }
 });
 
