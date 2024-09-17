@@ -30,7 +30,7 @@
   }
 
   @if $point ==large {
-    @media (min-width: 1529px) and (max-width: 1525px) {
+    @media (min-width: 1529px) and (max-width: 1839px) {
       @content;
     }
   }

@@ -75,8 +75,10 @@ lightModeToggle.addEventListener('click', function () {
   if (window.scrollY >= 63) {
     if (body.style.backgroundColor == 'rgb(235, 235, 235)') {
       navBar.style.backgroundColor = 'rgb(228, 228, 228)';
+      navBar.style.borderBottom = '0.5px solid rgb(200, 200, 200)';
     } else {
       navBar.style.backgroundColor = 'rgb(28, 28, 28)';
+      navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
     }
   }
 });
@@ -86,8 +88,10 @@ window.addEventListener('scroll', function () {
     (window.scrollY >= 63, body.style.backgroundColor == 'rgb(235, 235, 235)')
   ) {
     navBar.style.backgroundColor = 'rgb(228, 228, 228)';
+    navBar.style.borderBottom = '0.5px solid rgb(200, 200, 200)';
   } else {
     navBar.style.backgroundColor = 'rgb(28, 28, 28)';
+    navBar.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
   }
 });
 
@@ -103,6 +107,7 @@ window.addEventListener('scroll', function () {
     navBar.style.width = 'auto';
     navBar.style.position = 'unset';
     navBar.style.backgroundColor = 'unset';
+    navBar.style.borderBottom = 'unset';
   }
 });
 

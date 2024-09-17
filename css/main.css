@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: min(100% - 4em, 500em);
   margin: 23px 30px 23px 30px;
   padding-bottom: 15px;
   align-items: center;
@@ -99,7 +100,7 @@
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerContAndLoc #headerCont #pHeaderCont {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 #header #headerContAndLoc #headerLoc {
@@ -154,7 +155,7 @@
 }
 @media (min-width: 767px) and (max-width: 876px) {
   #header #headerContAndLoc #headerLoc #pHeaderLoc {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 #header #headerSchedule {
@@ -425,6 +426,7 @@
 @media (min-width: 767px) and (max-width: 876px) {
   #navBar #toggle #logo {
     font-size: 22px;
+    margin-right: 22px;
   }
 }
 #navBar #toggle #lightMode {
