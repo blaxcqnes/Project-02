@@ -6,7 +6,8 @@
   height: 80px;
   align-items: center;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
+  z-index: 100;
 
   @include breakPoints(small) {
     height: fit-content;
@@ -215,7 +216,7 @@
       margin-right: 20px;
       padding: 0 20px 0 20px;
       border-radius: 50px;
-      background-color: rgb(35, 35, 35);
+      background-color: rgb(40, 40, 40);
       align-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -239,7 +240,7 @@
         height: 45px;
         position: absolute;
         left: 0;
-        background-color: rgb(52, 52, 52);
+        background-color: rgb(55, 55, 55);
         border-radius: 50px;
         transition: all 0.2s ease;
 
@@ -269,7 +270,7 @@
       #pNavBarSchedule {
         margin-left: 55px;
         font-size: 14px;
-        color: rgb(180, 180, 180);
+        color: rgb(150, 150, 150);
         transition: all 0.2s ease;
 
         @media (min-width: 767px) and (max-width: 876px) {

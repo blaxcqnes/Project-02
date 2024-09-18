@@ -2,6 +2,11 @@ let body = document.querySelector('body');
 let lightModeToggle = document.querySelector('#lightMode');
 let header = document.querySelector('#header');
 let navBar = document.querySelector('#navBar');
+let slideWrapper = document.querySelector('#slideWrapper');
+let sliderBttnNext = document.querySelector('#sliderBttnNext');
+let sliderBttnPrev = document.querySelector('#sliderBttnPrev');
+let sliderContainer = document.querySelector('#sliderContainer');
+let slide = document.querySelector('#slide');
 
 lightModeToggle.addEventListener('click', function () {
   let light = document.querySelector('body').style.backgroundColor;
@@ -144,7 +149,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#navBarSchedule').style.backgroundColor =
     navBarScheduleLight === 'rgb(207, 207, 207)'
-      ? 'rgb(35, 35, 35)'
+      ? 'rgb(40, 40, 40)'
       : 'rgb(207, 207, 207)';
 });
 
@@ -155,7 +160,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#holderNavBarSchedule').style.backgroundColor =
     holderNavBarScheduleLight === 'rgb(175, 175, 175)'
-      ? 'rgb(52, 52, 52)'
+      ? 'rgb(55, 55, 55)'
       : 'rgb(175, 175, 175)';
 });
 
@@ -165,6 +170,60 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#pNavBarSchedule').style.color =
     pNavBarScheduleLight === 'rgb(110, 110, 110)'
-      ? 'rgb(180, 180, 180)'
+      ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= 63) {
+    slideWrapper.style.margin = '180px 20px 20px 20px';
+  } else {
+    slideWrapper.style.margin = '30px 20px 20px 20px';
+  }
+});
+
+sliderBttnNext.addEventListener('click', function () {
+  let slideWidth = slide.clientWidth;
+  sliderContainer.scrollLeft += slideWidth;
+});
+
+sliderBttnPrev.addEventListener('click', function () {
+  let slideWidth = slide.clientWidth;
+  sliderContainer.scrollLeft -= slideWidth;
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let sliderBttnPrevLight =
+    document.querySelector('#sliderBttnPrev').style.backgroundColor;
+
+  let sliderBttnPrevTextLight =
+    document.querySelector('#sliderBttnPrev').style.color;
+
+  document.querySelector('#sliderBttnPrev').style.backgroundColor =
+    sliderBttnPrevLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#sliderBttnPrev').style.color =
+    sliderBttnPrevTextLight === 'rgb(135, 135, 135)'
+      ? '(150, 150, 150)'
+      : 'rgb(135, 135, 135)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let sliderBttnNextLight =
+    document.querySelector('#sliderBttnNext').style.backgroundColor;
+
+  let sliderBttnNextTextLight =
+    document.querySelector('#sliderBttnNext').style.color;
+
+  document.querySelector('#sliderBttnNext').style.backgroundColor =
+    sliderBttnNextLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#sliderBttnNext').style.color =
+    sliderBttnNextTextLight === 'rgb(135, 135, 135)'
+      ? '(150, 150, 150)'
+      : 'rgb(135, 135, 135)';
 });
