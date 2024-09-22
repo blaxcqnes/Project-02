@@ -2,6 +2,7 @@ let body = document.querySelector('body');
 let smallScreens = window.matchMedia(
   '(min-width: 300px) and (max-width: 766.9px)'
 );
+let backToTop = document.querySelector('#backToTop');
 
 let header = document.querySelector('#header');
 
@@ -21,6 +22,28 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('body').style.backgroundColor =
     light === 'rgb(235, 235, 235)' ? 'rgb(25, 25, 25)' : 'rgb(235, 235, 235)';
+});
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 550) {
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.opacity = '0';
+  }
+});
+
+function backToTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+lightModeToggle.addEventListener('click', function () {
+  let backToTop = document.querySelector('#backToTop').style.backgroundColor;
+
+  document.querySelector('#backToTop').style.backgroundColor =
+    backToTop === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
 });
 
 lightModeToggle.addEventListener('click', function () {
