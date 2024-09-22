@@ -168,13 +168,13 @@ function expand() {
         navBarJumpingListsAndSchedule.style.maxHeight = '320px';
       } else {
         navBarJumpingListsAndSchedule.style.maxHeight = '190px';
-        navBarUl.style.marginTop = '70px';
+        navBarUl.style.marginTop = '60px';
       }
     }
   } else {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
-    navBarUl.style.marginTop = '0px';
+    navBarUl.style.marginTop = '15px';
 
     navBarUl.style.opacity = '0';
   }
@@ -198,28 +198,32 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 lightModeToggle.addEventListener('click', function () {
-  let navBarLiOneLight = document.querySelector('#navBarLiOne').style.color;
-  let navBarLiTwoLight = document.querySelector('#navBarLiTwo').style.color;
-  let navBarLiThreeLight = document.querySelector('#navBarLiThree').style.color;
-  let navBarLiFourLight = document.querySelector('#navBarLiFour').style.color;
+  let pLiOneLocationLight =
+    document.querySelector('#pLiOneLocation').style.color;
+  let pLiTwoLocationLight =
+    document.querySelector('#pLiTwoLocation').style.color;
+  let pLiThreeLocationLight =
+    document.querySelector('#pLiThreeLocation').style.color;
+  let pLiFourLocationLight =
+    document.querySelector('#pLiFourLocation').style.color;
 
-  document.querySelector('#navBarLiOne').style.color =
-    navBarLiOneLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pLiOneLocation').style.color =
+    pLiOneLocationLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#navBarLiTwo').style.color =
-    navBarLiTwoLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pLiTwoLocation').style.color =
+    pLiTwoLocationLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#navBarLiThree').style.color =
-    navBarLiThreeLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pLiThreeLocation').style.color =
+    pLiThreeLocationLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#navBarLiFour').style.color =
-    navBarLiFourLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pLiFourLocation').style.color =
+    pLiFourLocationLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 });
@@ -264,7 +268,7 @@ window.addEventListener('scroll', function () {
     if (window.scrollY >= 63) {
       if (navBarJumpingListsAndSchedule.style.maxHeight === '190px') {
         navBarJumpingListsAndSchedule.style.maxHeight = '320px';
-        navBarUl.style.marginTop = '0';
+        navBarUl.style.marginTop = '10px';
       }
 
       navBarSchedule.style.maxHeight = '45px';
@@ -276,7 +280,7 @@ window.addEventListener('scroll', function () {
     } else {
       if (navBarJumpingListsAndSchedule.style.maxHeight === '320px') {
         navBarJumpingListsAndSchedule.style.maxHeight = '190px';
-        navBarUl.style.marginTop = '30px';
+        navBarUl.style.marginTop = '40px';
       }
 
       navBarSchedule.style.maxHeight = '0';

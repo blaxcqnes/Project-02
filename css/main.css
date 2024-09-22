@@ -624,9 +624,17 @@
   align-items: center;
   transition: max-height 0.7s ease;
 }
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 549.9px) {
   #navBar #navBarJumpingListsAndSchedule {
     flex-direction: column;
+    opacity: 0;
+    max-height: 0;
+    align-self: start;
+  }
+}
+@media (min-width: 550px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule {
+    flex-direction: row;
     opacity: 0;
     max-height: 0;
     align-self: start;
@@ -650,6 +658,11 @@
     align-items: start;
   }
 }
+@media (min-width: 550px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl {
+    margin-left: 30px;
+  }
+}
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl {
     margin-right: 0;
@@ -660,36 +673,175 @@
     margin-left: 5px;
   }
 }
-#navBar #navBarJumpingListsAndSchedule #navBarUl li {
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
+  display: flex;
+  flex-direction: row;
   margin-right: 30px;
-  color: rgb(150, 150, 150);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
-  #navBar #navBarJumpingListsAndSchedule #navBarUl li {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
     margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
+    margin-right: 25px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #picLiOneLocation {
+  display: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  background-image: url("../images/svgs/navBar/location.svg");
+  background-repeat: no-repeat;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #picLiOneLocation {
+    display: inline;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation {
     font-size: 14px;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
-  #navBar #navBarJumpingListsAndSchedule #navBarUl li {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation {
+    font-size: 14px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
+    margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
     margin-right: 25px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #picLiTwoLocation {
+  display: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  background-image: url("../images/svgs/navBar/property.svg");
+  background-repeat: no-repeat;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #picLiTwoLocation {
+    display: inline;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation {
+    font-size: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation {
+    font-size: 14px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
+    margin: 0 0 25px 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
+    margin-right: 25px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #picLiThreeLocation {
+  display: none;
+  width: 19px;
+  height: 19px;
+  margin-right: 15px;
+  background-image: url("../images/svgs/navBar/details.svg");
+  background-repeat: no-repeat;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #picLiThreeLocation {
+    display: inline;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation {
+    font-size: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation {
     font-size: 14px;
   }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
-  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
     margin: 0 0 25px 0;
-    font-size: 14px;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
+    font-size: 14px;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #picLiFourLocation {
+  display: none;
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  background-image: url("../images/svgs/navBar/phone.svg");
+  background-repeat: no-repeat;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #picLiFourLocation {
+    display: inline;
+  }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation {
+    font-size: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation {
     font-size: 14px;
   }
 }
@@ -708,11 +860,37 @@
   cursor: pointer;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 549.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
     margin: 0 0 25px 17px;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+  }
+}
+@media (min-width: 550px) and (max-width: 599.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    margin: 0 0 70px 128px !important;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 699.9px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    margin: 0 0 70px 170px !important;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+}
+@media (min-width: 700px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    margin: 0 0 70px 200px !important;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 772px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    margin-right: 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
@@ -720,11 +898,6 @@
     width: 172px;
     height: 45px;
     padding: 0;
-  }
-}
-@media (min-width: 767px) and (max-width: 772px) {
-  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
-    margin-right: 0;
   }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
