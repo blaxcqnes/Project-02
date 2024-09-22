@@ -196,13 +196,6 @@
     align-items: center;
     transition: max-height 0.7s ease;
 
-    // @media (min-width: 300px) and (max-width: 767px) {
-    //   flex-direction: column;
-    //   opacity: 0;
-    //   max-height: 0;
-    //   align-self: start;
-    // }
-
     @media (min-width: 300px) and (max-width: 549.9px) {
       flex-direction: column;
       opacity: 0;
@@ -226,14 +219,11 @@
       list-style: none;
       transition: all 0.7s ease;
 
-      // breaks at 791px
-
       @media (min-width: 300px) and (max-width: 767px) {
         width: max-content;
         margin: 30px 0 20px 0;
         flex-direction: column;
         align-items: start;
-        // opacity: 0;
       }
 
       @media (min-width: 550px) and (max-width: 767px) {
