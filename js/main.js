@@ -1,6 +1,6 @@
 let body = document.querySelector('body');
 let smallScreens = window.matchMedia(
-  '(min-width: 300px) and (max-width: 1022.99px)'
+  '(min-width: 300px) and (max-width: 766.9px)'
 );
 
 let header = document.querySelector('#header');
@@ -225,19 +225,21 @@ window.addEventListener('scroll', function () {
   let picNavBarSchedule = document.querySelector('#picNavBarSchedule');
   let pNavBarSchedule = document.querySelector('#pNavBarSchedule');
 
-  if (window.scrollY >= 63) {
-    navBarUl.style.marginLeft = '117px';
-    navBarSchedule.style.maxHeight = '45px';
-    navBarSchedule.style.margin = '0 0 25px 17px';
-    holderNavBarSchedule.style.maxHeight = '45px';
-    picNavBarSchedule.style.maxHeight = '25px';
-    pNavBarSchedule.style.opacity = '1';
-  } else {
-    navBarSchedule.style.maxHeight = '0';
-    navBarSchedule.style.margin = '0';
-    holderNavBarSchedule.style.maxHeight = '0';
-    picNavBarSchedule.style.maxHeight = '0';
-    pNavBarSchedule.style.opacity = '0';
+  if (smallScreens.matches) {
+    if (window.scrollY >= 63) {
+      navBarUl.style.marginLeft = '117px';
+      navBarSchedule.style.maxHeight = '45px';
+      navBarSchedule.style.margin = '0 0 25px 17px';
+      holderNavBarSchedule.style.maxHeight = '45px';
+      picNavBarSchedule.style.maxHeight = '25px';
+      pNavBarSchedule.style.opacity = '1';
+    } else {
+      navBarSchedule.style.maxHeight = '0';
+      navBarSchedule.style.margin = '0';
+      holderNavBarSchedule.style.maxHeight = '0';
+      picNavBarSchedule.style.maxHeight = '0';
+      pNavBarSchedule.style.opacity = '0';
+    }
   }
 });
 

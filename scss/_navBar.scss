@@ -28,7 +28,16 @@
 
     @media (min-width: 300px) and (max-width: 767px) {
       align-self: start;
-      margin: 25px 0 20px 20px;
+      margin: 25px 0 25px 20px;
+    }
+
+    @media (min-width: 767px) and (max-width: 834.9px) {
+      align-self: start;
+      margin: 25px 0 25px 20px;
+    }
+
+    @media (min-width: 767px) and (max-width: 830px) {
+      margin: 25px 0 25px 5px;
     }
 
     #logo {
@@ -44,9 +53,17 @@
         font-size: 21px;
       }
 
-      @media (min-width: 767px) and (max-width: 876px) {
+      @media (min-width: 767px) and (max-width: 1022.9px) {
         font-size: 22px;
         margin-right: 22px;
+      }
+
+      @media (min-width: 767px) and (max-width: 780px) {
+        margin-right: 5px;
+      }
+
+      @media (min-width: 780px) and (max-width: 830px) {
+        margin-right: 10px;
       }
     }
 
@@ -80,13 +97,13 @@
         box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
         transition: all 0.2s ease;
 
-        @media (min-width: 300px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 1022.9px) {
           width: 22px;
           height: 22px;
         }
       }
 
-      @media (min-width: 300px) and (max-width: 876px) {
+      @media (min-width: 300px) and (max-width: 1022.9px) {
         width: 70px;
         height: 30px;
       }
@@ -101,7 +118,7 @@
         background-image: url('../images/svgs/navBar/moon.svg');
         transition: all 0.2s ease;
 
-        @media (min-width: 300px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 1022.9px) {
           width: 13.5px;
           height: 13.5px;
           top: 8.5px;
@@ -119,7 +136,7 @@
         background-image: url('../images/svgs/navBar/sun.svg');
         transition: all 0.2s ease;
 
-        @media (min-width: 300px) and (max-width: 876px) {
+        @media (min-width: 300px) and (max-width: 1022.9px) {
           width: 16px;
           height: 16px;
           top: 7.5px;
@@ -146,7 +163,7 @@
       );
       transition: all 0.2s ease;
 
-      @media (min-width: 300px) and (max-width: 876px) {
+      @media (min-width: 300px) and (max-width: 1022.9px) {
         top: 4.3px;
         left: 66.5px;
       }
@@ -205,8 +222,12 @@
         opacity: 0;
       }
 
-      @media (min-width: 767px) and (max-width: 876px) {
+      @media (min-width: 767px) and (max-width: 1022.9px) {
         margin-right: 0;
+      }
+
+      @media (min-width: 767px) and (max-width: 830px) {
+        margin-left: 5px;
       }
 
       li {
@@ -220,7 +241,7 @@
           font-size: 14px;
         }
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
           font-size: 14px;
         }
@@ -235,7 +256,7 @@
           font-size: 14px;
         }
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 767px) and (max-width: 1022.9px) {
           font-size: 14px;
         }
       }
@@ -261,10 +282,14 @@
         transition: all 0.5s ease-in-out;
       }
 
-      @media (min-width: 767px) and (max-width: 876px) {
+      @media (min-width: 767px) and (max-width: 1022.9px) {
         width: 172px;
         height: 45px;
         padding: 0;
+      }
+
+      @media (min-width: 767px) and (max-width: 772px) {
+        margin-right: 0;
       }
 
       #holderNavBarSchedule {
@@ -276,7 +301,7 @@
         border-radius: 50px;
         transition: all 0.2s ease;
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 767px) and (max-width: 1022.9px) {
           width: 43px;
           height: 43px;
         }
@@ -290,7 +315,7 @@
           background-image: url('../images/svgs/navBar/calendar.svg');
           transition: all 0.2s ease;
 
-          @media (min-width: 767px) and (max-width: 876px) {
+          @media (min-width: 767px) and (max-width: 1022.9px) {
             width: 23px;
             height: 23px;
             top: 9.5px;
@@ -305,7 +330,7 @@
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
 
-        @media (min-width: 767px) and (max-width: 876px) {
+        @media (min-width: 767px) and (max-width: 1022.9px) {
           font-size: 12px;
         }
       }
