@@ -134,14 +134,26 @@ function expand() {
 
   if (navBarJumpingListsAndSchedule.style.opacity === '0') {
     navBarJumpingListsAndSchedule.style.opacity = '1';
-    navBarJumpingListsAndSchedule.style.maxHeight = '320px';
     navBarUl.style.opacity = '1';
-    navBarSchedule.style.opacity = '1';
+
+    if (navBarJumpingListsAndSchedule.style.maxHeight === '190px') {
+      navBarJumpingListsAndSchedule.style.maxHeight = '320px';
+    } else {
+      navBarJumpingListsAndSchedule.style.maxHeight = '190px';
+
+      if (window.scrollY >= 63) {
+        navBarJumpingListsAndSchedule.style.maxHeight = '320px';
+      } else {
+        navBarJumpingListsAndSchedule.style.maxHeight = '190px';
+        navBarUl.style.marginTop = '70px';
+      }
+    }
   } else {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.marginTop = '0px';
+
     navBarUl.style.opacity = '0';
-    navBarSchedule.style.opacity = '0';
   }
 
   slideWrapper.addEventListener('click', function () {
@@ -227,13 +239,23 @@ window.addEventListener('scroll', function () {
 
   if (smallScreens.matches) {
     if (window.scrollY >= 63) {
-      navBarUl.style.marginLeft = '117px';
+      if (navBarJumpingListsAndSchedule.style.maxHeight === '190px') {
+        navBarJumpingListsAndSchedule.style.maxHeight = '320px';
+        navBarUl.style.marginTop = '0';
+      }
+
       navBarSchedule.style.maxHeight = '45px';
       navBarSchedule.style.margin = '0 0 25px 17px';
+      navBarSchedule.style.opacity = '1';
       holderNavBarSchedule.style.maxHeight = '45px';
       picNavBarSchedule.style.maxHeight = '25px';
       pNavBarSchedule.style.opacity = '1';
     } else {
+      if (navBarJumpingListsAndSchedule.style.maxHeight === '320px') {
+        navBarJumpingListsAndSchedule.style.maxHeight = '190px';
+        navBarUl.style.marginTop = '30px';
+      }
+
       navBarSchedule.style.maxHeight = '0';
       navBarSchedule.style.margin = '0';
       holderNavBarSchedule.style.maxHeight = '0';
