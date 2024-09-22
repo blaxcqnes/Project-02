@@ -5,7 +5,15 @@
   margin: 30px 20px 20px 20px;
   align-items: center;
   overflow: hidden;
-  transition: all 1.5s ease;
+  transition: all 0.5s ease;
+
+  @include breakPoints(small) {
+    overflow: unset;
+  }
+
+  @include breakPoints(mobile) {
+    overflow: unset;
+  }
 
   #sliderBttnPrev {
     width: 60px;
@@ -20,6 +28,63 @@
     cursor: pointer;
     z-index: 1;
 
+    @media (min-width: 300px) and (max-width: 345px) {
+      width: 95px;
+      height: 50px;
+      margin-right: 0;
+      position: absolute;
+      top: 8em;
+      right: 4.5em;
+    }
+
+    @media (min-width: 345px) and (max-width: 399px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8em;
+      right: 5em;
+    }
+
+    @media (min-width: 399px) and (max-width: 455px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      right: 6em;
+    }
+
+    @media (min-width: 455px) and (max-width: 510px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      right: 7em;
+    }
+
+    @media (min-width: 510px) and (max-width: 600px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      right: 8em;
+    }
+
+    @media (min-width: 600px) and (max-width: 680px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      right: 9.5em;
+    }
+
+    @media (min-width: 680px) and (max-width: 767px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      right: 10.5em;
+    }
+
     &:hover {
       background-color: rgb(52, 52, 52);
     }
@@ -29,17 +94,35 @@
     display: flex;
     align-content: center;
     width: max(100% - 30px);
-    height: calc(50em - 100px);
-    overflow: scroll;
+    height: calc(40em - 40px);
+    overflow: hidden;
     scroll-behavior: smooth;
     list-style: none;
     border-radius: 10px;
+    transition: all 0.5s ease;
+
+    @include breakPoints(small) {
+      height: calc(20em - 30px);
+    }
+
+    @include breakPoints(mobile) {
+      height: calc(20.5em - 30px);
+    }
+
+    @include breakPoints(tablet) {
+      height: calc(33em - 40px);
+    }
   }
 
   #slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 100%;
     width: 100%;
     height: 100%;
-    flex: 1 0 100%;
+    position: relative;
+    line-height: 2em;
   }
 
   #slide:nth-child(1) {
@@ -48,6 +131,54 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    #pSlideOne {
+      width: 165px;
+      height: 40px;
+      margin: 0 0 1.5em 16em;
+      padding: 6px 0;
+      text-align: center;
+      font-weight: 500;
+      border-radius: 5px;
+      background-color: rgb(230, 230, 230);
+
+      span {
+        color: rgb(243, 85, 37);
+      }
+    }
+
+    #pSlideTwo {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideThree {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideFour {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
   }
 
   #slide:nth-child(2) {
@@ -56,6 +187,54 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    #pSlideOne {
+      width: 190px;
+      height: 40px;
+      margin: 0 0 1.5em 16em;
+      padding: 6px 0;
+      text-align: center;
+      font-weight: 500;
+      border-radius: 5px;
+      background-color: rgb(230, 230, 230);
+
+      span {
+        color: rgb(243, 85, 37);
+      }
+    }
+
+    #pSlideTwo {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideThree {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideFour {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
   }
 
   #slide:nth-child(3) {
@@ -64,6 +243,54 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    #pSlideOne {
+      width: 190px;
+      height: 40px;
+      margin: 0 0 1.5em 16em;
+      padding: 6px 0;
+      text-align: center;
+      font-weight: 500;
+      border-radius: 5px;
+      background-color: rgb(230, 230, 230);
+
+      span {
+        color: rgb(243, 85, 37);
+      }
+    }
+
+    #pSlideTwo {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideThree {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #pSlideFour {
+      width: fit-content;
+      margin-left: 7em;
+      padding: 9px 0;
+      color: white;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 10px;
+    }
   }
 
   #sliderBttnNext {
@@ -78,6 +305,63 @@
     transition: all 0.2s ease;
     cursor: pointer;
     z-index: 1;
+
+    @media (min-width: 300px) and (max-width: 345px) {
+      width: 95px;
+      height: 50px;
+      margin-right: 0;
+      position: absolute;
+      top: 8em;
+      left: 4em;
+    }
+
+    @media (min-width: 345px) and (max-width: 399px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8em;
+      left: 5em;
+    }
+
+    @media (min-width: 399px) and (max-width: 455px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      left: 6em;
+    }
+
+    @media (min-width: 455px) and (max-width: 510px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      left: 7em;
+    }
+
+    @media (min-width: 510px) and (max-width: 600px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      left: 8em;
+    }
+
+    @media (min-width: 600px) and (max-width: 680px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      left: 9.5em;
+    }
+
+    @media (min-width: 680px) and (max-width: 767px) {
+      width: 95px;
+      height: 50px;
+      position: absolute;
+      top: 8.5em;
+      left: 10.5em;
+    }
 
     &:hover {
       background-color: rgb(52, 52, 52);

@@ -1,7 +1,15 @@
 let body = document.querySelector('body');
-let lightModeToggle = document.querySelector('#lightMode');
+let smallScreens = window.matchMedia(
+  '(min-width: 300px) and (max-width: 1022.99px)'
+);
+
 let header = document.querySelector('#header');
+
 let navBar = document.querySelector('#navBar');
+let lightModeToggle = document.querySelector('#lightMode');
+let navBarButton = document.querySelector('#navBarButton');
+let navBarSchedule = document.querySelector('#navBarSchedule');
+
 let slideWrapper = document.querySelector('#slideWrapper');
 let sliderBttnNext = document.querySelector('#sliderBttnNext');
 let sliderBttnPrev = document.querySelector('#sliderBttnPrev');
@@ -75,8 +83,6 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 lightModeToggle.addEventListener('click', function () {
-  let navBarBgLight = document.querySelector('#navBar').style.backgroundColor;
-
   if (window.scrollY >= 63) {
     if (body.style.backgroundColor == 'rgb(235, 235, 235)') {
       navBar.style.backgroundColor = 'rgb(228, 228, 228)';
@@ -114,6 +120,46 @@ window.addEventListener('scroll', function () {
     navBar.style.backgroundColor = 'unset';
     navBar.style.borderBottom = 'unset';
   }
+});
+
+if (smallScreens.matches) {
+  navBarButton.style.display = 'inline';
+} else {
+  navBarButton.style.display = 'none';
+}
+
+function expand() {
+  let navBarUl = document.querySelector('#navBarUl');
+  let navBarSchedule = document.querySelector('#navBarSchedule');
+
+  if (navBarJumpingListsAndSchedule.style.opacity === '0') {
+    navBarJumpingListsAndSchedule.style.opacity = '1';
+    navBarJumpingListsAndSchedule.style.maxHeight = '320px';
+    navBarUl.style.opacity = '1';
+    navBarSchedule.style.opacity = '1';
+  } else {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+    navBarSchedule.style.opacity = '0';
+  }
+
+  slideWrapper.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+    navBarSchedule.style.opacity = '0';
+  });
+}
+
+lightModeToggle.addEventListener('click', function () {
+  let navBarButtonLight =
+    document.querySelector('#navBarButton').style.backgroundColor;
+
+  document.querySelector('#navBarButton').style.backgroundColor =
+    navBarButtonLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
 });
 
 lightModeToggle.addEventListener('click', function () {
@@ -175,10 +221,23 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 window.addEventListener('scroll', function () {
+  let holderNavBarSchedule = document.querySelector('#holderNavBarSchedule');
+  let picNavBarSchedule = document.querySelector('#picNavBarSchedule');
+  let pNavBarSchedule = document.querySelector('#pNavBarSchedule');
+
   if (window.scrollY >= 63) {
-    slideWrapper.style.margin = '180px 20px 20px 20px';
+    navBarUl.style.marginLeft = '117px';
+    navBarSchedule.style.maxHeight = '45px';
+    navBarSchedule.style.margin = '0 0 25px 17px';
+    holderNavBarSchedule.style.maxHeight = '45px';
+    picNavBarSchedule.style.maxHeight = '25px';
+    pNavBarSchedule.style.opacity = '1';
   } else {
-    slideWrapper.style.margin = '30px 20px 20px 20px';
+    navBarSchedule.style.maxHeight = '0';
+    navBarSchedule.style.margin = '0';
+    holderNavBarSchedule.style.maxHeight = '0';
+    picNavBarSchedule.style.maxHeight = '0';
+    pNavBarSchedule.style.opacity = '0';
   }
 });
 
