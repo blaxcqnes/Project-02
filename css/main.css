@@ -706,12 +706,12 @@
   background-color: rgb(40, 40, 40);
   align-content: center;
   cursor: pointer;
-  transition: all 0.7s ease;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
     margin: 0 0 25px 17px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     opacity: 0;
   }
 }
