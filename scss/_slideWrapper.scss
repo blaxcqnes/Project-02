@@ -1,6 +1,7 @@
 #slideWrapper {
   display: flex;
   justify-content: center;
+  height: auto;
   position: relative;
   margin: 30px 20px 20px 20px;
   align-items: center;
@@ -8,11 +9,13 @@
   transition: all 0.5s ease;
 
   @include breakPoints(small) {
+    height: 335px;
     overflow: unset;
   }
 
   @include breakPoints(mobile) {
     overflow: unset;
+    height: 350px;
   }
 
   #sliderBttnPrev {
@@ -20,7 +23,7 @@
     height: 80px;
     margin-right: 20px;
     background-color: rgb(40, 40, 40);
-    color: rgb(150, 150, 150);
+    color: rgb(243, 85, 37);
     font-size: 35px;
     border: none;
     border-radius: 100px;
@@ -86,7 +89,8 @@
     }
 
     &:hover {
-      background-color: rgb(52, 52, 52);
+      opacity: 0.8;
+      filter: brightness(90%);
     }
   }
 
@@ -102,10 +106,14 @@
     transition: all 0.5s ease;
 
     @include breakPoints(small) {
+      position: absolute;
+      top: 0;
       height: calc(20em - 30px);
     }
 
     @include breakPoints(mobile) {
+      position: absolute;
+      top: 0;
       height: calc(20.5em - 30px);
     }
 
@@ -132,6 +140,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include breakPoints(small) {
+      background-position-x: 60%;
+    }
+
     #pSlideOne {
       width: 165px;
       height: 40px;
@@ -145,39 +157,220 @@
       span {
         color: rgb(243, 85, 37);
       }
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: 135px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 85px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: 135px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 120px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: 135px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 180px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: 135px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 180px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
     }
 
     #pSlideTwo {
       width: fit-content;
       margin-left: 7em;
       padding: 9px 0;
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 35px;
       font-weight: 700;
       text-align: center;
-      border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 120px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 155px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 218px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 218px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
     }
 
     #pSlideThree {
       width: fit-content;
       margin-left: 7em;
       padding: 9px 0;
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 35px;
       font-weight: 700;
       text-align: center;
-      border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 50px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 86px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 149px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 149px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
 
     #pSlideFour {
       width: fit-content;
-      margin-left: 7em;
+      margin-left: 7.1em;
       padding: 9px 0;
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 35px;
       font-weight: 700;
       text-align: center;
-      border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 30px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 65px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 128px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 128px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
   }
 
@@ -201,6 +394,50 @@
       span {
         color: rgb(243, 85, 37);
       }
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 65px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 110px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 155px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 180px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
     }
 
     #pSlideTwo {
@@ -212,6 +449,50 @@
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 120px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 170px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 215px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 238px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
     }
 
     #pSlideThree {
@@ -223,17 +504,113 @@
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 45px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 95px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 140px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 164px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
 
     #pSlideFour {
       width: fit-content;
-      margin-left: 7em;
+      margin-left: 7.18em;
       padding: 9px 0;
       color: white;
       font-size: 35px;
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 23px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 72px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 118px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 140px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
   }
 
@@ -257,6 +634,50 @@
       span {
         color: rgb(243, 85, 37);
       }
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 65px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 110px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 155px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: 155px;
+        height: 35px;
+        position: absolute;
+        top: 85px;
+        right: 180px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 13px;
+      }
     }
 
     #pSlideTwo {
@@ -268,6 +689,50 @@
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 85px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 130px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 173px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 130px;
+        right: 200px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+      }
     }
 
     #pSlideThree {
@@ -279,17 +744,113 @@
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 52px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 97px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 140px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 165px;
+        right: 168px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
 
     #pSlideFour {
       width: fit-content;
-      margin-left: 7em;
+      margin-left: 7.1em;
       padding: 9px 0;
       color: white;
       font-size: 35px;
       font-weight: 700;
       text-align: center;
       border-radius: 10px;
+
+      @media (min-width: 300px) and (max-width: 350px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 67px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 111px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 155px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: fit-content;
+        height: 35px;
+        position: absolute;
+        top: 200px;
+        right: 183px;
+        margin: 0;
+        padding: 4px 0;
+        font-size: 25px;
+        text-align: start;
+      }
     }
   }
 
@@ -298,13 +859,13 @@
     height: 80px;
     margin-left: 20px;
     background-color: rgb(40, 40, 40);
-    color: rgb(150, 150, 150);
+    color: rgb(243, 85, 37);
     font-size: 35px;
     border: none;
     border-radius: 100px;
     transition: all 0.2s ease;
     cursor: pointer;
-    z-index: 1;
+    z-index: 101;
 
     @media (min-width: 300px) and (max-width: 345px) {
       width: 95px;
@@ -364,7 +925,8 @@
     }
 
     &:hover {
-      background-color: rgb(52, 52, 52);
+      opacity: 0.8;
+      filter: brightness(90%);
     }
   }
 }

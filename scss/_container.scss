@@ -53,5 +53,10 @@
       font-size: 45px;
       font-weight: 700;
     }
+
+    &:hover {
+      opacity: 0.8;
+      filter: brightness(90%);
+    }
   }
 }
