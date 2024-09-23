@@ -67,7 +67,7 @@
       }
 
       &:hover {
-        opacity: 0.8;
+        opacity: 0.5;
         filter: brightness(90%);
       }
     }
@@ -291,11 +291,6 @@
           margin-right: 25px;
         }
 
-        &:hover {
-          opacity: 0.8;
-          filter: brightness(90%);
-        }
-
         #picLiOneLocation {
           display: none;
           width: 18px;
@@ -319,6 +314,11 @@
           @media (min-width: 767px) and (max-width: 1022.9px) {
             font-size: 14px;
           }
+
+          &:hover {
+            opacity: 0.5;
+            filter: brightness(90%);
+          }
         }
       }
 
@@ -335,11 +335,6 @@
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
-        }
-
-        &:hover {
-          opacity: 0.8;
-          filter: brightness(90%);
         }
 
         #picLiTwoLocation {
@@ -365,6 +360,11 @@
           @media (min-width: 767px) and (max-width: 1022.9px) {
             font-size: 14px;
           }
+
+          &:hover {
+            opacity: 0.5;
+            filter: brightness(90%);
+          }
         }
       }
 
@@ -381,11 +381,6 @@
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
-        }
-
-        &:hover {
-          opacity: 0.8;
-          filter: brightness(90%);
         }
 
         #picLiThreeLocation {
@@ -411,6 +406,11 @@
           @media (min-width: 767px) and (max-width: 1022.9px) {
             font-size: 14px;
           }
+
+          &:hover {
+            opacity: 0.5;
+            filter: brightness(90%);
+          }
         }
       }
 
@@ -427,11 +427,6 @@
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           font-size: 14px;
-        }
-
-        &:hover {
-          opacity: 0.8;
-          filter: brightness(90%);
         }
 
         #picLiFourLocation {
@@ -457,6 +452,11 @@
           @media (min-width: 767px) and (max-width: 1022.9px) {
             font-size: 14px;
           }
+
+          &:hover {
+            opacity: 0.5;
+            filter: brightness(90%);
+          }
         }
       }
     }
@@ -475,6 +475,20 @@
       align-content: center;
       cursor: pointer;
       transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        display: flex;
+        width: 177px;
+        height: 42px;
+        padding: 0 20px 0 8px;
+      }
+
+      @include breakPoints(mobile) {
+        display: flex;
+        width: 185px;
+        height: 45px;
+        padding: 0 20px 0 8px;
+      }
 
       @media (min-width: 300px) and (max-width: 549.9px) {
         margin: 0 0 25px 17px;
@@ -524,6 +538,11 @@
         border-radius: 50px;
         transition: all 0.2s ease;
 
+        @include breakPoints(small) {
+          width: 42px;
+          height: 42px;
+        }
+
         @media (min-width: 767px) and (max-width: 1022.9px) {
           width: 43px;
           height: 43px;
@@ -537,6 +556,18 @@
           left: 10px;
           background-image: url('../images/svgs/navBar/calendar.svg');
           transition: all 0.2s ease;
+
+          @include breakPoints(small) {
+            width: 22px;
+            height: 22px;
+          }
+
+          @include breakPoints(mobile) {
+            width: 22px;
+            height: 22px;
+            top: 11px;
+            left: 11px;
+          }
 
           @media (min-width: 767px) and (max-width: 1022.9px) {
             width: 23px;
@@ -552,6 +583,14 @@
         font-size: 14px;
         color: rgb(150, 150, 150);
         transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          font-size: 12px;
+        }
+
+        @include breakPoints(mobile) {
+          font-size: 13px;
+        }
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           font-size: 12px;

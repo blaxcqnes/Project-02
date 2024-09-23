@@ -88,7 +88,7 @@
         }
 
         &:hover {
-          opacity: 0.8;
+          opacity: 0.5;
           filter: brightness(90%);
         }
       }
@@ -179,6 +179,10 @@
       align-self: start;
     }
 
+    &:hover {
+      filter: brightness(88%);
+    }
+
     #holderHeaderSchedule {
       width: 45px;
       height: 45px;
@@ -205,8 +209,6 @@
         @include breakPoints(small) {
           width: 22px;
           height: 22px;
-          top: 10px;
-          left: 10px;
         }
 
         @include breakPoints(mobile) {
@@ -231,11 +233,6 @@
       @include breakPoints(mobile) {
         font-size: 13px;
       }
-    }
-
-    &:hover {
-      opacity: 0.8;
-      filter: brightness(90%);
     }
   }
 

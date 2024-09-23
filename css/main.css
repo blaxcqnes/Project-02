@@ -161,7 +161,7 @@
   }
 }
 #header #headerContAndLoc #headerCont #pHeaderCont:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   filter: brightness(90%);
 }
 #header #headerContAndLoc #headerLoc {
@@ -254,6 +254,9 @@
     align-self: start;
   }
 }
+#header #headerSchedule:hover {
+  filter: brightness(88%);
+}
 #header #headerSchedule #holderHeaderSchedule {
   width: 45px;
   height: 45px;
@@ -282,8 +285,6 @@
   #header #headerSchedule #holderHeaderSchedule #picHeaderSchedule {
     width: 22px;
     height: 22px;
-    top: 10px;
-    left: 10px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -309,10 +310,6 @@
   #header #headerSchedule #pHeaderSchedule {
     font-size: 13px;
   }
-}
-#header #headerSchedule:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
 }
 #header #headerSocialMedia {
   display: flex;
@@ -518,7 +515,7 @@
   }
 }
 #navBar #toggle #logo:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   filter: brightness(90%);
 }
 #navBar #toggle #lightMode {
@@ -732,10 +729,6 @@
     margin-right: 25px;
   }
 }
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
-}
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #picLiOneLocation {
   display: none;
   width: 18px;
@@ -762,6 +755,10 @@
     font-size: 14px;
   }
 }
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
   display: flex;
   flex-direction: row;
@@ -778,10 +775,6 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
     margin-right: 25px;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #picLiTwoLocation {
   display: none;
@@ -809,6 +802,10 @@
     font-size: 14px;
   }
 }
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
   display: flex;
   flex-direction: row;
@@ -825,10 +822,6 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
     margin-right: 25px;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #picLiThreeLocation {
   display: none;
@@ -856,6 +849,10 @@
     font-size: 14px;
   }
 }
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
   display: flex;
   flex-direction: row;
@@ -872,10 +869,6 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
     font-size: 14px;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #picLiFourLocation {
   display: none;
@@ -903,6 +896,10 @@
     font-size: 14px;
   }
 }
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
   display: flex;
   flex-direction: row;
@@ -917,6 +914,22 @@
   align-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    display: flex;
+    width: 177px;
+    height: 42px;
+    padding: 0 20px 0 8px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
+    display: flex;
+    width: 185px;
+    height: 45px;
+    padding: 0 20px 0 8px;
+  }
 }
 @media (min-width: 300px) and (max-width: 549.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
@@ -971,6 +984,12 @@
   border-radius: 50px;
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
+    width: 42px;
+    height: 42px;
+  }
+}
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
     width: 43px;
@@ -986,6 +1005,20 @@
   background-image: url("../images/svgs/navBar/calendar.svg");
   transition: all 0.2s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule #picNavBarSchedule {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule #picNavBarSchedule {
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
+  }
+}
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule #picNavBarSchedule {
     width: 23px;
@@ -999,6 +1032,16 @@
   font-size: 14px;
   color: rgb(150, 150, 150);
   transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #pNavBarSchedule {
+    font-size: 12px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #navBarJumpingListsAndSchedule #navBarSchedule #pNavBarSchedule {
+    font-size: 13px;
+  }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule #pNavBarSchedule {
