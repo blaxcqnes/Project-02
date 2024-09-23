@@ -11,7 +11,7 @@ let lightModeToggle = document.querySelector('#lightMode');
 let navBarButton = document.querySelector('#navBarButton');
 let navBarSchedule = document.querySelector('#navBarSchedule');
 
-let slideWrapper = document.querySelector('#slideWrapper');
+let topOne = document.querySelector('#topOne');
 let sliderBttnNext = document.querySelector('#sliderBttnNext');
 let sliderBttnPrev = document.querySelector('#sliderBttnPrev');
 let sliderContainer = document.querySelector('#sliderContainer');
@@ -179,7 +179,7 @@ function expand() {
     navBarUl.style.opacity = '0';
   }
 
-  slideWrapper.addEventListener('click', function () {
+  topOne.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
