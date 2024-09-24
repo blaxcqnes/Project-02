@@ -27,6 +27,11 @@ lightModeToggle.addEventListener('click', function () {
     light === 'rgb(235, 235, 235)' ? 'rgb(25, 25, 25)' : 'rgb(235, 235, 235)';
 });
 
+window.onbeforeunload = function () {
+  location.reload();
+  window.scrollTo(0, 0);
+};
+
 // backToTop section
 
 window.addEventListener('scroll', function () {
