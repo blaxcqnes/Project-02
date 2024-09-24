@@ -207,6 +207,8 @@
     }
 
     #navBarButton {
+      display: flex;
+      align-content: center;
       width: 60px;
       height: 32px;
       margin-left: 50px;

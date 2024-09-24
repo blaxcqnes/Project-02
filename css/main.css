@@ -7,15 +7,12 @@
   transition: all 0.2s ease;
 }
 #container #backToTop {
-  width: 70px;
+  width: 125px;
   height: 45px;
   position: fixed;
   bottom: 5%;
-  left: 90%;
+  left: 85%;
   background-color: rgb(40, 40, 40);
-  color: rgb(243, 85, 37);
-  font-size: 45px;
-  text-align: center;
   border-radius: 100px;
   border: none;
   z-index: 100;
@@ -26,31 +23,31 @@
 @media (min-width: 300px) and (max-width: 350px) {
   #container #backToTop {
     bottom: 3%;
-    left: 72%;
+    left: 52%;
   }
 }
 @media (min-width: 350px) and (max-width: 399px) {
   #container #backToTop {
     bottom: 3%;
-    left: 72%;
+    left: 60%;
   }
 }
 @media (min-width: 399px) and (max-width: 500px) {
   #container #backToTop {
     bottom: 3%;
-    left: 75%;
+    left: 65%;
   }
 }
 @media (min-width: 500px) and (max-width: 767px) {
   #container #backToTop {
     bottom: 3%;
-    left: 82%;
+    left: 70%;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #container #backToTop {
     bottom: 3%;
-    left: 85%;
+    left: 80%;
   }
 }
 #container #backToTop #backToTopSymbol {
@@ -61,6 +58,11 @@
 #container #backToTop:hover {
   opacity: 0.8;
   filter: brightness(90%);
+}
+#container #backToTop p {
+  color: rgb(243, 85, 37);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 #header {
@@ -638,6 +640,8 @@
   width: 35px;
 }
 #navBar #toggle #navBarButton {
+  display: flex;
+  align-content: center;
   width: 60px;
   height: 32px;
   margin-left: 50px;
