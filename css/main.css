@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: inherit;
-  height: 250lvh;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -69,6 +68,7 @@
   transform: translate(9%);
   margin-top: 50px;
   color: rgb(55, 55, 55);
+  overflow: hidden;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #container hr {

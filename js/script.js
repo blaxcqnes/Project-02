@@ -183,7 +183,7 @@ window.addEventListener('scroll', function () {
     topOne.style.margin = '120px 20px 20px 20px';
 
     if (smallAndMobScreens.matches) {
-      topOne.style.margin = '20px 0 0 0';
+      topOne.style.margin = '30px 0 0 0';
     }
   } else {
     header.style.opacity = '1';
