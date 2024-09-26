@@ -3,7 +3,7 @@
   justify-content: center;
   height: auto;
   position: relative;
-  margin: 30px 20px 20px 20px;
+  margin: 30px 20px 30px 20px;
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease;
@@ -12,12 +12,14 @@
     height: 335px;
     overflow: unset;
     margin: 20px 0 0 0;
+    transition: all 0.2s ease;
   }
 
   @include breakPoints(mobile) {
     overflow: unset;
     height: 350px;
     margin: 20px 0 0 0;
+    transition: all 0.2s ease;
   }
 
   #topOnePrevButton {
@@ -39,7 +41,7 @@
       margin-right: 0;
       position: absolute;
       top: 8.5em;
-      right: 4.5em;
+      right: 5em;
     }
 
     @media (min-width: 345px) and (max-width: 399px) {
@@ -112,12 +114,14 @@
       position: absolute;
       top: 0;
       height: calc(20em - 30px);
+      transition: all 0.2s ease;
     }
 
     @include breakPoints(mobile) {
       position: absolute;
       top: 0;
       height: calc(20.5em - 30px);
+      transition: all 0.2s ease;
     }
 
     @include breakPoints(tablet) {
@@ -876,7 +880,7 @@
       margin-right: 0;
       position: absolute;
       top: 8.5em;
-      left: 4em;
+      left: 4.5em;
     }
 
     @media (min-width: 345px) and (max-width: 399px) {

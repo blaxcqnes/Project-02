@@ -1,5 +1,102 @@
 #topTwo {
   display: flex;
   flex-direction: row;
+  width: inherit;
+  margin-top: 70px;
+  padding: 0 50px;
   flex-wrap: wrap;
+  transition: all 0.2s ease;
+
+  @include breakPoints(small) {
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  @include breakPoints(mobile) {
+    flex-direction: column;
+    align-content: center;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  @include breakPoints(tablet) {
+    flex-direction: column;
+    align-content: center;
+    margin-top: 55px;
+    padding: 0;
+  }
+
+  #topTwoLeftSec {
+    display: flex;
+    position: relative;
+    width: fit-content;
+
+    #topTwoLeftSecMainPhoto {
+      width: 355px;
+      height: 490px;
+      position: relative;
+      border-radius: 10px;
+      background-image: url('../images/topTwo/topTwoOne.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include breakPoints(small) {
+        width: 251px;
+        height: 346px;
+      }
+
+      @include breakPoints(mobile) {
+        width: 251px;
+        height: 346px;
+      }
+
+      #topTwoLeftSecSvgHolder {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+        background-color: rgb(243, 85, 37);
+        border-radius: 100px;
+        cursor: pointer;
+
+        @include breakPoints(small) {
+          width: 60px;
+          height: 60px;
+          bottom: -20px;
+          left: -20px;
+        }
+
+        @include breakPoints(mobile) {
+          width: 70px;
+          height: 70px;
+          bottom: -25px;
+          left: -25px;
+        }
+
+        #topTwoLeftSecSvg {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url('../images/svgs/topTwo/contract.svg');
+          background-repeat: no-repeat;
+
+          @include breakPoints(small) {
+            width: 35px;
+            height: 35px;
+          }
+
+          @include breakPoints(mobile) {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
 }

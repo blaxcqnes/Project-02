@@ -6,6 +6,7 @@ let tabletScreen = window.matchMedia(
   '(min-width: 767px) and (max-width: 900px'
 );
 let backToTop = document.querySelector('#backToTop');
+let hr = document.querySelector('hr');
 
 let header = document.querySelector('#header');
 
@@ -35,7 +36,7 @@ window.onbeforeunload = function () {
 // backToTop section
 
 window.addEventListener('scroll', function () {
-  if (window.scrollY > 650) {
+  if (window.scrollY > 400) {
     backToTop.style.opacity = '1';
   } else {
     backToTop.style.opacity = '0';
@@ -57,6 +58,17 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 //////////////////////////////////////
+
+// hr
+
+lightModeToggle.addEventListener('click', function () {
+  let hr = document.querySelector('hr').style.color;
+
+  document.querySelector('hr').style.color =
+    hr === 'rgba(255, 255, 255, 0.52)'
+      ? 'rgb(55, 55, 55)'
+      : 'rgba(255, 255, 255, 0.52)';
+});
 
 // header section
 
