@@ -7,6 +7,7 @@ let tabletScreen = window.matchMedia(
 );
 let backToTop = document.querySelector('#backToTop');
 let hr = document.querySelector('hr');
+let topTwo = document.querySelector('#topTwo');
 
 let header = document.querySelector('#header');
 
@@ -69,6 +70,8 @@ lightModeToggle.addEventListener('click', function () {
       ? 'rgb(55, 55, 55)'
       : 'rgba(255, 255, 255, 0.52)';
 });
+
+//////////////////////////////////////
 
 // header section
 
@@ -180,7 +183,7 @@ window.addEventListener('scroll', function () {
     topOne.style.margin = '120px 20px 20px 20px';
 
     if (smallAndMobScreens.matches) {
-      topOne.style.margin = '30px 0 0 0';
+      topOne.style.margin = '20px 0 0 0';
     }
   } else {
     header.style.opacity = '1';
@@ -250,6 +253,20 @@ function expand() {
   // closing navBar on smaller screens
 
   topOne.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+    navBarSchedule.style.opacity = '0';
+  });
+
+  hr.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+    navBarSchedule.style.opacity = '0';
+  });
+
+  topTwo.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';

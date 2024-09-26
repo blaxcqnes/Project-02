@@ -71,13 +71,13 @@
 
     @include breakPoints(small) {
       width: 75%;
-      margin-top: 55px;
+      margin-top: 40px;
       transform: translate(17%);
     }
 
     @include breakPoints(mobile) {
       width: 75%;
-      margin-top: 30px;
+      margin-top: 35px;
       transform: translate(17%);
     }
 

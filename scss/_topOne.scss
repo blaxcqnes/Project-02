@@ -9,7 +9,7 @@
   transition: all 0.5s ease;
 
   @include breakPoints(small) {
-    height: 335px;
+    height: 350px;
     overflow: unset;
     margin: 20px 0 0 0;
     transition: all 0.2s ease;
@@ -17,7 +17,7 @@
 
   @include breakPoints(mobile) {
     overflow: unset;
-    height: 350px;
+    height: 370px;
     margin: 20px 0 0 0;
     transition: all 0.2s ease;
   }
@@ -56,7 +56,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       right: 7em;
     }
 
@@ -64,7 +64,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       right: 8em;
     }
 
@@ -72,7 +72,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       right: 8.5em;
     }
 
@@ -80,7 +80,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       right: 9.5em;
     }
 
@@ -88,7 +88,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       right: 11em;
     }
 
@@ -895,7 +895,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       left: 7em;
     }
 
@@ -903,7 +903,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       left: 8em;
     }
 
@@ -911,7 +911,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       left: 8.5em;
     }
 
@@ -919,7 +919,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       left: 9.5em;
     }
 
@@ -927,7 +927,7 @@
       width: 95px;
       height: 50px;
       position: absolute;
-      top: 8.5em;
+      top: 9em;
       left: 11em;
     }
 
