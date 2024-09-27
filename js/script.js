@@ -12,6 +12,7 @@ let tabletScreen = window.matchMedia(
   '(min-width: 767px) and (max-width: 1023px'
 );
 let backToTop = document.querySelector('#backToTop');
+let backToTopSymbol = document.querySelector('#backToTopSymbol');
 let hr = document.querySelector('hr');
 
 let header = document.querySelector('#header');
@@ -59,9 +60,11 @@ window.onbeforeunload = function () {
 
 window.addEventListener('scroll', function () {
   if (window.scrollY >= 400) {
-    backToTop.style.opacity = '1';
+    backToTop.style.height = '45px';
+    backToTopText.style.visibility = 'visible';
   } else {
-    backToTop.style.opacity = '0';
+    backToTop.style.height = '0';
+    backToTopText.style.visibility = 'hidden';
   }
 });
 
@@ -275,21 +278,18 @@ function expand() {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
-    navBarSchedule.style.opacity = '0';
   });
 
   hr.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
-    navBarSchedule.style.opacity = '0';
   });
 
   topTwo.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
-    navBarSchedule.style.opacity = '0';
   });
 }
 
@@ -375,7 +375,6 @@ window.addEventListener('scroll', function () {
       if (navBarJumpingListsAndSchedule.style.maxHeight === '190px') {
         navBarJumpingListsAndSchedule.style.maxHeight = '320px';
         navBarUl.style.marginTop = '10px';
-        navBarSchedule.style.maxHeight = '45px'; // this added, remove if issues found
       }
 
       navBarSchedule.style.maxHeight = '45px';

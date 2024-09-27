@@ -7,7 +7,7 @@
 }
 #container #backToTop {
   width: 125px;
-  height: 45px;
+  height: 0;
   position: fixed;
   bottom: 5%;
   left: 85%;
@@ -15,9 +15,8 @@
   border-radius: 100px;
   border: none;
   z-index: 100;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
-  opacity: 0;
 }
 #container #backToTop:hover {
   filter: brightness(90%);
@@ -53,16 +52,8 @@
     left: 80%;
   }
 }
-#container #backToTop #backToTopSymbol {
-  height: 45px;
-  font-size: 45px;
-  font-weight: 700;
-}
-#container #backToTop:hover {
-  opacity: 0.8;
-  filter: brightness(90%);
-}
-#container #backToTop p {
+#container #backToTop #backToTopText {
+  visibility: hidden;
   color: rgb(243, 85, 37);
   font-size: 14px;
   font-weight: 700;
