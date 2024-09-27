@@ -66,9 +66,9 @@ lightModeToggle.addEventListener('click', function () {
   let hr = document.querySelector('hr').style.color;
 
   document.querySelector('hr').style.color =
-    hr === 'rgba(255, 255, 255, 0.52)'
+    hr === 'rgba(255, 255, 255, 0.50)'
       ? 'rgb(55, 55, 55)'
-      : 'rgba(255, 255, 255, 0.52)';
+      : 'rgba(255, 255, 255, 0.50)';
 });
 
 //////////////////////////////////////

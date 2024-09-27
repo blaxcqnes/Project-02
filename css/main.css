@@ -19,6 +19,10 @@
   cursor: pointer;
   opacity: 0;
 }
+#container #backToTop:hover {
+  filter: brightness(90%);
+  opacity: 0.5;
+}
 @media (min-width: 300px) and (max-width: 350px) {
   #container #backToTop {
     bottom: 3%;
@@ -97,6 +101,7 @@
   flex-direction: row;
   justify-content: space-around;
   width: min(100% - 4em, 500em);
+  height: auto;
   margin: 23px 30px 23px 30px;
   padding-bottom: 15px;
   align-items: center;
@@ -360,106 +365,106 @@
     align-self: center;
   }
 }
-#header #headerSocialMedia #headerInsta {
+#header #headerSocialMedia #headerInstaHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  margin-right: 22px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#header #headerSocialMedia #headerInstaHolder:hover {
+  border: 2px solid rgb(243, 85, 37);
+  border-radius: 100px;
+}
+#header #headerSocialMedia #headerInstaHolder #headerInsta {
   width: 18px;
   height: 18px;
-  margin-right: 22px;
   background-image: url("../images/svgs/headerSocialMedia/headerInsta.svg");
-  transition: all 0.2s ease;
+  background-repeat: no-repeat;
 }
 @media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerInsta {
+  #header #headerSocialMedia #headerInstaHolder #headerInsta {
     width: 16px;
     height: 16px;
   }
 }
-#header #headerSocialMedia #headerInsta:hover {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  background-image: url("../images/svgs/headerSocialMedia/hover/headerInsta.svg");
-  transition: all 0.2s ease;
-}
-@media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerInsta:hover {
-    width: 16px;
-    height: 16px;
-  }
-}
-#header #headerSocialMedia #headerTelegram {
-  width: 18px;
-  height: 18px;
+#header #headerSocialMedia #headerTelegramHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
   margin-right: 22px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#header #headerSocialMedia #headerTelegramHolder:hover {
+  border: 2px solid rgb(243, 85, 37);
+  border-radius: 100px;
+}
+#header #headerSocialMedia #headerTelegramHolder #headerTelegram {
+  width: 17.5px;
+  height: 17.5px;
   background-image: url("../images/svgs/headerSocialMedia/headerTelegram.svg");
-  transition: all 0.2s ease;
+  background-repeat: no-repeat;
 }
 @media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerTelegram {
+  #header #headerSocialMedia #headerTelegramHolder #headerTelegram {
     width: 16px;
     height: 16px;
   }
 }
-#header #headerSocialMedia #headerTelegram:hover {
-  width: 18px;
-  height: 18px;
+#header #headerSocialMedia #headerXHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
   margin-right: 22px;
+  transition: all 0.2s ease;
   cursor: pointer;
-  background-image: url("../images/svgs/headerSocialMedia/hover/headerTelegram.svg");
-  transition: all 0.2s ease;
 }
-@media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerTelegram:hover {
-    width: 16px;
-    height: 16px;
-  }
+#header #headerSocialMedia #headerXHolder:hover {
+  border: 2px solid rgb(243, 85, 37);
+  border-radius: 100px;
 }
-#header #headerSocialMedia #headerX {
+#header #headerSocialMedia #headerXHolder #headerX {
   width: 18px;
   height: 18px;
-  margin-right: 22px;
   background-image: url("../images/svgs/headerSocialMedia/headerX.svg");
-  transition: all 0.2s ease;
+  background-repeat: no-repeat;
 }
 @media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerX {
+  #header #headerSocialMedia #headerXHolder #headerX {
     width: 16px;
     height: 16px;
   }
 }
-#header #headerSocialMedia #headerX:hover {
-  width: 18px;
-  height: 18px;
+#header #headerSocialMedia #headerYouTubeHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  margin-right: 22px;
+  transition: all 0.2s ease;
   cursor: pointer;
-  background-image: url("../images/svgs/headerSocialMedia/hover/headerX.svg");
-  transition: all 0.2s ease;
 }
-@media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerX:hover {
-    width: 16px;
-    height: 16px;
-  }
+#header #headerSocialMedia #headerYouTubeHolder:hover {
+  border: 2px solid rgb(243, 85, 37);
+  border-radius: 100px;
 }
-#header #headerSocialMedia #headerYouTube {
+#header #headerSocialMedia #headerYouTubeHolder #headerYouTube {
   width: 18px;
   height: 18px;
   background-image: url("../images/svgs/headerSocialMedia/headerYouTube.svg");
-  transition: all 0.2s ease;
+  background-repeat: no-repeat;
 }
 @media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerYouTube {
-    width: 16px;
-    height: 16px;
-  }
-}
-#header #headerSocialMedia #headerYouTube:hover {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  background-image: url("../images/svgs/headerSocialMedia/hover/headerYouTube.svg");
-  transition: all 0.2s ease;
-}
-@media (min-width: 767px) and (max-width: 876px) {
-  #header #headerSocialMedia #headerYouTube:hover {
+  #header #headerSocialMedia #headerYouTubeHolder #headerYouTube {
     width: 16px;
     height: 16px;
   }
@@ -2114,6 +2119,7 @@
   display: flex;
   flex-direction: row;
   width: inherit;
+  height: 600px;
   margin-top: 70px;
   padding: 0 50px;
   flex-wrap: wrap;
@@ -2179,6 +2185,11 @@
   background-color: rgb(243, 85, 37);
   border-radius: 100px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+#topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder:hover {
+  filter: brightness(90%);
+  background-color: rgb(212, 73, 31);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder {
