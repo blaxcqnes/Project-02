@@ -7,7 +7,6 @@ let tabletScreen = window.matchMedia(
 );
 let backToTop = document.querySelector('#backToTop');
 let hr = document.querySelector('hr');
-let topTwo = document.querySelector('#topTwo');
 
 let header = document.querySelector('#header');
 
@@ -21,6 +20,16 @@ let topOnePrevButton = document.querySelector('#topOnePrevButton');
 let topOneSliderContainer = document.querySelector('#topOneSliderContainer');
 let topOneslide = document.querySelector('#topOneslide');
 let topOneNextButton = document.querySelector('#topOneNextButton');
+
+let topTwo = document.querySelector('#topTwo');
+let pTopTwoMidSecThreeShowen = document.querySelector(
+  '#pTopTwoMidSecThreeShowen'
+);
+let showMidSecHolder = document.querySelector('#showMidSecHolder');
+let hideMidSecHolder = document.querySelector('#hideMidSecHolder');
+let pTopTwoMidSecThreeHidden = document.querySelector(
+  '#pTopTwoMidSecThreeHidden'
+);
 
 lightModeToggle.addEventListener('click', function () {
   let light = document.querySelector('body').style.backgroundColor;
@@ -381,7 +390,7 @@ window.addEventListener('scroll', function () {
 
 //////////////////////////////////////
 
-//
+// topOnePrevButton and topOneNextButton section
 
 topOnePrevButton.addEventListener('click', function () {
   let slideWidth = topOneslide.clientWidth;
@@ -414,3 +423,29 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 //////////////////////////////////////
+
+// pTopTwoMidSecTwo section
+
+pTopTwoMidSecThreeShowen.addEventListener('click', function () {
+  if (pTopTwoMidSecThreeHidden.style.opacity === '0') {
+    showMidSecHolder.style.opacity = '0';
+    hideMidSecHolder.style.opacity = '1';
+    pTopTwoMidSecThreeHidden.style.height = '130px';
+    pTopTwoMidSecThreeHidden.style.opacity = '1';
+  } else {
+    showMidSecHolder.style.opacity = '1';
+    hideMidSecHolder.style.opacity = '0';
+    pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.opacity = '0';
+  }
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecTwoLight =
+    document.querySelector('#pTopTwoMidSecTwo').style.color;
+
+  document.querySelector('#pTopTwoMidSecTwo').style.color =
+    pTopTwoMidSecTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
