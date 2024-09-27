@@ -2288,7 +2288,7 @@
   margin-top: 25px;
   background-color: rgb(28, 28, 28);
 }
-#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShowen {
+#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
   height: 50px;
   align-content: center;
   position: relative;
@@ -2298,13 +2298,13 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
 }
-#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShowen #showMidSecHolder {
+#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown #showMidSecThreeHolder {
   position: absolute;
   right: 50px;
   font-size: 13px;
   transition: all 0.2s ease;
 }
-#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShowen #hideMidSecHolder {
+#topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown #hideMidSecThreeHolder {
   position: absolute;
   right: 52px;
   opacity: 0;
@@ -2318,6 +2318,46 @@
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeHidden {
+    height: 0px;
+    opacity: 0;
+    align-content: center;
+  }
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFourHolder {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(28, 28, 28);
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown {
+  height: 50px;
+  align-content: center;
+  position: relative;
+  padding-left: 20px;
+  background-color: rgb(32, 32, 32);
+  color: rgb(243, 85, 37);
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  cursor: pointer;
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown #showMidSecFourHolder {
+  position: absolute;
+  right: 50px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown #hideMidSecFourHolder {
+  position: absolute;
+  right: 52px;
+  opacity: 0;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourHidden {
+  padding: 0 10px;
+  color: rgb(150, 150, 150);
+  transition: all 0.3s ease-in;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourHidden {
     height: 0px;
     opacity: 0;
     align-content: center;

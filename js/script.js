@@ -22,13 +22,19 @@ let topOneslide = document.querySelector('#topOneslide');
 let topOneNextButton = document.querySelector('#topOneNextButton');
 
 let topTwo = document.querySelector('#topTwo');
-let pTopTwoMidSecThreeShowen = document.querySelector(
-  '#pTopTwoMidSecThreeShowen'
+let pTopTwoMidSecThreeShown = document.querySelector(
+  '#pTopTwoMidSecThreeShown'
 );
-let showMidSecHolder = document.querySelector('#showMidSecHolder');
-let hideMidSecHolder = document.querySelector('#hideMidSecHolder');
+let showMidSecThreeHolder = document.querySelector('#showMidSecThreeHolder');
+let hideMidSecThreeHolder = document.querySelector('#hideMidSecThreeHolder');
 let pTopTwoMidSecThreeHidden = document.querySelector(
   '#pTopTwoMidSecThreeHidden'
+);
+let pTopTwoMidSecFourShown = document.querySelector('#pTopTwoMidSecFourShown');
+let showMidSecFourHolder = document.querySelector('#showMidSecFourHolder');
+let hideMidSecFourHolder = document.querySelector('#hideMidSecFourHolder');
+let pTopTwoMidSecFourHidden = document.querySelector(
+  '#pTopTwoMidSecFourHidden'
 );
 
 lightModeToggle.addEventListener('click', function () {
@@ -426,17 +432,31 @@ lightModeToggle.addEventListener('click', function () {
 
 // pTopTwoMidSecTwo section
 
-pTopTwoMidSecThreeShowen.addEventListener('click', function () {
+pTopTwoMidSecThreeShown.addEventListener('click', function () {
   if (pTopTwoMidSecThreeHidden.style.opacity === '0') {
-    showMidSecHolder.style.opacity = '0';
-    hideMidSecHolder.style.opacity = '1';
+    showMidSecThreeHolder.style.opacity = '0';
+    hideMidSecThreeHolder.style.opacity = '1';
     pTopTwoMidSecThreeHidden.style.height = '130px';
     pTopTwoMidSecThreeHidden.style.opacity = '1';
   } else {
-    showMidSecHolder.style.opacity = '1';
-    hideMidSecHolder.style.opacity = '0';
+    showMidSecThreeHolder.style.opacity = '1';
+    hideMidSecThreeHolder.style.opacity = '0';
     pTopTwoMidSecThreeHidden.style.height = '0';
     pTopTwoMidSecThreeHidden.style.opacity = '0';
+  }
+});
+
+pTopTwoMidSecFourShown.addEventListener('click', function () {
+  if (pTopTwoMidSecFourHidden.style.opacity === '0') {
+    showMidSecFourHolder.style.opacity = '0';
+    hideMidSecFourHolder.style.opacity = '1';
+    pTopTwoMidSecFourHidden.style.height = '140px';
+    pTopTwoMidSecFourHidden.style.opacity = '1';
+  } else {
+    showMidSecFourHolder.style.opacity = '1';
+    hideMidSecFourHolder.style.opacity = '0';
+    pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.opacity = '0';
   }
 });
 
@@ -448,4 +468,58 @@ lightModeToggle.addEventListener('click', function () {
     pTopTwoMidSecTwoLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecThreeHolderLight = document.querySelector(
+    '#pTopTwoMidSecThreeHolder'
+  ).style.backgroundColor;
+  let pTopTwoMidSecThreeShownLight = document.querySelector(
+    '#pTopTwoMidSecThreeShown'
+  ).style.backgroundColor;
+  let pTopTwoMidSecThreeShownBorderLight = document.querySelector(
+    '#pTopTwoMidSecThreeShown'
+  ).style.borderBottom;
+
+  document.querySelector('#pTopTwoMidSecThreeHolder').style.backgroundColor =
+    pTopTwoMidSecThreeHolderLight === 'rgb(238, 238, 238)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(238, 238, 238)';
+
+  document.querySelector('#pTopTwoMidSecThreeShown').style.backgroundColor =
+    pTopTwoMidSecThreeShownLight === 'rgb(242, 242, 242)'
+      ? 'rgb(32, 32, 32)'
+      : 'rgb(242, 242, 242)';
+
+  document.querySelector('#pTopTwoMidSecThreeShown').style.borderBottom =
+    pTopTwoMidSecThreeShownBorderLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecFourHolderLight = document.querySelector(
+    '#pTopTwoMidSecFourHolder'
+  ).style.backgroundColor;
+  let pTopTwoMidSecFourShownLight = document.querySelector(
+    '#pTopTwoMidSecFourShown'
+  ).style.backgroundColor;
+  let pTopTwoMidSecFourShownBorderLight = document.querySelector(
+    '#pTopTwoMidSecFourShown'
+  ).style.borderBottom;
+
+  document.querySelector('#pTopTwoMidSecFourHolder').style.backgroundColor =
+    pTopTwoMidSecFourHolderLight === 'rgb(238, 238, 238)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(238, 238, 238)';
+
+  document.querySelector('#pTopTwoMidSecFourShown').style.backgroundColor =
+    pTopTwoMidSecFourShownLight === 'rgb(242, 242, 242)'
+      ? 'rgb(32, 32, 32)'
+      : 'rgb(242, 242, 242)';
+
+  document.querySelector('#pTopTwoMidSecFourShown').style.borderBottom =
+    pTopTwoMidSecFourShownBorderLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
 });

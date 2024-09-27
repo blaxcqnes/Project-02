@@ -166,7 +166,7 @@
       margin-top: 25px;
       background-color: rgb(28, 28, 28);
 
-      #pTopTwoMidSecThreeShowen {
+      #pTopTwoMidSecThreeShown {
         height: 50px;
         align-content: center;
         position: relative;
@@ -176,14 +176,14 @@
         border-bottom: 0.5px solid rgb(55, 55, 55);
         cursor: pointer;
 
-        #showMidSecHolder {
+        #showMidSecThreeHolder {
           position: absolute;
           right: 50px;
           font-size: 13px;
           transition: all 0.2s ease;
         }
 
-        #hideMidSecHolder {
+        #hideMidSecThreeHolder {
           position: absolute;
           right: 52px;
           opacity: 0;
@@ -193,6 +193,49 @@
       }
 
       #pTopTwoMidSecThreeHidden {
+        padding: 0 10px;
+        color: rgb(150, 150, 150);
+        transition: all 0.3s ease-in;
+
+        @include breakPoints(small) {
+          height: 0px;
+          opacity: 0;
+          align-content: center;
+        }
+      }
+    }
+
+    #pTopTwoMidSecFourHolder {
+      width: fit-content;
+      background-color: rgb(28, 28, 28);
+
+      #pTopTwoMidSecFourShown {
+        height: 50px;
+        align-content: center;
+        position: relative;
+        padding-left: 20px;
+        background-color: rgb(32, 32, 32);
+        color: rgb(243, 85, 37);
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        cursor: pointer;
+
+        #showMidSecFourHolder {
+          position: absolute;
+          right: 50px;
+          font-size: 13px;
+          transition: all 0.2s ease;
+        }
+
+        #hideMidSecFourHolder {
+          position: absolute;
+          right: 52px;
+          opacity: 0;
+          font-size: 13px;
+          transition: all 0.2s ease;
+        }
+      }
+
+      #pTopTwoMidSecFourHidden {
         padding: 0 10px;
         color: rgb(150, 150, 150);
         transition: all 0.3s ease-in;
