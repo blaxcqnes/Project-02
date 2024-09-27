@@ -58,7 +58,7 @@ window.onbeforeunload = function () {
 // backToTop section
 
 window.addEventListener('scroll', function () {
-  if (window.scrollY > 400) {
+  if (window.scrollY >= 400) {
     backToTop.style.opacity = '1';
   } else {
     backToTop.style.opacity = '0';
@@ -375,6 +375,7 @@ window.addEventListener('scroll', function () {
       if (navBarJumpingListsAndSchedule.style.maxHeight === '190px') {
         navBarJumpingListsAndSchedule.style.maxHeight = '320px';
         navBarUl.style.marginTop = '10px';
+        navBarSchedule.style.maxHeight = '45px'; // this added, remove if issues found
       }
 
       navBarSchedule.style.maxHeight = '45px';
