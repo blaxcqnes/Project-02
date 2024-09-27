@@ -2,8 +2,14 @@ let body = document.querySelector('body');
 let smallAndMobScreens = window.matchMedia(
   '(min-width: 300px) and (max-width: 766.9px)'
 );
+let smallScreen = window.matchMedia(
+  '(min-width: 300px) and (max-width: 399px)'
+);
+let mobileScreen = window.matchMedia(
+  '(min-width: 399px) and (max-width: 767px)'
+);
 let tabletScreen = window.matchMedia(
-  '(min-width: 767px) and (max-width: 900px'
+  '(min-width: 767px) and (max-width: 1023px'
 );
 let backToTop = document.querySelector('#backToTop');
 let hr = document.querySelector('hr');
@@ -436,13 +442,61 @@ pTopTwoMidSecThreeShown.addEventListener('click', function () {
   if (pTopTwoMidSecThreeHidden.style.opacity === '0') {
     showMidSecThreeHolder.style.opacity = '0';
     hideMidSecThreeHolder.style.opacity = '1';
-    pTopTwoMidSecThreeHidden.style.height = '130px';
+    pTopTwoMidSecThreeHidden.style.height = '135px';
+    pTopTwoMidSecThreeHidden.style.padding = '15px 10px';
     pTopTwoMidSecThreeHidden.style.opacity = '1';
+
+    if (smallScreen.matches) {
+      pTopTwoMidSecThreeHidden.style.height = '175px';
+      pTopTwoMidSecThreeHidden.style.padding = '12px 10px';
+    }
+
+    if (mobileScreen.matches) {
+      pTopTwoMidSecThreeHidden.style.height = '120px';
+      pTopTwoMidSecThreeHidden.style.padding = '20px 10px';
+    }
+
+    if (tabletScreen.matches) {
+      pTopTwoMidSecThreeHidden.style.height = '110px';
+      pTopTwoMidSecThreeHidden.style.padding = '18px 10px';
+    }
+
+    ///////////////////////////////////////////////////
+    // remaining Four and Five
+
+    showMidSecFourHolder.style.opacity = '1';
+    hideMidSecFourHolder.style.opacity = '0';
+    pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.padding = '0';
+    pTopTwoMidSecFourHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFiveHolder.style.opacity = '1';
+    hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveHidden.style.height = '0';
+    pTopTwoMidSecFiveHidden.style.padding = '0';
+    pTopTwoMidSecFiveHidden.style.opacity = '0';
   } else {
+    // main Three
     showMidSecThreeHolder.style.opacity = '1';
     hideMidSecThreeHolder.style.opacity = '0';
     pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.padding = '0';
     pTopTwoMidSecThreeHidden.style.opacity = '0';
+
+    ///////////////////////////////////////////////////
+    // remaining Four and Five
+
+    showMidSecFourHolder.style.opacity = '1';
+    hideMidSecFourHolder.style.opacity = '0';
+    pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.padding = '0';
+    pTopTwoMidSecFourHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFiveHolder.style.opacity = '1';
+    hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveHidden.style.height = '0';
+    pTopTwoMidSecFiveHidden.style.padding = '0';
+    pTopTwoMidSecFiveHidden.style.opacity = '0';
   }
 });
 
@@ -450,12 +504,120 @@ pTopTwoMidSecFourShown.addEventListener('click', function () {
   if (pTopTwoMidSecFourHidden.style.opacity === '0') {
     showMidSecFourHolder.style.opacity = '0';
     hideMidSecFourHolder.style.opacity = '1';
-    pTopTwoMidSecFourHidden.style.height = '140px';
+    pTopTwoMidSecFourHidden.style.height = '135px';
+    pTopTwoMidSecFourHidden.style.padding = '20px 10px';
     pTopTwoMidSecFourHidden.style.opacity = '1';
+
+    if (smallScreen.matches) {
+      pTopTwoMidSecFourHidden.style.height = '175px';
+      pTopTwoMidSecFourHidden.style.padding = '12px 10px';
+    }
+
+    if (mobileScreen.matches) {
+      pTopTwoMidSecFourHidden.style.height = '135px';
+      pTopTwoMidSecFourHidden.style.padding = '20px 10px';
+    }
+
+    if (tabletScreen.matches) {
+      pTopTwoMidSecFourHidden.style.height = '120px';
+      pTopTwoMidSecFourHidden.style.padding = '24px 10px';
+    }
+
+    ///////////////////////////////////////////////////
+    // remaining Three and Five
+
+    showMidSecThreeHolder.style.opacity = '1';
+    hideMidSecThreeHolder.style.opacity = '0';
+    pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.padding = '0';
+    pTopTwoMidSecThreeHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFiveHolder.style.opacity = '1';
+    hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveHidden.style.height = '0';
+    pTopTwoMidSecFiveHidden.style.padding = '0';
+    pTopTwoMidSecFiveHidden.style.opacity = '0';
   } else {
+    // main Four
     showMidSecFourHolder.style.opacity = '1';
     hideMidSecFourHolder.style.opacity = '0';
     pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.padding = '0';
+    pTopTwoMidSecFourHidden.style.opacity = '0';
+
+    ///////////////////////////////////////////////////
+    // remaining Three and Five
+
+    showMidSecThreeHolder.style.opacity = '1';
+    hideMidSecThreeHolder.style.opacity = '0';
+    pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.padding = '0';
+    pTopTwoMidSecThreeHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFiveHolder.style.opacity = '1';
+    hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveHidden.style.height = '0';
+    pTopTwoMidSecFiveHidden.style.padding = '0';
+    pTopTwoMidSecFiveHidden.style.opacity = '0';
+  }
+});
+
+pTopTwoMidSecFiveShown.addEventListener('click', function () {
+  if (pTopTwoMidSecFiveHidden.style.opacity === '0') {
+    showMidSecFiveHolder.style.opacity = '0';
+    hideMidSecFiveHolder.style.opacity = '1';
+    pTopTwoMidSecFiveHidden.style.height = '135px';
+    pTopTwoMidSecFiveHidden.style.padding = '20px 10px';
+    pTopTwoMidSecFiveHidden.style.opacity = '1';
+
+    if (smallScreen.matches) {
+      pTopTwoMidSecFiveHidden.style.height = '175px';
+      pTopTwoMidSecFiveHidden.style.padding = '12px 10px';
+    }
+
+    if (mobileScreen.matches) {
+      pTopTwoMidSecFiveHidden.style.height = '135px';
+      pTopTwoMidSecFiveHidden.style.padding = '20px 10px';
+    }
+
+    if (tabletScreen.matches) {
+      pTopTwoMidSecFiveHidden.style.height = '120px';
+      pTopTwoMidSecFiveHidden.style.padding = '24px 10px';
+    }
+
+    ///////////////////////////////////////////////////
+    // remaining Three and Four
+    showMidSecThreeHolder.style.opacity = '1';
+    hideMidSecThreeHolder.style.opacity = '0';
+    pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.padding = '0';
+    pTopTwoMidSecThreeHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFourHolder.style.opacity = '1';
+    hideMidSecFourHolder.style.opacity = '0';
+    pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.padding = '0';
+    pTopTwoMidSecFourHidden.style.opacity = '0';
+  } else {
+    // main Five
+    showMidSecFiveHolder.style.opacity = '1';
+    hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveHidden.style.height = '0';
+    pTopTwoMidSecFiveHidden.style.padding = '0';
+    pTopTwoMidSecFiveHidden.style.opacity = '0';
+
+    ///////////////////////////////////////////////////
+    // remaining Three and Four
+    showMidSecThreeHolder.style.opacity = '1';
+    hideMidSecThreeHolder.style.opacity = '0';
+    pTopTwoMidSecThreeHidden.style.height = '0';
+    pTopTwoMidSecThreeHidden.style.padding = '0';
+    pTopTwoMidSecThreeHidden.style.opacity = '0';
+    ///////////////////////////////////////////////////
+    showMidSecFourHolder.style.opacity = '1';
+    hideMidSecFourHolder.style.opacity = '0';
+    pTopTwoMidSecFourHidden.style.height = '0';
+    pTopTwoMidSecFourHidden.style.padding = '0';
     pTopTwoMidSecFourHidden.style.opacity = '0';
   }
 });
@@ -498,6 +660,55 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecThreeHiddenLight = document.querySelector(
+    '#pTopTwoMidSecThreeHidden'
+  ).style.color;
+
+  document.querySelector('#pTopTwoMidSecThreeHidden').style.color =
+    pTopTwoMidSecThreeHiddenLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let showMidSecThreeHolderLight = document.querySelector(
+    '#showMidSecThreeHolder'
+  ).style.color;
+  let hideMidSecThreeHolderLight = document.querySelector(
+    '#hideMidSecThreeHolder'
+  ).style.color;
+
+  document.querySelector('#showMidSecThreeHolder').style.color =
+    showMidSecThreeHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#hideMidSecThreeHolder').style.color =
+    hideMidSecThreeHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let showMidSecFourHolderLight = document.querySelector(
+    '#showMidSecFourHolder'
+  ).style.color;
+  let hideMidSecFourHolderLight = document.querySelector(
+    '#hideMidSecFourHolder'
+  ).style.color;
+
+  document.querySelector('#showMidSecFourHolder').style.color =
+    showMidSecFourHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#hideMidSecFourHolder').style.color =
+    hideMidSecFourHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
   let pTopTwoMidSecFourHolderLight = document.querySelector(
     '#pTopTwoMidSecFourHolder'
   ).style.backgroundColor;
@@ -522,4 +733,72 @@ lightModeToggle.addEventListener('click', function () {
     pTopTwoMidSecFourShownBorderLight === '0.5px solid rgb(200, 200, 200)'
       ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecFourHiddenLight = document.querySelector(
+    '#pTopTwoMidSecFourHidden'
+  ).style.color;
+
+  document.querySelector('#pTopTwoMidSecFourHidden').style.color =
+    pTopTwoMidSecFourHiddenLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let showMidSecFiveHolderLight = document.querySelector(
+    '#showMidSecFiveHolder'
+  ).style.color;
+  let hideMidSecFiveHolderLight = document.querySelector(
+    '#hideMidSecFiveHolder'
+  ).style.color;
+
+  document.querySelector('#showMidSecFiveHolder').style.color =
+    showMidSecFiveHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#hideMidSecFiveHolder').style.color =
+    hideMidSecFiveHolderLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecFiveHolderLight = document.querySelector(
+    '#pTopTwoMidSecFiveHolder'
+  ).style.backgroundColor;
+  let pTopTwoMidSecFiveShownLight = document.querySelector(
+    '#pTopTwoMidSecFiveShown'
+  ).style.backgroundColor;
+  let pTopTwoMidSecFiveShownBorderLight = document.querySelector(
+    '#pTopTwoMidSecFiveShown'
+  ).style.borderBottom;
+
+  document.querySelector('#pTopTwoMidSecFiveHolder').style.backgroundColor =
+    pTopTwoMidSecFiveHolderLight === 'rgb(238, 238, 238)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(238, 238, 238)';
+
+  document.querySelector('#pTopTwoMidSecFiveShown').style.backgroundColor =
+    pTopTwoMidSecFiveShownLight === 'rgb(242, 242, 242)'
+      ? 'rgb(32, 32, 32)'
+      : 'rgb(242, 242, 242)';
+
+  document.querySelector('#pTopTwoMidSecFiveShown').style.borderBottom =
+    pTopTwoMidSecFiveShownBorderLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let pTopTwoMidSecFiveHiddenLight = document.querySelector(
+    '#pTopTwoMidSecFiveHidden'
+  ).style.color;
+
+  document.querySelector('#pTopTwoMidSecFiveHidden').style.color =
+    pTopTwoMidSecFiveHiddenLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
 });

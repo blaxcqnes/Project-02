@@ -2118,6 +2118,7 @@
 #topTwo {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: inherit;
   height: auto;
@@ -2186,11 +2187,11 @@
   }
 }
 #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   position: absolute;
-  bottom: -40px;
-  left: -40px;
+  bottom: -25px;
+  left: -25px;
   background-color: rgb(243, 85, 37);
   border-radius: 100px;
   cursor: pointer;
@@ -2204,29 +2205,29 @@
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder {
     width: 60px;
     height: 60px;
-    bottom: -20px;
-    left: -20px;
+    bottom: -10px;
+    left: -10px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     bottom: -25px;
     left: -25px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder {
-    width: 78px;
-    height: 78px;
-    bottom: -25px;
-    left: -25px;
+    width: 65px;
+    height: 65px;
+    bottom: -20px;
+    left: -20px;
   }
 }
 #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder #topTwoLeftSecSvg {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2234,22 +2235,16 @@
   background-image: url("../images/svgs/topTwo/contract.svg");
   background-repeat: no-repeat;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder #topTwoLeftSecSvg {
-    width: 35px;
-    height: 35px;
-  }
-}
 @media (min-width: 399px) and (max-width: 767px) {
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder #topTwoLeftSecSvg {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder #topTwoLeftSecSvg {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 }
 #topTwo #topTwoMidSec {
@@ -2257,14 +2252,23 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
+  width: 43%;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec {
+    width: unset;
+    margin-top: 65px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTwo #topTwoMidSec {
+    width: unset;
     margin-top: 65px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #topTwo #topTwoMidSec {
+    width: 80%;
     margin-top: 50px;
   }
 }
@@ -2288,6 +2292,11 @@
   margin-top: 25px;
   background-color: rgb(28, 28, 28);
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder {
+    border-radius: 0;
+  }
+}
 #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
   height: 50px;
   align-content: center;
@@ -2295,33 +2304,41 @@
   padding-left: 20px;
   background-color: rgb(32, 32, 32);
   color: rgb(243, 85, 37);
+  font-size: 14px;
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
+    border-radius: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
+    border-radius: 0;
+  }
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown #showMidSecThreeHolder {
   position: absolute;
   right: 50px;
+  color: rgb(150, 150, 150);
   font-size: 13px;
   transition: all 0.2s ease;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown #hideMidSecThreeHolder {
   position: absolute;
   right: 52px;
+  color: rgb(150, 150, 150);
   opacity: 0;
   font-size: 13px;
   transition: all 0.2s ease;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeHidden {
-  padding: 0 10px;
+  height: 0;
   color: rgb(150, 150, 150);
-  transition: all 0.3s ease-in;
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeHidden {
-    height: 0px;
-    opacity: 0;
-    align-content: center;
-  }
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder {
   width: -moz-fit-content;
@@ -2335,12 +2352,14 @@
   padding-left: 20px;
   background-color: rgb(32, 32, 32);
   color: rgb(243, 85, 37);
+  font-size: 14px;
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown #showMidSecFourHolder {
   position: absolute;
   right: 50px;
+  color: rgb(150, 150, 150);
   font-size: 13px;
   transition: all 0.2s ease;
 }
@@ -2348,18 +2367,82 @@
   position: absolute;
   right: 52px;
   opacity: 0;
+  color: rgb(150, 150, 150);
   font-size: 13px;
   transition: all 0.2s ease;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourHidden {
-  padding: 0 10px;
+  height: 0;
   color: rgb(150, 150, 150);
-  transition: all 0.3s ease-in;
+  opacity: 0;
+  transition: all 0.2s ease-in;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourHidden {
-    height: 0px;
-    opacity: 0;
+    align-content: center;
+  }
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(28, 28, 28);
+  border-radius: 0px 0px 10px 10px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder {
+    border-radius: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder {
+    border-radius: 0;
+  }
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
+  height: 50px;
+  align-content: center;
+  position: relative;
+  padding-left: 20px;
+  background-color: rgb(32, 32, 32);
+  color: rgb(243, 85, 37);
+  font-size: 14px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  cursor: pointer;
+  border-radius: 0px 0px 10px 10px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
+    border-radius: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
+    border-radius: 0;
+  }
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown #showMidSecFiveHolder {
+  position: absolute;
+  right: 50px;
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown #hideMidSecFiveHolder {
+  position: absolute;
+  right: 52px;
+  opacity: 0;
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+#topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveHidden {
+  height: 0;
+  color: rgb(150, 150, 150);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveHidden {
     align-content: center;
   }
 }
