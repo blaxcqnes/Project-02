@@ -13,7 +13,6 @@ let tabletScreen = window.matchMedia(
 );
 let backToTop = document.querySelector('#backToTop');
 let backToTopSymbol = document.querySelector('#backToTopSymbol');
-let hr = document.querySelector('hr');
 
 let header = document.querySelector('#header');
 
@@ -87,17 +86,6 @@ lightModeToggle.addEventListener('click', function () {
     backToTop === 'rgb(215, 215, 215)'
       ? 'rgb(40, 40, 40)'
       : 'rgb(215, 215, 215)';
-});
-
-//////////////////////////////////////
-
-// hr
-
-lightModeToggle.addEventListener('click', function () {
-  let hr = document.querySelector('hr').style.color;
-
-  document.querySelector('hr').style.color =
-    hr === 'rgb(255, 255, 255)' ? 'rgb(55, 55, 55)' : 'rgb(255, 255, 255)';
 });
 
 //////////////////////////////////////
@@ -287,12 +275,6 @@ function expand() {
     navBarUl.style.opacity = '0';
   });
 
-  hr.addEventListener('click', function () {
-    navBarJumpingListsAndSchedule.style.maxHeight = '0';
-    navBarJumpingListsAndSchedule.style.opacity = '0';
-    navBarUl.style.opacity = '0';
-  });
-
   topTwo.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
@@ -437,6 +419,16 @@ lightModeToggle.addEventListener('click', function () {
     topOneNextButtonLight === 'rgb(215, 215, 215)'
       ? 'rgb(40, 40, 40)'
       : 'rgb(215, 215, 215)';
+});
+
+lightModeToggle.addEventListener('click', function () {
+  let topOneBorderBottomLight =
+    document.querySelector('#topOne').style.borderBottom;
+
+  document.querySelector('#topOne').style.borderBottom =
+    topOneBorderBottomLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
 });
 
 //////////////////////////////////////
@@ -932,3 +924,4 @@ lightModeToggle.addEventListener('click', function () {
       ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
 });
+//////////////////////////////////////

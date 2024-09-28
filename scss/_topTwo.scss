@@ -62,7 +62,8 @@
       border-radius: 10px;
       background-image: url('../images/topTwo/topTwoOne.jpg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
+      background-position-x: 6%;
 
       @include breakPoints(small) {
         width: 251px;
@@ -157,6 +158,10 @@
       margin-top: 50px;
     }
 
+    @include breakPoints(laptop) {
+      transform: translate(0%, 50%);
+    }
+
     #pTopTwoMidSecOne {
       color: rgb(243, 85, 37);
       text-transform: uppercase;
@@ -167,10 +172,26 @@
     #pTopTwoMidSecTwo {
       display: flex;
       flex-wrap: wrap;
-      margin: 25px 20px 0 20px;
+      margin: 25px 20px 60px 20px;
       color: rgb(150, 150, 150);
       font-size: 30px;
       font-weight: 700;
+
+      @include breakPoints(small) {
+        margin-bottom: 0;
+      }
+
+      @include breakPoints(small) {
+        margin-bottom: 20px;
+      }
+
+      @include breakPoints(tablet) {
+        margin-bottom: 20px;
+      }
+
+      @include breakPoints(laptop) {
+        margin-bottom: 120px;
+      }
     }
 
     #pTopTwoMidSecThreeHolder {

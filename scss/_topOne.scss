@@ -7,9 +7,11 @@
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  padding-bottom: 85px;
 
   @include breakPoints(small) {
-    height: 350px;
+    height: 385px;
     overflow: unset;
     margin: 20px 0 0 0;
     transition: all 0.2s ease;
@@ -17,9 +19,13 @@
 
   @include breakPoints(mobile) {
     overflow: unset;
-    height: 370px;
+    height: 405px;
     margin: 20px 0 0 0;
     transition: all 0.2s ease;
+  }
+
+  @include breakPoints(tablet) {
+    padding-bottom: 75px;
   }
 
   #topOnePrevButton {

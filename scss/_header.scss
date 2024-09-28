@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 0;
   border-bottom: 0.5px solid rgb(55, 55, 55);
-  transition: all 0.2s ease;
+  transition: all 0.4s ease-in-out;
 
   @include breakPoints(small) {
     flex-direction: column;
@@ -17,7 +17,8 @@
     position: relative;
     margin: 25px 25px 0 25px;
     padding-bottom: 20px;
-    transition: all 0.2s ease-out;
+    // transition: all 0.2s ease-out;
+    transition: all 0.4s ease-in-out;
   }
 
   @include breakPoints(mobile) {
@@ -26,7 +27,8 @@
     position: relative;
     margin: 25px 25px 0 25px;
     padding-bottom: 20px;
-    transition: all 0.2s ease-out;
+    // transition: all 0.2s ease-out;
+    transition: all 0.4s ease-in-out;
   }
 
   #headerContAndLoc {
