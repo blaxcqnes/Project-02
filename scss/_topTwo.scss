@@ -1,11 +1,12 @@
 #topTwo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: inherit;
   height: auto;
   margin-top: 70px;
+  margin-bottom: 10em; // remove when a new section is added
   padding: 0 50px;
   flex-wrap: wrap;
   transition: all 0.2s ease;
@@ -34,6 +35,12 @@
     padding: 0;
   }
 
+  @include breakPoints(laptop) {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: end;
+  }
+
   #topTwoLeftSec {
     display: flex;
     position: relative;
@@ -41,6 +48,11 @@
 
     @include breakPoints(tablet) {
       height: 525px;
+    }
+
+    @include breakPoints(laptop) {
+      margin-left: 105px;
+      transform: translate(-15%, 0%);
     }
 
     #topTwoLeftSecMainPhoto {
@@ -128,7 +140,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: start;
-    width: 43%;
+    width: 35%;
 
     @include breakPoints(small) {
       width: unset;
@@ -285,6 +297,7 @@
         font-size: 14px;
         border-bottom: unset;
         cursor: pointer;
+        border-bottom: unset;
         border-radius: 0px 0px 10px 10px;
 
         @include breakPoints(small) {
@@ -330,38 +343,57 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 50px;
+    width: 30%;
+    // margin-top: 50px;
+    padding: 30px 50px;
     background-color: rgb(28, 28, 28);
     border-radius: 10px;
 
     @include breakPoints(small) {
       width: inherit;
+      margin-top: 50px;
       padding: 30px 50px;
+      border-radius: unset;
     }
 
     @media (min-width: 399px) and (max-width: 499px) {
       width: inherit;
+      margin-top: 50px;
       padding: 30px 50px;
+      border-radius: unset;
     }
 
     @media (min-width: 499px) and (max-width: 599px) {
       width: inherit;
+      margin-top: 50px;
       padding: 30px 90px;
+      border-radius: unset;
     }
 
     @media (min-width: 599px) and (max-width: 699px) {
       width: inherit;
+      margin-top: 50px;
       padding: 30px 130px;
+      border-radius: unset;
     }
 
     @media (min-width: 699px) and (max-width: 767px) {
       width: inherit;
+      margin-top: 50px;
       padding: 30px 170px;
+      border-radius: unset;
     }
 
     @include breakPoints(tablet) {
       width: 80%;
+      margin-top: 50px;
       padding: 30px 150px;
+    }
+
+    @include breakPoints(laptop) {
+      width: 45%;
+      margin-top: 50px;
+      padding: 30px 50px;
     }
 
     #topTwoRightSecHolderOne {
@@ -369,23 +401,174 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 35px;
+      border-bottom: 0.5px solid rgb(55, 55, 55);
 
       #picTopTwoRightSecHolder {
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         background-image: url('../images/svgs/topTwo/size.svg');
+        background-repeat: no-repeat;
+
+        @include breakPoints(small) {
+          width: 45px;
+          height: 45px;
+        }
       }
 
       #pTopTwoRightSecHolder {
         display: flex;
         flex-direction: column;
+        text-align: end;
 
         #pTopTwoRightSecOne {
           color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
         }
 
         #pTopTwoRightSecTwo {
           color: rgb(120, 120, 120);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #topTwoRightSecHolderTwo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 35px;
+      padding-bottom: 35px;
+      border-bottom: 0.5px solid rgb(55, 55, 55);
+
+      #picTopTwoRightSecHolder {
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/svgs/topTwo/contractRight.svg');
+        background-repeat: no-repeat;
+
+        @include breakPoints(small) {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      #pTopTwoRightSecHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+
+        #pTopTwoRightSecThree {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+
+        #pTopTwoRightSecFour {
+          color: rgb(120, 120, 120);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #topTwoRightSecHolderThree {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 35px;
+      padding-bottom: 35px;
+      border-bottom: 0.5px solid rgb(55, 55, 55);
+
+      #picTopTwoRightSecHolder {
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/svgs/topTwo/payment.svg');
+        background-repeat: no-repeat;
+        transform: translate(11%);
+
+        @include breakPoints(small) {
+          width: 42px;
+          height: 42px;
+          transform: translate(16%);
+        }
+      }
+
+      #pTopTwoRightSecHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+
+        #pTopTwoRightSecFive {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+
+        #pTopTwoRightSecSix {
+          color: rgb(120, 120, 120);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #topTwoRightSecHolderFour {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 35px;
+
+      #picTopTwoRightSecHolder {
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/svgs/topTwo/safety.svg');
+        background-repeat: no-repeat;
+        transform: translate(14%);
+
+        @include breakPoints(small) {
+          width: 40px;
+          height: 40px;
+          transform: translate(20%);
+        }
+      }
+
+      #pTopTwoRightSecHolder {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+
+        #pTopTwoRightSecSeven {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+
+        #pTopTwoRightSecEight {
+          color: rgb(120, 120, 120);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
         }
       }
     }

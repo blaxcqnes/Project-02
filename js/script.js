@@ -32,16 +32,25 @@ let topTwo = document.querySelector('#topTwo');
 let pTopTwoMidSecThreeShown = document.querySelector(
   '#pTopTwoMidSecThreeShown'
 );
+
 let showMidSecThreeHolder = document.querySelector('#showMidSecThreeHolder');
 let hideMidSecThreeHolder = document.querySelector('#hideMidSecThreeHolder');
 let pTopTwoMidSecThreeHidden = document.querySelector(
   '#pTopTwoMidSecThreeHidden'
 );
+
 let pTopTwoMidSecFourShown = document.querySelector('#pTopTwoMidSecFourShown');
 let showMidSecFourHolder = document.querySelector('#showMidSecFourHolder');
 let hideMidSecFourHolder = document.querySelector('#hideMidSecFourHolder');
 let pTopTwoMidSecFourHidden = document.querySelector(
   '#pTopTwoMidSecFourHidden'
+);
+
+let pTopTwoMidSecFiveShown = document.querySelector('#pTopTwoMidSecFiveShown');
+let showMidSecFiveHolder = document.querySelector('#showMidSecFiveHolder');
+let hideMidSecFiveHolder = document.querySelector('#hideMidSecFiveHolder');
+let pTopTwoMidSecFiveHidden = document.querySelector(
+  '#pTopTwoMidSecFiveHidden'
 );
 
 lightModeToggle.addEventListener('click', function () {
@@ -562,10 +571,16 @@ pTopTwoMidSecFiveShown.addEventListener('click', function () {
   if (pTopTwoMidSecFiveHidden.style.opacity === '0') {
     showMidSecFiveHolder.style.opacity = '0';
     hideMidSecFiveHolder.style.opacity = '1';
+    pTopTwoMidSecFiveShown.style.borderBottom = '0.5px solid rgb(55, 55, 55)';
     pTopTwoMidSecFiveShown.style.borderRadius = 'unset';
     pTopTwoMidSecFiveHidden.style.height = '135px';
     pTopTwoMidSecFiveHidden.style.padding = '20px 10px';
     pTopTwoMidSecFiveHidden.style.opacity = '1';
+
+    if (pTopTwoMidSecFiveShown.style.backgroundColor === 'rgb(242, 242, 242)') {
+      pTopTwoMidSecFiveShown.style.borderBottom =
+        '0.5px solid rgb(200, 200, 200)';
+    }
 
     if (smallScreen.matches) {
       pTopTwoMidSecFiveHidden.style.height = '175px';
@@ -771,6 +786,12 @@ lightModeToggle.addEventListener('click', function () {
   let pTopTwoMidSecFiveShownLight = document.querySelector(
     '#pTopTwoMidSecFiveShown'
   ).style.backgroundColor;
+  let pTopTwoMidSecFiveShownBorderBottomLight = document.querySelector(
+    '#pTopTwoMidSecFiveShown'
+  ).style.borderBottom;
+  let pTopTwoMidSecFiveShownBorderBottomDark = document.querySelector(
+    '#pTopTwoMidSecFiveShown'
+  ).style.borderBottom;
 
   document.querySelector('#pTopTwoMidSecFiveHolder').style.backgroundColor =
     pTopTwoMidSecFiveHolderLight === 'rgb(228, 228, 228)'
@@ -781,6 +802,26 @@ lightModeToggle.addEventListener('click', function () {
     pTopTwoMidSecFiveShownLight === 'rgb(242, 242, 242)'
       ? 'rgb(32, 32, 32)'
       : 'rgb(242, 242, 242)';
+
+  if (
+    pTopTwoMidSecFiveShown.style.borderBottom === '0.5px solid rgb(55, 55, 55)'
+  ) {
+    document.querySelector('#pTopTwoMidSecFiveShown').style.borderBottom =
+      pTopTwoMidSecFiveShownBorderBottomLight ===
+      '0.5px solid rgb(200, 200, 200)'
+        ? '0.5px solid rgb(55, 55, 55)'
+        : '0.5px solid rgb(200, 200, 200)';
+  } else {
+    if (
+      pTopTwoMidSecFiveShown.style.borderBottom ===
+      '0.5px solid rgb(200, 200, 200)'
+    ) {
+      document.querySelector('#pTopTwoMidSecFiveShown').style.borderBottom =
+        pTopTwoMidSecFiveShownBorderBottomDark === '0.5px solid rgb(55, 55, 55)'
+          ? '0.5px solid rgb(200, 200, 200)'
+          : '0.5px solid rgb(55, 55, 55)';
+    }
+  }
 });
 
 lightModeToggle.addEventListener('click', function () {
@@ -803,6 +844,30 @@ lightModeToggle.addEventListener('click', function () {
     .style.color;
   let pTopTwoRightSecTwoLight = document.querySelector('#pTopTwoRightSecTwo')
     .style.color;
+  let pTopTwoRightSecThreeLight = document.querySelector(
+    '#pTopTwoRightSecThree'
+  ).style.color;
+  let pTopTwoRightSecFourLight = document.querySelector('#pTopTwoRightSecFour')
+    .style.color;
+  let pTopTwoRightSecFiveLight = document.querySelector('#pTopTwoRightSecFive')
+    .style.color;
+  let pTopTwoRightSecSixLight = document.querySelector('#pTopTwoRightSecSix')
+    .style.color;
+  let pTopTwoRightSecSevenLight = document.querySelector(
+    '#pTopTwoRightSecSeven'
+  ).style.color;
+  let pTopTwoRightSecEightLight = document.querySelector(
+    '#pTopTwoRightSecEight'
+  ).style.color;
+  let topTwoRightSecHolderOneBorderBottomLight = document.querySelector(
+    '#topTwoRightSecHolderOne'
+  ).style.borderBottom;
+  let topTwoRightSecHolderTwoBorderBottomLight = document.querySelector(
+    '#topTwoRightSecHolderTwo'
+  ).style.borderBottom;
+  let topTwoRightSecHolderThreeBorderBottomLight = document.querySelector(
+    '#topTwoRightSecHolderThree'
+  ).style.borderBottom;
 
   document.querySelector('#topTwoRightSec').style.backgroundColor =
     topTwoRightSecLight === 'rgb(228, 228, 228)'
@@ -818,4 +883,52 @@ lightModeToggle.addEventListener('click', function () {
     pTopTwoRightSecTwoLight === 'rgb(150, 150, 150)'
       ? 'rgb(120, 120, 120)'
       : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pTopTwoRightSecThree').style.color =
+    pTopTwoRightSecThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pTopTwoRightSecFour').style.color =
+    pTopTwoRightSecFourLight === 'rgb(150, 150, 150)'
+      ? 'rgb(120, 120, 120)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pTopTwoRightSecFive').style.color =
+    pTopTwoRightSecFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pTopTwoRightSecSix').style.color =
+    pTopTwoRightSecSixLight === 'rgb(150, 150, 150)'
+      ? 'rgb(120, 120, 120)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pTopTwoRightSecSeven').style.color =
+    pTopTwoRightSecSevenLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pTopTwoRightSecEight').style.color =
+    pTopTwoRightSecEightLight === 'rgb(150, 150, 150)'
+      ? 'rgb(120, 120, 120)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#topTwoRightSecHolderOne').style.borderBottom =
+    topTwoRightSecHolderOneBorderBottomLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#topTwoRightSecHolderTwo').style.borderBottom =
+    topTwoRightSecHolderTwoBorderBottomLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#topTwoRightSecHolderThree').style.borderBottom =
+    topTwoRightSecHolderThreeBorderBottomLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
 });
