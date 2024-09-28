@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="collage">
+  <path fill="#f35525" d="M54.86 55.86H9.14a1 1 0 0 1-1-1V9.14a1 1 0 0 1 1-1h45.72a1 1 0 0 1 1 1v45.72a1 1 0 0 1-1 1Zm-44.72-2h43.72V10.14H10.14Z" class="color222222 svgShape"></path>
+  <path fill="#f35525" d="M32 55.76a1 1 0 0 1-1-1V9.24a1 1 0 0 1 2 0v45.52a1 1 0 0 1-1 1Z" class="color222222 svgShape"></path>
+  <path fill="#f35525" d="M32 33H9.24a1 1 0 0 1 0-2H32a1 1 0 0 1 0 2Z" class="color222222 svgShape"></path>
+</svg>

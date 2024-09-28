@@ -6,8 +6,10 @@
   transition: all 0.2s ease;
 }
 #container #backToTop {
+  display: none;
   width: 125px;
-  height: 0;
+  height: 45px;
+  opacity: 0;
   position: fixed;
   bottom: 5%;
   left: 85%;
@@ -53,7 +55,6 @@
   }
 }
 #container #backToTop #backToTopText {
-  visibility: hidden;
   color: rgb(243, 85, 37);
   font-size: 14px;
   font-weight: 700;
@@ -2285,6 +2286,7 @@
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder {
+    margin-top: 45px;
     border-radius: 0;
   }
 }
@@ -2397,7 +2399,7 @@
   background-color: rgb(32, 32, 32);
   color: rgb(243, 85, 37);
   font-size: 14px;
-  border-bottom: 0.5px solid rgb(55, 55, 55);
+  border-bottom: unset;
   cursor: pointer;
   border-radius: 0px 0px 10px 10px;
 }
@@ -2437,6 +2439,71 @@
     align-content: center;
   }
 }
+#topTwo #topTwoRightSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoRightSec {
+    width: inherit;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #topTwo #topTwoRightSec {
+    width: inherit;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #topTwo #topTwoRightSec {
+    width: inherit;
+    padding: 30px 90px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #topTwo #topTwoRightSec {
+    width: inherit;
+    padding: 30px 130px;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #topTwo #topTwoRightSec {
+    width: inherit;
+    padding: 30px 170px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topTwo #topTwoRightSec {
+    width: 80%;
+    padding: 30px 150px;
+  }
+}
+#topTwo #topTwoRightSec #topTwoRightSecHolderOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#topTwo #topTwoRightSec #topTwoRightSecHolderOne #picTopTwoRightSecHolder {
+  width: 75px;
+  height: 75px;
+  background-image: url("../images/svgs/topTwo/size.svg");
+}
+#topTwo #topTwoRightSec #topTwoRightSecHolderOne #pTopTwoRightSecHolder {
+  display: flex;
+  flex-direction: column;
+}
+#topTwo #topTwoRightSec #topTwoRightSecHolderOne #pTopTwoRightSecHolder #pTopTwoRightSecOne {
+  color: rgb(150, 150, 150);
+}
+#topTwo #topTwoRightSec #topTwoRightSecHolderOne #pTopTwoRightSecHolder #pTopTwoRightSecTwo {
+  color: rgb(120, 120, 120);
+}
 
 * {
   margin: 0;
@@ -2456,5 +2523,5 @@ body {
   width: 100%;
   height: auto;
   background-color: rgb(25, 25, 25);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }/*# sourceMappingURL=main.css.map */

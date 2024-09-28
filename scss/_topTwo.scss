@@ -167,6 +167,7 @@
       background-color: rgb(28, 28, 28);
 
       @include breakPoints(small) {
+        margin-top: 45px;
         border-radius: 0;
       }
 
@@ -282,7 +283,7 @@
         background-color: rgb(32, 32, 32);
         color: rgb(243, 85, 37);
         font-size: 14px;
-        border-bottom: 0.5px solid rgb(55, 55, 55);
+        border-bottom: unset;
         cursor: pointer;
         border-radius: 0px 0px 10px 10px;
 
@@ -320,6 +321,71 @@
 
         @include breakPoints(small) {
           align-content: center;
+        }
+      }
+    }
+  }
+
+  #topTwoRightSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+
+    @include breakPoints(small) {
+      width: inherit;
+      padding: 30px 50px;
+    }
+
+    @media (min-width: 399px) and (max-width: 499px) {
+      width: inherit;
+      padding: 30px 50px;
+    }
+
+    @media (min-width: 499px) and (max-width: 599px) {
+      width: inherit;
+      padding: 30px 90px;
+    }
+
+    @media (min-width: 599px) and (max-width: 699px) {
+      width: inherit;
+      padding: 30px 130px;
+    }
+
+    @media (min-width: 699px) and (max-width: 767px) {
+      width: inherit;
+      padding: 30px 170px;
+    }
+
+    @include breakPoints(tablet) {
+      width: 80%;
+      padding: 30px 150px;
+    }
+
+    #topTwoRightSecHolderOne {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      #picTopTwoRightSecHolder {
+        width: 75px;
+        height: 75px;
+        background-image: url('../images/svgs/topTwo/size.svg');
+      }
+
+      #pTopTwoRightSecHolder {
+        display: flex;
+        flex-direction: column;
+
+        #pTopTwoRightSecOne {
+          color: rgb(150, 150, 150);
+        }
+
+        #pTopTwoRightSecTwo {
+          color: rgb(120, 120, 120);
         }
       }
     }

@@ -6,8 +6,10 @@
   transition: all 0.2s ease;
 
   #backToTop {
+    display: none;
     width: 125px;
-    height: 0;
+    height: 45px;
+    opacity: 0;
     position: fixed;
     bottom: 5%;
     left: 85%;
@@ -49,7 +51,6 @@
     }
 
     #backToTopText {
-      visibility: hidden;
       color: rgb(243, 85, 37);
       font-size: 14px;
       font-weight: 700;

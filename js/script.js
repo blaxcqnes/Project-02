@@ -60,11 +60,9 @@ window.onbeforeunload = function () {
 
 window.addEventListener('scroll', function () {
   if (window.scrollY >= 400) {
-    backToTop.style.height = '45px';
-    backToTopText.style.visibility = 'visible';
+    backToTop.style.opacity = '1';
   } else {
-    backToTop.style.height = '0';
-    backToTopText.style.visibility = 'hidden';
+    backToTop.style.opacity = '0';
   }
 });
 
@@ -434,7 +432,7 @@ lightModeToggle.addEventListener('click', function () {
 
 //////////////////////////////////////
 
-// pTopTwoMidSecTwo section
+// topTwoMidSec section
 
 pTopTwoMidSecThreeShown.addEventListener('click', function () {
   if (pTopTwoMidSecThreeHidden.style.opacity === '0') {
@@ -446,7 +444,7 @@ pTopTwoMidSecThreeShown.addEventListener('click', function () {
 
     if (smallScreen.matches) {
       pTopTwoMidSecThreeHidden.style.height = '175px';
-      pTopTwoMidSecThreeHidden.style.padding = '12px 10px';
+      pTopTwoMidSecThreeHidden.style.padding = '28px 10px';
     }
 
     if (mobileScreen.matches) {
@@ -564,6 +562,7 @@ pTopTwoMidSecFiveShown.addEventListener('click', function () {
   if (pTopTwoMidSecFiveHidden.style.opacity === '0') {
     showMidSecFiveHolder.style.opacity = '0';
     hideMidSecFiveHolder.style.opacity = '1';
+    pTopTwoMidSecFiveShown.style.borderRadius = 'unset';
     pTopTwoMidSecFiveHidden.style.height = '135px';
     pTopTwoMidSecFiveHidden.style.padding = '20px 10px';
     pTopTwoMidSecFiveHidden.style.opacity = '1';
@@ -600,6 +599,8 @@ pTopTwoMidSecFiveShown.addEventListener('click', function () {
     // main Five
     showMidSecFiveHolder.style.opacity = '1';
     hideMidSecFiveHolder.style.opacity = '0';
+    pTopTwoMidSecFiveShown.style.borderRadius = '0px 0px 10px 10px';
+    pTopTwoMidSecFiveShown.style.borderBottom = 'unset';
     pTopTwoMidSecFiveHidden.style.height = '0';
     pTopTwoMidSecFiveHidden.style.padding = '0';
     pTopTwoMidSecFiveHidden.style.opacity = '0';
@@ -642,9 +643,9 @@ lightModeToggle.addEventListener('click', function () {
   ).style.borderBottom;
 
   document.querySelector('#pTopTwoMidSecThreeHolder').style.backgroundColor =
-    pTopTwoMidSecThreeHolderLight === 'rgb(238, 238, 238)'
+    pTopTwoMidSecThreeHolderLight === 'rgb(228, 228, 228)'
       ? 'rgb(28, 28, 28)'
-      : 'rgb(238, 238, 238)';
+      : 'rgb(228, 228, 228)';
 
   document.querySelector('#pTopTwoMidSecThreeShown').style.backgroundColor =
     pTopTwoMidSecThreeShownLight === 'rgb(242, 242, 242)'
@@ -718,9 +719,9 @@ lightModeToggle.addEventListener('click', function () {
   ).style.borderBottom;
 
   document.querySelector('#pTopTwoMidSecFourHolder').style.backgroundColor =
-    pTopTwoMidSecFourHolderLight === 'rgb(238, 238, 238)'
+    pTopTwoMidSecFourHolderLight === 'rgb(228, 228, 228)'
       ? 'rgb(28, 28, 28)'
-      : 'rgb(238, 238, 238)';
+      : 'rgb(228, 228, 228)';
 
   document.querySelector('#pTopTwoMidSecFourShown').style.backgroundColor =
     pTopTwoMidSecFourShownLight === 'rgb(242, 242, 242)'
@@ -770,24 +771,16 @@ lightModeToggle.addEventListener('click', function () {
   let pTopTwoMidSecFiveShownLight = document.querySelector(
     '#pTopTwoMidSecFiveShown'
   ).style.backgroundColor;
-  let pTopTwoMidSecFiveShownBorderLight = document.querySelector(
-    '#pTopTwoMidSecFiveShown'
-  ).style.borderBottom;
 
   document.querySelector('#pTopTwoMidSecFiveHolder').style.backgroundColor =
-    pTopTwoMidSecFiveHolderLight === 'rgb(238, 238, 238)'
+    pTopTwoMidSecFiveHolderLight === 'rgb(228, 228, 228)'
       ? 'rgb(28, 28, 28)'
-      : 'rgb(238, 238, 238)';
+      : 'rgb(228, 228, 228)';
 
   document.querySelector('#pTopTwoMidSecFiveShown').style.backgroundColor =
     pTopTwoMidSecFiveShownLight === 'rgb(242, 242, 242)'
       ? 'rgb(32, 32, 32)'
       : 'rgb(242, 242, 242)';
-
-  document.querySelector('#pTopTwoMidSecFiveShown').style.borderBottom =
-    pTopTwoMidSecFiveShownBorderLight === '0.5px solid rgb(200, 200, 200)'
-      ? '0.5px solid rgb(55, 55, 55)'
-      : '0.5px solid rgb(200, 200, 200)';
 });
 
 lightModeToggle.addEventListener('click', function () {
@@ -799,4 +792,30 @@ lightModeToggle.addEventListener('click', function () {
     pTopTwoMidSecFiveHiddenLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
+});
+//////////////////////////////////////
+
+// topTwoRightSec section
+lightModeToggle.addEventListener('click', function () {
+  let topTwoRightSecLight =
+    document.querySelector('#topTwoRightSec').style.backgroundColor;
+  let pTopTwoRightSecOneLight = document.querySelector('#pTopTwoRightSecOne')
+    .style.color;
+  let pTopTwoRightSecTwoLight = document.querySelector('#pTopTwoRightSecTwo')
+    .style.color;
+
+  document.querySelector('#topTwoRightSec').style.backgroundColor =
+    topTwoRightSecLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pTopTwoRightSecOne').style.color =
+    pTopTwoRightSecOneLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pTopTwoRightSecTwo').style.color =
+    pTopTwoRightSecTwoLight === 'rgb(150, 150, 150)'
+      ? 'rgb(120, 120, 120)'
+      : 'rgb(150, 150, 150)';
 });
