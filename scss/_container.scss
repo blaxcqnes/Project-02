@@ -10,7 +10,7 @@
     height: 45px;
     opacity: 0;
     position: fixed;
-    bottom: 5%;
+    bottom: 2%;
     left: 85%;
     background-color: rgb(40, 40, 40);
     border-radius: 100px;
@@ -24,29 +24,54 @@
       opacity: 0.5;
     }
 
-    @media (min-width: 300px) and (max-width: 350px) {
-      bottom: 3%;
-      left: 52%;
+    @media (min-width: 300px) and (max-width: 349px) {
+      bottom: 2%;
+      left: 57%;
     }
 
-    @media (min-width: 350px) and (max-width: 399px) {
-      bottom: 3%;
-      left: 60%;
+    @media (min-width: 349px) and (max-width: 399px) {
+      bottom: 2%;
+      left: 63%;
     }
 
-    @media (min-width: 399px) and (max-width: 500px) {
-      bottom: 3%;
-      left: 65%;
+    @media (min-width: 399px) and (max-width: 499px) {
+      bottom: 2%;
+      left: 67%;
     }
 
-    @media (min-width: 500px) and (max-width: 767px) {
-      bottom: 3%;
-      left: 70%;
+    @media (min-width: 499px) and (max-width: 549px) {
+      bottom: 2%;
+      left: 74%;
     }
 
-    @include breakPoints(tablet) {
-      bottom: 3%;
+    @media (min-width: 549px) and (max-width: 599px) {
+      bottom: 2%;
+      left: 76%;
+    }
+
+    @media (min-width: 599px) and (max-width: 649px) {
+      bottom: 2%;
+      left: 78%;
+    }
+
+    @media (min-width: 649px) and (max-width: 699px) {
+      bottom: 2%;
       left: 80%;
+    }
+
+    @media (min-width: 699px) and (max-width: 767px) {
+      bottom: 2%;
+      left: 81%;
+    }
+
+    @media (min-width: 767px) and (max-width: 849px) {
+      bottom: 2%;
+      left: 83%;
+    }
+
+    @media (min-width: 849px) and (max-width: 899px) {
+      bottom: 2%;
+      left: 85%;
     }
 
     #backToTopText {

@@ -925,3 +925,30 @@ lightModeToggle.addEventListener('click', function () {
       : '0.5px solid rgb(200, 200, 200)';
 });
 //////////////////////////////////////
+
+// cardOneMidOne section
+
+lightModeToggle.addEventListener('click', function () {
+  let cardOneMidOneLight =
+    document.querySelector('#cardOneMidOne').style.backgroundColor;
+  let cardTwoMidOneLight =
+    document.querySelector('#cardTwoMidOne').style.backgroundColor;
+  let cardThreeMidOneLight =
+    document.querySelector('#cardThreeMidOne').style.backgroundColor;
+
+  document.querySelector('#cardOneMidOne').style.backgroundColor =
+    cardOneMidOneLight === 'rgb(255, 225, 215)'
+      ? 'rgb(255, 238, 233)'
+      : 'rgb(255, 225, 215)';
+
+  document.querySelector('#cardTwoMidOne').style.backgroundColor =
+    cardTwoMidOneLight === 'rgb(255, 225, 215)'
+      ? 'rgb(255, 238, 233)'
+      : 'rgb(255, 225, 215)';
+
+  document.querySelector('#cardThreeMidOne').style.backgroundColor =
+    cardThreeMidOneLight === 'rgb(255, 225, 215)'
+      ? 'rgb(255, 238, 233)'
+      : 'rgb(255, 225, 215)';
+});
+//////////////////////////////////////
