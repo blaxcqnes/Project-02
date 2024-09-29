@@ -18,6 +18,10 @@
   z-index: 100;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #container #backToTop:hover {
   filter: brightness(90%);
@@ -151,6 +155,10 @@
   cursor: pointer;
   -webkit-text-decoration: underline rgb(243, 85, 37);
           text-decoration: underline rgb(243, 85, 37);
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #header #headerContAndLoc #headerCont #picHeaderOne {
   width: 20px;
@@ -262,6 +270,10 @@
   align-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #header #headerSchedule {
@@ -367,10 +379,15 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #header #headerSocialMedia #headerInstaHolder:hover {
-  border: 2px solid rgb(243, 85, 37);
+  box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
   border-radius: 100px;
+  transition: all 0.5s ease;
 }
 #header #headerSocialMedia #headerInstaHolder #headerInsta {
   width: 18px;
@@ -393,10 +410,15 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #header #headerSocialMedia #headerTelegramHolder:hover {
-  border: 2px solid rgb(243, 85, 37);
+  box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
   border-radius: 100px;
+  transition: all 0.5s ease;
 }
 #header #headerSocialMedia #headerTelegramHolder #headerTelegram {
   width: 17.5px;
@@ -419,10 +441,15 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #header #headerSocialMedia #headerXHolder:hover {
-  border: 2px solid rgb(243, 85, 37);
+  box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
   border-radius: 100px;
+  transition: all 0.5s ease;
 }
 #header #headerSocialMedia #headerXHolder #headerX {
   width: 18px;
@@ -445,10 +472,15 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #header #headerSocialMedia #headerYouTubeHolder:hover {
-  border: 2px solid rgb(243, 85, 37);
+  box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
   border-radius: 100px;
+  transition: all 0.5s ease;
 }
 #header #headerSocialMedia #headerYouTubeHolder #headerYouTube {
   width: 18px;
@@ -642,6 +674,10 @@
   background-color: rgb(255, 255, 255);
   box-shadow: inset 0 5px 15px rgba(97, 97, 97, 0.4), inset 0 -5px 15px rgba(146, 146, 146, 0.4);
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #navBar #toggle #lightMode:checked + label:hover {
   filter: brightness(95%);
@@ -680,6 +716,10 @@
   transition: all 0.2s ease;
   cursor: pointer;
   text-align: center;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #navBar #toggle #navBarButton:hover {
   opacity: 0.8;
@@ -749,6 +789,10 @@
   margin-right: 30px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
@@ -796,6 +840,10 @@
   margin-right: 30px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
@@ -843,6 +891,10 @@
   margin-right: 30px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
@@ -890,6 +942,10 @@
   margin-right: 25px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
@@ -945,6 +1001,10 @@
   align-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
@@ -1125,6 +1185,10 @@
   transition: all 0.2s ease;
   cursor: pointer;
   z-index: 1;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 345px) {
   #topOne #topOnePrevButton {
@@ -2045,6 +2109,10 @@
   transition: all 0.2s ease;
   cursor: pointer;
   z-index: 101;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 345px) {
   #topOne #topOneNextButton {
@@ -2210,6 +2278,10 @@
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder:hover {
   filter: brightness(90%);
@@ -2348,6 +2420,10 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
   border-radius: 10px 10px 0px 0px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
@@ -2395,6 +2471,10 @@
   font-size: 14px;
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown #showMidSecFourHolder {
   position: absolute;
@@ -2450,6 +2530,10 @@
   cursor: pointer;
   border-bottom: unset;
   border-radius: 0px 0px 10px 10px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
@@ -2823,6 +2907,10 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 339px) {
   #midOne #midOneVideo {

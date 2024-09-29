@@ -94,6 +94,10 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 339px) {
       height: 160px;

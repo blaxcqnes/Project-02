@@ -40,6 +40,10 @@
     transition: all 0.2s ease;
     cursor: pointer;
     z-index: 1;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 345px) {
       width: 95px;
@@ -879,6 +883,10 @@
     transition: all 0.2s ease;
     cursor: pointer;
     z-index: 101;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 345px) {
       width: 95px;
