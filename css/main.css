@@ -550,7 +550,6 @@
   color: rgb(130, 130, 130);
   font-size: 25px;
   font-weight: 700;
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
@@ -578,6 +577,7 @@
 #navBar #toggle #logo:hover {
   opacity: 0.5;
   filter: brightness(90%);
+  cursor: pointer;
 }
 #navBar #toggle #lightMode {
   width: 0;
@@ -592,11 +592,11 @@
   background-color: rgb(65, 65, 65);
   border-radius: 200px;
   box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4), inset 0 -5px 15px rgba(107, 107, 107, 0.4);
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 #navBar #toggle label:hover {
   filter: brightness(90%);
+  cursor: pointer;
 }
 #navBar #toggle label::after {
   content: "";
@@ -673,14 +673,10 @@
 #navBar #toggle #lightMode:checked + label {
   background-color: rgb(255, 255, 255);
   box-shadow: inset 0 5px 15px rgba(97, 97, 97, 0.4), inset 0 -5px 15px rgba(146, 146, 146, 0.4);
-  cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 #navBar #toggle #lightMode:checked + label:hover {
   filter: brightness(95%);
+  cursor: pointer;
 }
 #navBar #toggle #lightMode:checked + label::after {
   top: 4.5px;
@@ -714,16 +710,12 @@
   border: none;
   border-radius: 100px;
   transition: all 0.2s ease;
-  cursor: pointer;
   text-align: center;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 #navBar #toggle #navBarButton:hover {
   opacity: 0.8;
   filter: brightness(90%);
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule {
   display: flex;
@@ -787,12 +779,7 @@
   display: flex;
   flex-direction: row;
   margin-right: 30px;
-  cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
@@ -803,6 +790,9 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
     margin-right: 25px;
   }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne:hover {
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #picLiOneLocation {
   display: none;
@@ -838,12 +828,7 @@
   display: flex;
   flex-direction: row;
   margin-right: 30px;
-  cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
@@ -854,6 +839,9 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
     margin-right: 25px;
   }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo:hover {
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #picLiTwoLocation {
   display: none;
@@ -889,12 +877,7 @@
   display: flex;
   flex-direction: row;
   margin-right: 30px;
-  cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
@@ -905,6 +888,9 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
     margin-right: 25px;
   }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree:hover {
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #picLiThreeLocation {
   display: none;
@@ -940,12 +926,7 @@
   display: flex;
   flex-direction: row;
   margin-right: 25px;
-  cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
@@ -956,6 +937,9 @@
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
     font-size: 14px;
   }
+}
+#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour:hover {
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #picLiFourLocation {
   display: none;
@@ -999,12 +983,7 @@
   border-radius: 50px;
   background-color: rgb(40, 40, 40);
   align-content: center;
-  cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
@@ -1065,6 +1044,7 @@
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule:hover {
   opacity: 0.8;
   filter: brightness(90%);
+  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
   width: 45px;
