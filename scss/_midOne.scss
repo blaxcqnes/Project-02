@@ -6,17 +6,23 @@
   align-items: center;
   height: 1100px;
   margin-bottom: 15em; //remove when done with this section
+  transition: all 0.2s ease;
 
   @include breakPoints(small) {
     margin-top: 90px;
   }
 
-  @include breakPoints(mobile) {
+  @media (min-width: 399px) and (max-width: 599px) {
     margin-top: 110px;
   }
 
-  @include breakPoints(tabelt) {
+  @media (min-width: 599px) and (max-width: 767px) {
+    height: 1120px;
+  }
+
+  @include breakPoints(tablet) {
     margin-top: 90px;
+    height: 1200px;
   }
 
   #midOneTexts {
@@ -30,6 +36,7 @@
       font-weight: 700;
       font-size: 20px;
       text-transform: uppercase;
+      transition: all 0.2s ease;
 
       @include breakPoints(small) {
         font-size: 16px;
@@ -45,6 +52,7 @@
       color: rgb(255, 255, 255);
       font-weight: 700;
       font-size: 40px;
+      transition: all 0.2s ease;
 
       @include breakPoints(small) {
         margin-top: 40px;
@@ -66,6 +74,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    transition: all 0.2s ease;
 
     @include breakPoints(small) {
       height: 400px;
@@ -84,6 +93,7 @@
     transform: translate(0, 20%);
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.2s ease;
 
     @media (min-width: 300px) and (max-width: 339px) {
       height: 160px;
@@ -153,6 +163,7 @@
     width: fit-content;
     position: absolute;
     bottom: 110px;
+    transition: all 0.2s ease;
 
     @include breakPoints(small) {
       flex-direction: column;
@@ -166,12 +177,12 @@
 
     @media (min-width: 599px) and (max-width: 767px) {
       flex-direction: column;
-      bottom: 0;
+      bottom: 10px;
     }
 
     @include breakPoints(tablet) {
       flex-direction: column;
-      bottom: -85px;
+      bottom: 4px;
     }
 
     #cardOneMidOne {
@@ -184,6 +195,7 @@
       box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
+      transition: all 0.2s ease;
 
       @include breakPoints(small) {
         align-items: center;
@@ -203,6 +215,7 @@
         border-radius: 100px;
         box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
+        transition: all 0.2s ease;
 
         @media (min-width: 300px) and (max-width: 379px) {
           width: 55px;
@@ -239,6 +252,7 @@
         height: 80px;
         padding: 15px;
         position: relative;
+        transition: all 0.2s ease;
 
         @include breakPoints(small) {
           width: 260px;
@@ -285,6 +299,7 @@
       box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
+      transition: all 0.2s ease;
 
       @include breakPoints(small) {
         margin: 75px 0 0 0;
@@ -311,6 +326,7 @@
         border-radius: 100px;
         box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
+        transition: all 0.2s ease;
 
         @media (min-width: 300px) and (max-width: 379px) {
           width: 55px;
@@ -340,6 +356,7 @@
         height: 80px;
         padding: 15px;
         position: relative;
+        transition: all 0.2s ease;
 
         @include breakPoints(small) {
           width: 260px;
@@ -386,6 +403,7 @@
       box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
+      transition: all 0.2s ease;
 
       @include breakPoints(small) {
         margin: 75px 0 0 0;
@@ -412,6 +430,7 @@
         border-radius: 100px;
         box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
+        transition: all 0.2s ease;
 
         @media (min-width: 300px) and (max-width: 379px) {
           width: 55px;
@@ -448,6 +467,7 @@
         height: 80px;
         padding: 15px;
         position: relative;
+        transition: all 0.2s ease;
 
         @include breakPoints(small) {
           width: 260px;

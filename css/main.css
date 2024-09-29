@@ -2584,7 +2584,7 @@
   }
 }
 #topTwo #topTwoRightSec #topTwoRightSecHolderOne #pTopTwoRightSecHolder #pTopTwoRightSecTwo {
-  color: rgb(120, 120, 120);
+  color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoRightSec #topTwoRightSecHolderOne #pTopTwoRightSecHolder #pTopTwoRightSecTwo {
@@ -2626,7 +2626,7 @@
   }
 }
 #topTwo #topTwoRightSec #topTwoRightSecHolderTwo #pTopTwoRightSecHolder #pTopTwoRightSecFour {
-  color: rgb(120, 120, 120);
+  color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoRightSec #topTwoRightSecHolderTwo #pTopTwoRightSecHolder #pTopTwoRightSecFour {
@@ -2670,7 +2670,7 @@
   }
 }
 #topTwo #topTwoRightSec #topTwoRightSecHolderThree #pTopTwoRightSecHolder #pTopTwoRightSecSix {
-  color: rgb(120, 120, 120);
+  color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoRightSec #topTwoRightSecHolderThree #pTopTwoRightSecHolder #pTopTwoRightSecSix {
@@ -2712,7 +2712,7 @@
   }
 }
 #topTwo #topTwoRightSec #topTwoRightSecHolderFour #pTopTwoRightSecHolder #pTopTwoRightSecEight {
-  color: rgb(120, 120, 120);
+  color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoRightSec #topTwoRightSecHolderFour #pTopTwoRightSecHolder #pTopTwoRightSecEight {
@@ -2728,15 +2728,27 @@
   align-items: center;
   height: 1100px;
   margin-bottom: 15em;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne {
     margin-top: 90px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
+@media (min-width: 399px) and (max-width: 599px) {
   #midOne {
     margin-top: 110px;
+  }
+}
+@media (min-width: 599px) and (max-width: 767px) {
+  #midOne {
+    height: 1120px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midOne {
+    margin-top: 90px;
+    height: 1200px;
   }
 }
 #midOne #midOneTexts {
@@ -2750,6 +2762,7 @@
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #midOneTexts #pMidOneOne {
@@ -2766,6 +2779,7 @@
   color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 40px;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #midOneTexts #pMidOneTwo {
@@ -2787,6 +2801,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #bgOneMidOne {
@@ -2807,6 +2822,7 @@
   transform: translate(0, 20%);
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 339px) {
   #midOne #midOneVideo {
@@ -2888,6 +2904,7 @@
   width: fit-content;
   position: absolute;
   bottom: 110px;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne {
@@ -2904,13 +2921,13 @@
 @media (min-width: 599px) and (max-width: 767px) {
   #midOne #cardsMidOne {
     flex-direction: column;
-    bottom: 0;
+    bottom: 10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midOne #cardsMidOne {
     flex-direction: column;
-    bottom: -85px;
+    bottom: 4px;
   }
 }
 #midOne #cardsMidOne #cardOneMidOne {
@@ -2924,6 +2941,7 @@
   box-shadow: 0 0 15px gray;
   background-color: rgb(255, 238, 233);
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardOneMidOne {
@@ -2945,6 +2963,7 @@
   border-radius: 100px;
   box-shadow: 0 0 5px #bb2e03;
   z-index: 1;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
   #midOne #cardsMidOne #cardOneMidOne #circleMidOne {
@@ -2984,6 +3003,7 @@
   height: 80px;
   padding: 15px;
   position: relative;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardOneMidOne #cardTexts {
@@ -3027,6 +3047,7 @@
   box-shadow: 0 0 15px gray;
   background-color: rgb(255, 238, 233);
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardTwoMidOne {
@@ -3056,6 +3077,7 @@
   border-radius: 100px;
   box-shadow: 0 0 5px #bb2e03;
   z-index: 1;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
   #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
@@ -3087,6 +3109,7 @@
   height: 80px;
   padding: 15px;
   position: relative;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardTwoMidOne #cardTexts {
@@ -3130,6 +3153,7 @@
   box-shadow: 0 0 15px gray;
   background-color: rgb(255, 238, 233);
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardThreeMidOne {
@@ -3159,6 +3183,7 @@
   border-radius: 100px;
   box-shadow: 0 0 5px #bb2e03;
   z-index: 1;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
   #midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
@@ -3198,6 +3223,7 @@
   height: 80px;
   padding: 15px;
   position: relative;
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardThreeMidOne #cardTexts {

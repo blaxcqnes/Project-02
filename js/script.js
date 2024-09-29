@@ -52,6 +52,8 @@ let pTopTwoMidSecFiveHidden = document.querySelector(
   '#pTopTwoMidSecFiveHidden'
 );
 
+let midOne = document.querySelector('#midOne');
+
 lightModeToggle.addEventListener('click', function () {
   let light = document.querySelector('body').style.backgroundColor;
 
@@ -276,6 +278,12 @@ function expand() {
   });
 
   topTwo.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+  });
+
+  midOne.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
@@ -873,7 +881,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#pTopTwoRightSecTwo').style.color =
     pTopTwoRightSecTwoLight === 'rgb(150, 150, 150)'
-      ? 'rgb(120, 120, 120)'
+      ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
   document.querySelector('#pTopTwoRightSecThree').style.color =
@@ -883,7 +891,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#pTopTwoRightSecFour').style.color =
     pTopTwoRightSecFourLight === 'rgb(150, 150, 150)'
-      ? 'rgb(120, 120, 120)'
+      ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
   document.querySelector('#pTopTwoRightSecFive').style.color =
@@ -893,7 +901,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#pTopTwoRightSecSix').style.color =
     pTopTwoRightSecSixLight === 'rgb(150, 150, 150)'
-      ? 'rgb(120, 120, 120)'
+      ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
   document.querySelector('#pTopTwoRightSecSeven').style.color =
@@ -903,7 +911,7 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#pTopTwoRightSecEight').style.color =
     pTopTwoRightSecEightLight === 'rgb(150, 150, 150)'
-      ? 'rgb(120, 120, 120)'
+      ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
   document.querySelector('#topTwoRightSecHolderOne').style.borderBottom =
