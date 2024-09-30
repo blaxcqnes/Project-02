@@ -949,24 +949,18 @@ lightModeToggle.addEventListener('click', function () {
 lightModeToggle.addEventListener('click', function () {
   let cardOneMidOneLight =
     document.querySelector('#cardOneMidOne').style.backgroundColor;
-  let circleOneMidOneLight =
-    document.querySelector('#circleOneMidOne').style.backgroundColor;
   let cardTextOneLight = document.querySelector('#cardTextOne').style.color;
   let cardTextTwoLight = document.querySelector('#cardTextTwo').style.color;
   let cardTextThreeLight = document.querySelector('#cardTextThree').style.color;
 
   let cardTwoMidOneLight =
     document.querySelector('#cardTwoMidOne').style.backgroundColor;
-  let circleTwoMidTwoLight =
-    document.querySelector('#circleTwoMidTwo').style.backgroundColor;
   let cardTextFourLight = document.querySelector('#cardTextFour').style.color;
   let cardTextFiveLight = document.querySelector('#cardTextFive').style.color;
   let cardTextSixLight = document.querySelector('#cardTextSix').style.color;
 
   let cardThreeMidOneLight =
     document.querySelector('#cardThreeMidOne').style.backgroundColor;
-  let circleThreeMidThreeLight = document.querySelector('#circleThreeMidThree')
-    .style.backgroundColor;
   let cardTextSevenLight = document.querySelector('#cardTextSeven').style.color;
   let cardTextEightLight = document.querySelector('#cardTextEight').style.color;
   let cardTextNineLight = document.querySelector('#cardTextNine').style.color;
@@ -975,11 +969,6 @@ lightModeToggle.addEventListener('click', function () {
     cardOneMidOneLight === 'rgb(255, 210, 180)'
       ? 'rgb(120, 65, 50)'
       : 'rgb(255, 210, 180)';
-
-  document.querySelector('#circleOneMidOne').style.backgroundColor =
-    circleOneMidOneLight === 'rgb(243, 85, 37)'
-      ? 'rgb(255, 125, 90)'
-      : 'rgb(243, 85, 37)';
 
   document.querySelector('#cardTextOne').style.color =
     cardTextOneLight === 'rgb(255, 120, 75)'
@@ -1001,11 +990,6 @@ lightModeToggle.addEventListener('click', function () {
       ? 'rgb(120, 65, 50)'
       : 'rgb(255, 210, 180)';
 
-  document.querySelector('#circleTwoMidTwo').style.backgroundColor =
-    circleTwoMidTwoLight === 'rgb(243, 85, 37)'
-      ? 'rgb(255, 125, 90)'
-      : 'rgb(243, 85, 37)';
-
   document.querySelector('#cardTextFour').style.color =
     cardTextFourLight === 'rgb(255, 120, 75)'
       ? 'rgb(255, 175, 150)'
@@ -1025,11 +1009,6 @@ lightModeToggle.addEventListener('click', function () {
     cardThreeMidOneLight === 'rgb(255, 210, 180)'
       ? 'rgb(120, 65, 50)'
       : 'rgb(255, 210, 180)';
-
-  document.querySelector('#circleThreeMidThree').style.backgroundColor =
-    circleThreeMidThreeLight === 'rgb(243, 85, 37)'
-      ? 'rgb(255, 125, 90)'
-      : 'rgb(243, 85, 37)';
 
   document.querySelector('#cardTextSeven').style.color =
     cardTextSevenLight === 'rgb(255, 120, 75)'
@@ -1098,5 +1077,3 @@ lightModeToggle.addEventListener('click', function () {
       ? 'rgb(210, 210, 210)'
       : 'rgb(45, 45, 45)';
 });
-
-pMidTwoThreeHolder.addEventListener('click', function () {});
