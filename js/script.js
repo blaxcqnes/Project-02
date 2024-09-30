@@ -54,6 +54,16 @@ let pTopTwoMidSecFiveHidden = document.querySelector(
 
 let midOne = document.querySelector('#midOne');
 
+let midTwo = document.querySelector('#midTwo');
+let pMidTwoThreeHolder = document.querySelector('#pMidTwoThreeHolder');
+let pMidTwoThree = document.querySelector('#pMidTwoThree');
+let pMidTwoFourHolder = document.querySelector('#pMidTwoFourHolder');
+let pMidTwoFour = document.querySelector('#pMidTwoFour');
+let pMidTwoFiveHolder = document.querySelector('#pMidTwoThreeHolder');
+let pMidTwoFive = document.querySelector('#pMidTwoThree');
+
+///////////////////////////////////////////////////////
+
 lightModeToggle.addEventListener('click', function () {
   let light = document.querySelector('body').style.backgroundColor;
 
@@ -939,24 +949,154 @@ lightModeToggle.addEventListener('click', function () {
 lightModeToggle.addEventListener('click', function () {
   let cardOneMidOneLight =
     document.querySelector('#cardOneMidOne').style.backgroundColor;
+  let circleOneMidOneLight =
+    document.querySelector('#circleOneMidOne').style.backgroundColor;
+  let cardTextOneLight = document.querySelector('#cardTextOne').style.color;
+  let cardTextTwoLight = document.querySelector('#cardTextTwo').style.color;
+  let cardTextThreeLight = document.querySelector('#cardTextThree').style.color;
+
   let cardTwoMidOneLight =
     document.querySelector('#cardTwoMidOne').style.backgroundColor;
+  let circleTwoMidTwoLight =
+    document.querySelector('#circleTwoMidTwo').style.backgroundColor;
+  let cardTextFourLight = document.querySelector('#cardTextFour').style.color;
+  let cardTextFiveLight = document.querySelector('#cardTextFive').style.color;
+  let cardTextSixLight = document.querySelector('#cardTextSix').style.color;
+
   let cardThreeMidOneLight =
     document.querySelector('#cardThreeMidOne').style.backgroundColor;
+  let circleThreeMidThreeLight = document.querySelector('#circleThreeMidThree')
+    .style.backgroundColor;
+  let cardTextSevenLight = document.querySelector('#cardTextSeven').style.color;
+  let cardTextEightLight = document.querySelector('#cardTextEight').style.color;
+  let cardTextNineLight = document.querySelector('#cardTextNine').style.color;
 
   document.querySelector('#cardOneMidOne').style.backgroundColor =
-    cardOneMidOneLight === 'rgb(255, 225, 215)'
-      ? 'rgb(255, 238, 233)'
-      : 'rgb(255, 225, 215)';
+    cardOneMidOneLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#circleOneMidOne').style.backgroundColor =
+    circleOneMidOneLight === 'rgb(243, 85, 37)'
+      ? 'rgb(255, 125, 90)'
+      : 'rgb(243, 85, 37)';
+
+  document.querySelector('#cardTextOne').style.color =
+    cardTextOneLight === 'rgb(255, 120, 75)'
+      ? 'rgb(255, 175, 150)'
+      : 'rgb(255, 120, 75)';
+
+  document.querySelector('#cardTextTwo').style.color =
+    cardTextTwoLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#cardTextThree').style.color =
+    cardTextThreeLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#cardTwoMidOne').style.backgroundColor =
-    cardTwoMidOneLight === 'rgb(255, 225, 215)'
-      ? 'rgb(255, 238, 233)'
-      : 'rgb(255, 225, 215)';
+    cardTwoMidOneLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#circleTwoMidTwo').style.backgroundColor =
+    circleTwoMidTwoLight === 'rgb(243, 85, 37)'
+      ? 'rgb(255, 125, 90)'
+      : 'rgb(243, 85, 37)';
+
+  document.querySelector('#cardTextFour').style.color =
+    cardTextFourLight === 'rgb(255, 120, 75)'
+      ? 'rgb(255, 175, 150)'
+      : 'rgb(255, 120, 75)';
+
+  document.querySelector('#cardTextFive').style.color =
+    cardTextFiveLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#cardTextSix').style.color =
+    cardTextSixLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#cardThreeMidOne').style.backgroundColor =
-    cardThreeMidOneLight === 'rgb(255, 225, 215)'
-      ? 'rgb(255, 238, 233)'
-      : 'rgb(255, 225, 215)';
+    cardThreeMidOneLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#circleThreeMidThree').style.backgroundColor =
+    circleThreeMidThreeLight === 'rgb(243, 85, 37)'
+      ? 'rgb(255, 125, 90)'
+      : 'rgb(243, 85, 37)';
+
+  document.querySelector('#cardTextSeven').style.color =
+    cardTextSevenLight === 'rgb(255, 120, 75)'
+      ? 'rgb(255, 175, 150)'
+      : 'rgb(255, 120, 75)';
+
+  document.querySelector('#cardTextEight').style.color =
+    cardTextEightLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#cardTextNine').style.color =
+    cardTextNineLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
 });
 //////////////////////////////////////
+
+// midTwo - rightMidTwo section
+
+lightModeToggle.addEventListener('click', function () {
+  let pMidTwoTwoLight = document.querySelector('#pMidTwoTwo').style.color;
+  let pMidTwoThreeHolderLight = document.querySelector('#pMidTwoThreeHolder')
+    .style.backgroundColor;
+  let pMidTwoFourHolderLight =
+    document.querySelector('#pMidTwoFourHolder').style.backgroundColor;
+  let pMidTwoFiveHolderLight =
+    document.querySelector('#pMidTwoFiveHolder').style.backgroundColor;
+
+  let pMidTwoThreeLight = document.querySelector('#pMidTwoThree').style.color;
+  let pMidTwoFourLight = document.querySelector('#pMidTwoFour').style.color;
+  let pMidTwoFiveLight = document.querySelector('#pMidTwoFive').style.color;
+
+  document.querySelector('#pMidTwoTwo').style.color =
+    pMidTwoTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pMidTwoThreeHolder').style.backgroundColor =
+    pMidTwoThreeHolderLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#pMidTwoFourHolder').style.backgroundColor =
+    pMidTwoFourHolderLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#pMidTwoFiveHolder').style.backgroundColor =
+    pMidTwoFiveHolderLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#pMidTwoThree').style.color =
+    pMidTwoThreeLight === 'rgb(45, 45, 45)'
+      ? 'rgb(210, 210, 210)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#pMidTwoFour').style.color =
+    pMidTwoFourLight === 'rgb(45, 45, 45)'
+      ? 'rgb(210, 210, 210)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#pMidTwoFive').style.color =
+    pMidTwoFiveLight === 'rgb(45, 45, 45)'
+      ? 'rgb(210, 210, 210)'
+      : 'rgb(45, 45, 45)';
+});
+
+pMidTwoThreeHolder.addEventListener('click', function () {});

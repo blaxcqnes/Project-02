@@ -3,7 +3,6 @@
   flex-direction: column;
   position: relative;
   margin-top: 150px;
-  margin-bottom: 15em;
   align-items: center;
   height: 1100px;
   transition: all 0.2s ease;
@@ -194,55 +193,32 @@
       flex-direction: column;
       width: fit-content;
       position: relative;
-      background-color: rgb(255, 208, 194);
-      border-radius: 10px;
-      background-color: rgb(255, 238, 233);
+      background-color: rgb(120, 65, 50);
       border-radius: 10px;
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       @include breakPoints(mobile) {
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
-      }
-
-      @include breakPoints(tablet) {
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       &:hover {
-        transition: all 0.5s ease;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        #circleMidOne {
+        #circleOneMidOne {
           transition: all 0.5s ease;
           box-shadow: 0 0 15px rgb(187, 46, 3);
         }
       }
 
-      #circleMidOne {
+      #circleOneMidOne {
         width: 60px;
         height: 60px;
         position: absolute;
         bottom: 8px;
         left: -35px;
-        background-color: rgb(243, 85, 37);
+        background-color: rgb(255, 125, 90);
         border-radius: 100px;
         z-index: 1;
         transition: all 0.2s ease;
@@ -253,10 +229,6 @@
           bottom: 65px;
           left: unset;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
@@ -264,20 +236,12 @@
           left: unset;
           right: -35px;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @include breakPoints(tablet) {
           left: unset;
           right: -35px;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
@@ -312,9 +276,10 @@
         }
 
         #cardTextOne {
-          color: rgb(243, 85, 37);
+          color: rgb(255, 175, 150);
           font-size: 30px;
           font-weight: 700;
+          transition: all 0.2s ease;
         }
 
         #cardTextHolder {
@@ -322,13 +287,15 @@
           flex-direction: column;
 
           #cardTextTwo {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
 
           #cardTextThree {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
         }
       }
@@ -339,59 +306,39 @@
       flex-direction: column;
       margin-left: 80px;
       position: relative;
-      background-color: rgb(255, 208, 194);
-      border-radius: 10px;
-      background-color: rgb(255, 238, 233);
+      background-color: rgb(120, 65, 50);
       border-radius: 10px;
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       @include breakPoints(mobile) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       @include breakPoints(tablet) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       &:hover {
-        transition: all 0.5s ease;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        #circleMidTwo {
+        #circleTwoMidTwo {
           transition: all 0.5s ease;
           box-shadow: 0 0 15px rgb(187, 46, 3);
         }
       }
 
-      #circleMidTwo {
+      #circleTwoMidTwo {
         width: 60px;
         height: 60px;
         position: absolute;
         bottom: 8px;
         left: -35px;
-        background-color: rgb(243, 85, 37);
+        background-color: rgb(255, 125, 90);
         border-radius: 100px;
         z-index: 1;
         transition: all 0.2s ease;
@@ -402,27 +349,15 @@
           bottom: 65px;
           left: unset;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
           bottom: 8px;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @include breakPoints(tablet) {
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
@@ -457,9 +392,10 @@
         }
 
         #cardTextFour {
-          color: rgb(243, 85, 37);
+          color: rgb(255, 175, 150);
           font-size: 30px;
           font-weight: 700;
+          transition: all 0.2s ease;
         }
 
         #cardTextHolder {
@@ -467,13 +403,15 @@
           flex-direction: column;
 
           #cardTextFive {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
 
           #cardTextSix {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
         }
       }
@@ -484,59 +422,39 @@
       flex-direction: column;
       margin-left: 80px;
       position: relative;
-      background-color: rgb(255, 208, 194);
-      border-radius: 10px;
-      background-color: rgb(255, 238, 233);
+      background-color: rgb(120, 65, 50);
       border-radius: 10px;
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       @include breakPoints(mobile) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       @include breakPoints(tablet) {
         margin: 75px 0 0 0;
         align-items: center;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        &:hover {
-          box-shadow: unset;
-        }
       }
 
       &:hover {
-        transition: all 0.5s ease;
-        box-shadow: 0 0 15px rgb(128, 128, 128);
-
-        #circleMidThree {
+        #circleThreeMidThree {
           transition: all 0.5s ease;
           box-shadow: 0 0 15px rgb(187, 46, 3);
         }
       }
 
-      #circleMidThree {
+      #circleThreeMidThree {
         width: 60px;
         height: 60px;
         position: absolute;
         bottom: 8px;
         left: -35px;
-        background-color: rgb(243, 85, 37);
+        background-color: rgb(255, 125, 90);
         border-radius: 100px;
         z-index: 1;
         transition: all 0.2s ease;
@@ -547,10 +465,6 @@
           bottom: 65px;
           left: unset;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
@@ -558,20 +472,12 @@
           left: unset;
           right: -35px;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @include breakPoints(tablet) {
           left: unset;
           right: -35px;
           box-shadow: 0 0 15px rgb(187, 46, 3);
-
-          &:hover {
-            box-shadow: unset;
-          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
@@ -606,9 +512,10 @@
         }
 
         #cardTextSeven {
-          color: rgb(243, 85, 37);
+          color: rgb(255, 175, 150);
           font-size: 30px;
           font-weight: 700;
+          transition: all 0.2s ease;
         }
 
         #cardTextHolder {
@@ -616,13 +523,15 @@
           flex-direction: column;
 
           #cardTextEight {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
 
           #cardTextNine {
-            color: rgb(65, 65, 65);
+            color: rgb(220, 220, 220);
             font-weight: 500;
+            transition: all 0.2s ease;
           }
         }
       }

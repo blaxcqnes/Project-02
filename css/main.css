@@ -2825,7 +2825,6 @@
   flex-direction: column;
   position: relative;
   margin-top: 150px;
-  margin-bottom: 15em;
   align-items: center;
   height: 1100px;
   transition: all 0.2s ease;
@@ -3040,92 +3039,61 @@
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  background-color: rgb(255, 208, 194);
-  border-radius: 10px;
-  background-color: rgb(255, 238, 233);
+  background-color: rgb(120, 65, 50);
   border-radius: 10px;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midOne #cardsMidOne #cardOneMidOne {
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardOneMidOne:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midOne #cardsMidOne #cardOneMidOne {
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardOneMidOne:hover {
-    box-shadow: unset;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midOne #cardsMidOne #cardOneMidOne {
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardOneMidOne:hover {
-    box-shadow: unset;
-  }
-}
-#midOne #cardsMidOne #cardOneMidOne:hover {
-  transition: all 0.5s ease;
-  box-shadow: 0 0 15px rgb(128, 128, 128);
-}
-#midOne #cardsMidOne #cardOneMidOne:hover #circleMidOne {
+#midOne #cardsMidOne #cardOneMidOne:hover #circleOneMidOne {
   transition: all 0.5s ease;
   box-shadow: 0 0 15px rgb(187, 46, 3);
 }
-#midOne #cardsMidOne #cardOneMidOne #circleMidOne {
+#midOne #cardsMidOne #cardOneMidOne #circleOneMidOne {
   width: 60px;
   height: 60px;
   position: absolute;
   bottom: 8px;
   left: -35px;
-  background-color: rgb(243, 85, 37);
+  background-color: rgb(255, 125, 90);
   border-radius: 100px;
   z-index: 1;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne {
+  #midOne #cardsMidOne #cardOneMidOne #circleOneMidOne {
     width: 55px;
     height: 55px;
     bottom: 65px;
     left: unset;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 379px) and (max-width: 767px) {
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne {
+  #midOne #cardsMidOne #cardOneMidOne #circleOneMidOne {
     bottom: 8px;
     left: unset;
     right: -35px;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne {
+  #midOne #cardsMidOne #cardOneMidOne #circleOneMidOne {
     left: unset;
     right: -35px;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1089px) {
-  #midOne #cardsMidOne #cardOneMidOne #circleMidOne {
+  #midOne #cardsMidOne #cardOneMidOne #circleOneMidOne {
     width: 50px;
     height: 50px;
     bottom: 13px;
@@ -3159,30 +3127,31 @@
   }
 }
 #midOne #cardsMidOne #cardOneMidOne #cardTexts #cardTextOne {
-  color: rgb(243, 85, 37);
+  color: rgb(255, 175, 150);
   font-size: 30px;
   font-weight: 700;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardOneMidOne #cardTexts #cardTextHolder {
   display: flex;
   flex-direction: column;
 }
 #midOne #cardsMidOne #cardOneMidOne #cardTexts #cardTextHolder #cardTextTwo {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardOneMidOne #cardTexts #cardTextHolder #cardTextThree {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardTwoMidOne {
   display: flex;
   flex-direction: column;
   margin-left: 80px;
   position: relative;
-  background-color: rgb(255, 208, 194);
-  border-radius: 10px;
-  background-color: rgb(255, 238, 233);
+  background-color: rgb(120, 65, 50);
   border-radius: 10px;
   transition: all 0.2s ease;
 }
@@ -3190,82 +3159,57 @@
   #midOne #cardsMidOne #cardTwoMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardTwoMidOne:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midOne #cardsMidOne #cardTwoMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardTwoMidOne:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midOne #cardsMidOne #cardTwoMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardTwoMidOne:hover {
-    box-shadow: unset;
   }
 }
-#midOne #cardsMidOne #cardTwoMidOne:hover {
-  transition: all 0.5s ease;
-  box-shadow: 0 0 15px rgb(128, 128, 128);
-}
-#midOne #cardsMidOne #cardTwoMidOne:hover #circleMidTwo {
+#midOne #cardsMidOne #cardTwoMidOne:hover #circleTwoMidTwo {
   transition: all 0.5s ease;
   box-shadow: 0 0 15px rgb(187, 46, 3);
 }
-#midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
+#midOne #cardsMidOne #cardTwoMidOne #circleTwoMidTwo {
   width: 60px;
   height: 60px;
   position: absolute;
   bottom: 8px;
   left: -35px;
-  background-color: rgb(243, 85, 37);
+  background-color: rgb(255, 125, 90);
   border-radius: 100px;
   z-index: 1;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
+  #midOne #cardsMidOne #cardTwoMidOne #circleTwoMidTwo {
     width: 55px;
     height: 55px;
     bottom: 65px;
     left: unset;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 379px) and (max-width: 767px) {
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
+  #midOne #cardsMidOne #cardTwoMidOne #circleTwoMidTwo {
     bottom: 8px;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
+  #midOne #cardsMidOne #cardTwoMidOne #circleTwoMidTwo {
     box-shadow: 0 0 15px rgb(187, 46, 3);
-  }
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 1023px) and (max-width: 1089px) {
-  #midOne #cardsMidOne #cardTwoMidOne #circleMidTwo {
+  #midOne #cardsMidOne #cardTwoMidOne #circleTwoMidTwo {
     width: 50px;
     height: 50px;
     bottom: 13px;
@@ -3299,30 +3243,31 @@
   }
 }
 #midOne #cardsMidOne #cardTwoMidOne #cardTexts #cardTextFour {
-  color: rgb(243, 85, 37);
+  color: rgb(255, 175, 150);
   font-size: 30px;
   font-weight: 700;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardTwoMidOne #cardTexts #cardTextHolder {
   display: flex;
   flex-direction: column;
 }
 #midOne #cardsMidOne #cardTwoMidOne #cardTexts #cardTextHolder #cardTextFive {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardTwoMidOne #cardTexts #cardTextHolder #cardTextSix {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardThreeMidOne {
   display: flex;
   flex-direction: column;
   margin-left: 80px;
   position: relative;
-  background-color: rgb(255, 208, 194);
-  border-radius: 10px;
-  background-color: rgb(255, 238, 233);
+  background-color: rgb(120, 65, 50);
   border-radius: 10px;
   transition: all 0.2s ease;
 }
@@ -3330,86 +3275,61 @@
   #midOne #cardsMidOne #cardThreeMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardThreeMidOne:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midOne #cardsMidOne #cardThreeMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardThreeMidOne:hover {
-    box-shadow: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midOne #cardsMidOne #cardThreeMidOne {
     margin: 75px 0 0 0;
     align-items: center;
-    box-shadow: 0 0 15px rgb(128, 128, 128);
-  }
-  #midOne #cardsMidOne #cardThreeMidOne:hover {
-    box-shadow: unset;
   }
 }
-#midOne #cardsMidOne #cardThreeMidOne:hover {
-  transition: all 0.5s ease;
-  box-shadow: 0 0 15px rgb(128, 128, 128);
-}
-#midOne #cardsMidOne #cardThreeMidOne:hover #circleMidThree {
+#midOne #cardsMidOne #cardThreeMidOne:hover #circleThreeMidThree {
   transition: all 0.5s ease;
   box-shadow: 0 0 15px rgb(187, 46, 3);
 }
-#midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
+#midOne #cardsMidOne #cardThreeMidOne #circleThreeMidThree {
   width: 60px;
   height: 60px;
   position: absolute;
   bottom: 8px;
   left: -35px;
-  background-color: rgb(243, 85, 37);
+  background-color: rgb(255, 125, 90);
   border-radius: 100px;
   z-index: 1;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 379px) {
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
+  #midOne #cardsMidOne #cardThreeMidOne #circleThreeMidThree {
     width: 55px;
     height: 55px;
     bottom: 65px;
     left: unset;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 379px) and (max-width: 767px) {
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
+  #midOne #cardsMidOne #cardThreeMidOne #circleThreeMidThree {
     bottom: 8px;
     left: unset;
     right: -35px;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
+  #midOne #cardsMidOne #cardThreeMidOne #circleThreeMidThree {
     left: unset;
     right: -35px;
     box-shadow: 0 0 15px rgb(187, 46, 3);
   }
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree:hover {
-    box-shadow: unset;
-  }
 }
 @media (min-width: 1023px) and (max-width: 1089px) {
-  #midOne #cardsMidOne #cardThreeMidOne #circleMidThree {
+  #midOne #cardsMidOne #cardThreeMidOne #circleThreeMidThree {
     width: 50px;
     height: 50px;
     bottom: 13px;
@@ -3443,21 +3363,215 @@
   }
 }
 #midOne #cardsMidOne #cardThreeMidOne #cardTexts #cardTextSeven {
-  color: rgb(243, 85, 37);
+  color: rgb(255, 175, 150);
   font-size: 30px;
   font-weight: 700;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardThreeMidOne #cardTexts #cardTextHolder {
   display: flex;
   flex-direction: column;
 }
 #midOne #cardsMidOne #cardThreeMidOne #cardTexts #cardTextHolder #cardTextEight {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 #midOne #cardsMidOne #cardThreeMidOne #cardTexts #cardTextHolder #cardTextNine {
-  color: rgb(65, 65, 65);
+  color: rgb(220, 220, 220);
   font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#midTwo {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  margin-top: 30px;
+  margin-bottom: 15em;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo {
+    margin-top: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo {
+    margin-top: 60px;
+  }
+}
+#midTwo #headerMidTwo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  padding: 0 120px;
+  justify-content: space-between;
+  align-items: end;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo {
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo {
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #headerMidTwo {
+    flex-direction: column;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo {
+    flex-direction: row;
+    align-items: start;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1169px) {
+  #midTwo #headerMidTwo {
+    padding: 0 50px;
+  }
+}
+#midTwo #headerMidTwo #leftMidTwo {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #leftMidTwo #pMidTwoOne {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(243, 85, 37);
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #leftMidTwo #pMidTwoTwo {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #leftMidTwo #pMidTwoTwo {
+    font-size: 25px;
+  }
+}
+#midTwo #headerMidTwo #rightMidTwo {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo {
+    flex-direction: column;
+    align-self: center;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo {
+    flex-direction: column;
+    align-self: center;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #headerMidTwo #rightMidTwo {
+    align-self: center;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo #rightMidTwo {
+    align-self: end;
+  }
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+  width: 160px;
+  height: 50px;
+  align-content: center;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder #pMidTwoThree {
+  color: rgb(210, 210, 210);
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder:hover {
+  cursor: pointer;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+  width: 160px;
+  height: 50px;
+  align-content: center;
+  margin-left: 20px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+    margin: 20px 0 0 0;
+  }
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder #pMidTwoFour {
+  color: rgb(210, 210, 210);
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder:hover {
+  cursor: pointer;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+  width: 160px;
+  height: 50px;
+  align-content: center;
+  margin-left: 20px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+    margin: 20px 0 0 0;
+  }
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder #pMidTwoFive {
+  color: rgb(210, 210, 210);
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder:hover {
+  cursor: pointer;
 }
 
 * {
