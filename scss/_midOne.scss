@@ -5,7 +5,6 @@
   margin-top: 150px;
   align-items: center;
   height: 1100px;
-  margin-bottom: 15em; //remove when done with this section
   transition: all 0.2s ease;
 
   @include breakPoints(small) {
@@ -196,17 +195,44 @@
       position: relative;
       background-color: rgb(255, 208, 194);
       border-radius: 10px;
-      box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
       }
 
       @include breakPoints(mobile) {
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
+      }
+
+      @include breakPoints(tablet) {
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
+      }
+
+      &:hover {
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        #circleMidOne {
+          transition: all 0.5s ease;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+        }
       }
 
       #circleMidOne {
@@ -217,7 +243,6 @@
         left: -35px;
         background-color: rgb(243, 85, 37);
         border-radius: 100px;
-        box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
         transition: all 0.2s ease;
 
@@ -226,17 +251,32 @@
           height: 55px;
           bottom: 65px;
           left: unset;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
           bottom: 8px;
           left: unset;
           right: -35px;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @include breakPoints(tablet) {
           left: unset;
           right: -35px;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
@@ -300,7 +340,6 @@
       position: relative;
       background-color: rgb(255, 208, 194);
       border-radius: 10px;
-      box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
       transition: all 0.2s ease;
@@ -308,16 +347,41 @@
       @include breakPoints(small) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
       }
 
       @include breakPoints(mobile) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
       }
 
       @include breakPoints(tablet) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
+      }
+
+      &:hover {
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        #circleMidTwo {
+          transition: all 0.5s ease;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+        }
       }
 
       #circleMidTwo {
@@ -328,7 +392,6 @@
         left: -35px;
         background-color: rgb(243, 85, 37);
         border-radius: 100px;
-        box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
         transition: all 0.2s ease;
 
@@ -337,10 +400,28 @@
           height: 55px;
           bottom: 65px;
           left: unset;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
           bottom: 8px;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
+        }
+
+        @include breakPoints(tablet) {
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
@@ -404,7 +485,6 @@
       position: relative;
       background-color: rgb(255, 208, 194);
       border-radius: 10px;
-      box-shadow: 0 0 15px gray;
       background-color: rgb(255, 238, 233);
       border-radius: 10px;
       transition: all 0.2s ease;
@@ -412,16 +492,41 @@
       @include breakPoints(small) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
       }
 
       @include breakPoints(mobile) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
       }
 
       @include breakPoints(tablet) {
         margin: 75px 0 0 0;
         align-items: center;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        &:hover {
+          box-shadow: unset;
+        }
+      }
+
+      &:hover {
+        transition: all 0.5s ease;
+        box-shadow: 0 0 15px rgb(128, 128, 128);
+
+        #circleMidThree {
+          transition: all 0.5s ease;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+        }
       }
 
       #circleMidThree {
@@ -432,7 +537,6 @@
         left: -35px;
         background-color: rgb(243, 85, 37);
         border-radius: 100px;
-        box-shadow: 0 0 5px #bb2e03;
         z-index: 1;
         transition: all 0.2s ease;
 
@@ -441,17 +545,32 @@
           height: 55px;
           bottom: 65px;
           left: unset;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 379px) and (max-width: 767px) {
           bottom: 8px;
           left: unset;
           right: -35px;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @include breakPoints(tablet) {
           left: unset;
           right: -35px;
+          box-shadow: 0 0 15px rgb(187, 46, 3);
+
+          &:hover {
+            box-shadow: unset;
+          }
         }
 
         @media (min-width: 1023px) and (max-width: 1089px) {
