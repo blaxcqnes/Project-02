@@ -390,9 +390,9 @@ window.addEventListener('scroll', function () {
         navBarUl.style.margin = '20px 0 0 15px';
       }
 
+      navBarSchedule.style.opacity = '1';
       navBarSchedule.style.maxHeight = '45px';
       navBarSchedule.style.margin = '0 0 25px 17px';
-      navBarSchedule.style.opacity = '1';
       holderNavBarSchedule.style.maxHeight = '45px';
       picNavBarSchedule.style.maxHeight = '25px';
       pNavBarSchedule.style.opacity = '1';
@@ -404,6 +404,7 @@ window.addEventListener('scroll', function () {
 
       navBarSchedule.style.maxHeight = '0';
       navBarSchedule.style.margin = '0';
+      navBarSchedule.style.opacity = '0';
       holderNavBarSchedule.style.maxHeight = '0';
       picNavBarSchedule.style.maxHeight = '0';
       pNavBarSchedule.style.opacity = '0';
