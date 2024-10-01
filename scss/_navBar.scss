@@ -529,7 +529,8 @@
       @include breakPoints(small) {
         display: flex;
         width: 177px;
-        height: 42px;
+        max-height: 0;
+        margin: 0;
         padding: 0 20px 0 8px;
         cursor: unset;
       }
@@ -538,32 +539,33 @@
         display: flex;
         width: 185px;
         height: 45px;
+        margin: 0;
         padding: 0 20px 0 8px;
         cursor: unset;
       }
 
-      @media (min-width: 300px) and (max-width: 549.9px) {
-        margin: 0 0 25px 17px;
+      @media (min-width: 300px) and (max-width: 549px) {
+        margin: 0;
         transition: all 0.2s ease-in-out;
         opacity: 0;
         cursor: unset;
       }
 
-      @media (min-width: 550px) and (max-width: 599.9px) {
+      @media (min-width: 550px) and (max-width: 599px) {
         margin: 0 0 70px 128px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
         cursor: unset;
       }
 
-      @media (min-width: 600px) and (max-width: 699.9px) {
+      @media (min-width: 599px) and (max-width: 699px) {
         margin: 0 0 70px 170px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
         cursor: unset;
       }
 
-      @media (min-width: 700px) and (max-width: 767px) {
+      @media (min-width: 699px) and (max-width: 767px) {
         margin: 0 0 70px 200px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
