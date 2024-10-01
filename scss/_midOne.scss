@@ -93,49 +93,53 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 339px) {
       height: 160px;
       transform: translate(0, 50%);
+      cursor: unset;
     }
 
     @media (min-width: 339px) and (max-width: 379px) {
       height: 180px;
       transform: translate(0, 40%);
+      cursor: unset;
     }
 
     @media (min-width: 379px) and (max-width: 399px) {
       height: 195px;
       transform: translate(0, 30%);
+      cursor: unset;
     }
 
     @media (min-width: 399px) and (max-width: 449px) {
       height: 215px;
       transform: translate(0, 50%);
+      cursor: unset;
     }
 
     @media (min-width: 449px) and (max-width: 499px) {
       height: 230px;
       transform: translate(0, 45%);
+      cursor: unset;
     }
 
     @media (min-width: 499px) and (max-width: 599px) {
       height: 250px;
       transform: translate(0, 40%);
+      cursor: unset;
     }
 
     @media (min-width: 599px) and (max-width: 767px) {
       height: 280px;
       transform: translate(0, 32%);
+      cursor: unset;
     }
 
     @include breakPoints(tablet) {
       height: 300px;
       transform: translate(0, 50%);
+      cursor: unset;
     }
 
     @media (min-width: 1023px) and (max-width: 1149px) {

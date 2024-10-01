@@ -112,16 +112,25 @@
         background-color: rgb(40, 40, 40);
         border-radius: 10px;
         transition: all 0.2s ease;
+        cursor: pointer;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
 
         #pMidTwoThree {
           color: rgb(210, 210, 210);
           text-align: center;
           font-weight: 500;
           transition: all 0.2s ease;
-        }
-
-        &:hover {
-          cursor: pointer;
         }
       }
 
@@ -133,6 +142,19 @@
         background-color: rgb(40, 40, 40);
         border-radius: 10px;
         transition: all 0.2s ease;
+        cursor: pointer;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
 
         @include breakPoints(small) {
           margin: 20px 0 0 0;
@@ -148,10 +170,6 @@
           font-weight: 500;
           transition: all 0.2s ease;
         }
-
-        &:hover {
-          cursor: pointer;
-        }
       }
 
       #pMidTwoFiveHolder {
@@ -162,6 +180,19 @@
         background-color: rgb(40, 40, 40);
         border-radius: 10px;
         transition: all 0.2s ease;
+        cursor: pointer;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
 
         @include breakPoints(small) {
           margin: 20px 0 0 0;
@@ -176,10 +207,6 @@
           text-align: center;
           font-weight: 500;
           transition: all 0.2s ease;
-        }
-
-        &:hover {
-          cursor: pointer;
         }
       }
     }

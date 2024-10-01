@@ -46,33 +46,33 @@
       font-size: 25px;
       font-weight: 700;
       transition: all 0.2s ease;
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+      cursor: pointer;
 
       @media (min-width: 300px) and (max-width: 767px) {
         margin-right: 20px;
         font-size: 21px;
+        cursor: unset;
       }
 
       @media (min-width: 767px) and (max-width: 1022.9px) {
         font-size: 22px;
         margin-right: 22px;
+        cursor: unset;
       }
 
       @media (min-width: 767px) and (max-width: 780px) {
         margin-right: 5px;
+        cursor: unset;
       }
 
       @media (min-width: 780px) and (max-width: 830px) {
         margin-right: 10px;
+        cursor: unset;
       }
 
       &:hover {
         opacity: 0.5;
         filter: brightness(90%);
-        cursor: pointer;
       }
     }
 
@@ -92,14 +92,22 @@
       box-shadow: inset 0 5px 15px rgb(0, 0, 0, 0.4),
         inset 0 -5px 15px rgb(107, 107, 107, 0.4);
       transition: all 0.2s ease;
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+      cursor: pointer;
+
+      @include breakPoints(small) {
+        cursor: unset;
+      }
+
+      @include breakPoints(mobile) {
+        cursor: unset;
+      }
+
+      @include breakPoints(tablet) {
+        cursor: unset;
+      }
 
       &:hover {
         filter: brightness(90%);
-        cursor: pointer;
       }
 
       &::after {
@@ -181,14 +189,22 @@
       background-color: rgb(255, 255, 255);
       box-shadow: inset 0 5px 15px rgb(97, 97, 97, 0.4),
         inset 0 -5px 15px rgb(146, 146, 146, 0.4);
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+      cursor: pointer;
+
+      @include breakPoints(small) {
+        cursor: unset;
+      }
+
+      @include breakPoints(mobile) {
+        cursor: unset;
+      }
+
+      @include breakPoints(tablet) {
+        cursor: unset;
+      }
 
       &:hover {
         filter: brightness(95%);
-        cursor: pointer;
       }
     }
 
@@ -231,15 +247,23 @@
       border-radius: 100px;
       transition: all 0.2s ease;
       text-align: center;
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+      cursor: pointer;
+
+      @include breakPoints(small) {
+        cursor: unset;
+      }
+
+      @include breakPoints(mobile) {
+        cursor: unset;
+      }
+
+      @include breakPoints(tablet) {
+        cursor: unset;
+      }
 
       &:hover {
         opacity: 0.8;
         filter: brightness(90%);
-        cursor: pointer;
       }
     }
   }
@@ -299,21 +323,16 @@
         flex-direction: row;
         margin-right: 30px;
         transition: all 0.2s ease;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
+        cursor: pointer;
 
         @media (min-width: 300px) and (max-width: 767px) {
           margin: 0 0 25px 0;
+          cursor: unset;
         }
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
-        }
-
-        &:hover {
-          cursor: pointer;
+          cursor: unset;
         }
 
         #picLiOneLocation {
@@ -331,6 +350,7 @@
 
         #pLiOneLocation {
           color: rgb(150, 150, 150);
+          transition: all 0.2s ease;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 14px;
@@ -352,21 +372,16 @@
         flex-direction: row;
         margin-right: 30px;
         transition: all 0.2s ease;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
+        cursor: pointer;
 
         @media (min-width: 300px) and (max-width: 767px) {
           margin: 0 0 25px 0;
+          cursor: unset;
         }
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
-        }
-
-        &:hover {
-          cursor: pointer;
+          cursor: unset;
         }
 
         #picLiTwoLocation {
@@ -384,6 +399,7 @@
 
         #pLiTwoLocation {
           color: rgb(150, 150, 150);
+          transition: all 0.2s ease;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 14px;
@@ -405,21 +421,16 @@
         flex-direction: row;
         margin-right: 30px;
         transition: all 0.2s ease;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
+        cursor: pointer;
 
         @media (min-width: 300px) and (max-width: 767px) {
           margin: 0 0 25px 0;
+          cursor: unset;
         }
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           margin-right: 25px;
-        }
-
-        &:hover {
-          cursor: pointer;
+          cursor: unset;
         }
 
         #picLiThreeLocation {
@@ -437,6 +448,7 @@
 
         #pLiThreeLocation {
           color: rgb(150, 150, 150);
+          transition: all 0.2s ease;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 14px;
@@ -458,21 +470,16 @@
         flex-direction: row;
         margin-right: 25px;
         transition: all 0.2s ease;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
+        cursor: pointer;
 
         @media (min-width: 300px) and (max-width: 767px) {
           margin: 0 0 25px 0;
+          cursor: unset;
         }
 
         @media (min-width: 767px) and (max-width: 1022.9px) {
           font-size: 14px;
-        }
-
-        &:hover {
-          cursor: pointer;
+          cursor: unset;
         }
 
         #picLiFourLocation {
@@ -490,6 +497,7 @@
 
         #pLiFourLocation {
           color: rgb(150, 150, 150);
+          transition: all 0.2s ease;
 
           @media (min-width: 300px) and (max-width: 767px) {
             font-size: 14px;
@@ -520,16 +528,14 @@
       background-color: rgb(40, 40, 40);
       align-content: center;
       transition: all 0.2s ease;
-      user-select: none;
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+      cursor: pointer;
 
       @include breakPoints(small) {
         display: flex;
         width: 177px;
         height: 42px;
         padding: 0 20px 0 8px;
+        cursor: unset;
       }
 
       @include breakPoints(mobile) {
@@ -537,46 +543,52 @@
         width: 185px;
         height: 45px;
         padding: 0 20px 0 8px;
+        cursor: unset;
       }
 
       @media (min-width: 300px) and (max-width: 549.9px) {
         margin: 0 0 25px 17px;
         transition: all 0.2s ease-in-out;
         opacity: 0;
+        cursor: unset;
       }
 
       @media (min-width: 550px) and (max-width: 599.9px) {
         margin: 0 0 70px 128px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
+        cursor: unset;
       }
 
       @media (min-width: 600px) and (max-width: 699.9px) {
         margin: 0 0 70px 170px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
+        cursor: unset;
       }
 
       @media (min-width: 700px) and (max-width: 767px) {
         margin: 0 0 70px 200px !important;
         transition: all 0.2s ease-in-out;
         opacity: 0;
+        cursor: unset;
       }
 
       @media (min-width: 767px) and (max-width: 772px) {
         margin-right: 0;
+        cursor: unset;
       }
 
       @media (min-width: 767px) and (max-width: 1022.9px) {
         width: 172px;
         height: 45px;
         padding: 0;
+        cursor: unset;
       }
 
       &:hover {
         opacity: 0.8;
         filter: brightness(90%);
-        cursor: pointer;
       }
 
       #holderNavBarSchedule {

@@ -40,10 +40,6 @@
     transition: all 0.2s ease;
     cursor: pointer;
     z-index: 1;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 345px) {
       width: 95px;
@@ -52,6 +48,7 @@
       position: absolute;
       top: 8.5em;
       right: 5em;
+      cursor: unset;
     }
 
     @media (min-width: 345px) and (max-width: 399px) {
@@ -60,6 +57,7 @@
       position: absolute;
       top: 8.5em;
       right: 5.5em;
+      cursor: unset;
     }
 
     @media (min-width: 399px) and (max-width: 455px) {
@@ -68,6 +66,7 @@
       position: absolute;
       top: 9em;
       right: 7em;
+      cursor: unset;
     }
 
     @media (min-width: 455px) and (max-width: 510px) {
@@ -76,6 +75,7 @@
       position: absolute;
       top: 9em;
       right: 8em;
+      cursor: unset;
     }
 
     @media (min-width: 510px) and (max-width: 600px) {
@@ -84,6 +84,7 @@
       position: absolute;
       top: 9em;
       right: 8.5em;
+      cursor: unset;
     }
 
     @media (min-width: 600px) and (max-width: 680px) {
@@ -92,6 +93,7 @@
       position: absolute;
       top: 9em;
       right: 9.5em;
+      cursor: unset;
     }
 
     @media (min-width: 680px) and (max-width: 767px) {
@@ -100,6 +102,11 @@
       position: absolute;
       top: 9em;
       right: 11em;
+      cursor: unset;
+    }
+
+    @include breakPoints(tablet) {
+      cursor: unset;
     }
 
     &:hover {
@@ -883,10 +890,6 @@
     transition: all 0.2s ease;
     cursor: pointer;
     z-index: 101;
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
 
     @media (min-width: 300px) and (max-width: 345px) {
       width: 95px;
@@ -895,6 +898,7 @@
       position: absolute;
       top: 8.5em;
       left: 4.5em;
+      cursor: unset;
     }
 
     @media (min-width: 345px) and (max-width: 399px) {
@@ -903,6 +907,7 @@
       position: absolute;
       top: 8.5em;
       left: 5.5em;
+      cursor: unset;
     }
 
     @media (min-width: 399px) and (max-width: 455px) {
@@ -911,6 +916,7 @@
       position: absolute;
       top: 9em;
       left: 7em;
+      cursor: unset;
     }
 
     @media (min-width: 455px) and (max-width: 510px) {
@@ -919,6 +925,7 @@
       position: absolute;
       top: 9em;
       left: 8em;
+      cursor: unset;
     }
 
     @media (min-width: 510px) and (max-width: 600px) {
@@ -927,6 +934,7 @@
       position: absolute;
       top: 9em;
       left: 8.5em;
+      cursor: unset;
     }
 
     @media (min-width: 600px) and (max-width: 680px) {
@@ -935,6 +943,7 @@
       position: absolute;
       top: 9em;
       left: 9.5em;
+      cursor: unset;
     }
 
     @media (min-width: 680px) and (max-width: 767px) {
@@ -943,6 +952,11 @@
       position: absolute;
       top: 9em;
       left: 11em;
+      cursor: unset;
+    }
+
+    @include breakPoints(tablet) {
+      cursor: unset;
     }
 
     &:hover {

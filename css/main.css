@@ -31,60 +31,75 @@
   #container #backToTop {
     bottom: 2%;
     left: 57%;
+    cursor: unset;
   }
 }
 @media (min-width: 349px) and (max-width: 399px) {
   #container #backToTop {
     bottom: 2%;
     left: 63%;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 499px) {
   #container #backToTop {
     bottom: 2%;
     left: 67%;
+    cursor: unset;
   }
 }
 @media (min-width: 499px) and (max-width: 549px) {
   #container #backToTop {
     bottom: 2%;
     left: 74%;
+    cursor: unset;
   }
 }
 @media (min-width: 549px) and (max-width: 599px) {
   #container #backToTop {
     bottom: 2%;
     left: 76%;
+    cursor: unset;
   }
 }
 @media (min-width: 599px) and (max-width: 649px) {
   #container #backToTop {
     bottom: 2%;
     left: 78%;
+    cursor: unset;
   }
 }
 @media (min-width: 649px) and (max-width: 699px) {
   #container #backToTop {
     bottom: 2%;
     left: 80%;
+    cursor: unset;
   }
 }
 @media (min-width: 699px) and (max-width: 767px) {
   #container #backToTop {
     bottom: 2%;
     left: 81%;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 849px) {
   #container #backToTop {
     bottom: 2%;
     left: 83%;
+    cursor: unset;
   }
 }
 @media (min-width: 849px) and (max-width: 899px) {
   #container #backToTop {
     bottom: 2%;
     left: 85%;
+    cursor: unset;
+  }
+}
+@media (min-width: 899px) and (max-width: 1023px) {
+  #container #backToTop {
+    cursor: unset;
   }
 }
 #container #backToTop #backToTopText {
@@ -155,10 +170,21 @@
   cursor: pointer;
   -webkit-text-decoration: underline rgb(243, 85, 37);
           text-decoration: underline rgb(243, 85, 37);
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerContAndLoc #headerCont:hover {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerContAndLoc #headerCont:hover {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerContAndLoc #headerCont:hover {
+    cursor: unset;
+  }
 }
 #header #headerContAndLoc #headerCont #picHeaderOne {
   width: 20px;
@@ -270,10 +296,6 @@
   align-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #header #headerSchedule {
@@ -283,6 +305,7 @@
     padding: 0 20px 0 8px;
     margin: 22px 10px 0px 0;
     align-self: start;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -293,6 +316,12 @@
     padding: 0 20px 0 8px;
     margin: 22px 10px 0px 0;
     align-self: start;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerSchedule {
+    cursor: unset;
   }
 }
 #header #headerSchedule:hover {
@@ -379,10 +408,21 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerInstaHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerSocialMedia #headerInstaHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerSocialMedia #headerInstaHolder {
+    cursor: unset;
+  }
 }
 #header #headerSocialMedia #headerInstaHolder:hover {
   box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
@@ -410,10 +450,21 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerTelegramHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerSocialMedia #headerTelegramHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerSocialMedia #headerTelegramHolder {
+    cursor: unset;
+  }
 }
 #header #headerSocialMedia #headerTelegramHolder:hover {
   box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
@@ -441,10 +492,21 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerXHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerSocialMedia #headerXHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerSocialMedia #headerXHolder {
+    cursor: unset;
+  }
 }
 #header #headerSocialMedia #headerXHolder:hover {
   box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
@@ -472,10 +534,21 @@
   margin-right: 22px;
   transition: all 0.2s ease;
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #header #headerSocialMedia #headerYouTubeHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #header #headerSocialMedia #headerYouTubeHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header #headerSocialMedia #headerYouTubeHolder {
+    cursor: unset;
+  }
 }
 #header #headerSocialMedia #headerYouTubeHolder:hover {
   box-shadow: inset 0 0 15px rgba(243, 85, 37, 0.25), inset 0 0 15px rgba(243, 85, 37, 0.25);
@@ -551,37 +624,37 @@
   font-size: 25px;
   font-weight: 700;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #toggle #logo {
     margin-right: 20px;
     font-size: 21px;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #toggle #logo {
     font-size: 22px;
     margin-right: 22px;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 780px) {
   #navBar #toggle #logo {
     margin-right: 5px;
+    cursor: unset;
   }
 }
 @media (min-width: 780px) and (max-width: 830px) {
   #navBar #toggle #logo {
     margin-right: 10px;
+    cursor: unset;
   }
 }
 #navBar #toggle #logo:hover {
   opacity: 0.5;
   filter: brightness(90%);
-  cursor: pointer;
 }
 #navBar #toggle #lightMode {
   width: 0;
@@ -597,14 +670,25 @@
   border-radius: 200px;
   box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4), inset 0 -5px 15px rgba(107, 107, 107, 0.4);
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle label {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #toggle label {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #navBar #toggle label {
+    cursor: unset;
+  }
 }
 #navBar #toggle label:hover {
   filter: brightness(90%);
-  cursor: pointer;
 }
 #navBar #toggle label::after {
   content: "";
@@ -681,14 +765,25 @@
 #navBar #toggle #lightMode:checked + label {
   background-color: rgb(255, 255, 255);
   box-shadow: inset 0 5px 15px rgba(97, 97, 97, 0.4), inset 0 -5px 15px rgba(146, 146, 146, 0.4);
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle #lightMode:checked + label {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #toggle #lightMode:checked + label {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #navBar #toggle #lightMode:checked + label {
+    cursor: unset;
+  }
 }
 #navBar #toggle #lightMode:checked + label:hover {
   filter: brightness(95%);
-  cursor: pointer;
 }
 #navBar #toggle #lightMode:checked + label::after {
   top: 4.5px;
@@ -723,15 +818,26 @@
   border-radius: 100px;
   transition: all 0.2s ease;
   text-align: center;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #navBar #toggle #navBarButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #navBar #toggle #navBarButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #navBar #toggle #navBarButton {
+    cursor: unset;
+  }
 }
 #navBar #toggle #navBarButton:hover {
   opacity: 0.8;
   filter: brightness(90%);
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule {
   display: flex;
@@ -796,23 +902,19 @@
   flex-direction: row;
   margin-right: 30px;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
     margin: 0 0 25px 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne {
     margin-right: 25px;
+    cursor: unset;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne:hover {
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #picLiOneLocation {
   display: none;
@@ -829,6 +931,7 @@
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation {
   color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiOne #pLiOneLocation {
@@ -849,23 +952,19 @@
   flex-direction: row;
   margin-right: 30px;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
     margin: 0 0 25px 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo {
     margin-right: 25px;
+    cursor: unset;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo:hover {
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #picLiTwoLocation {
   display: none;
@@ -882,6 +981,7 @@
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation {
   color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiTwo #pLiTwoLocation {
@@ -902,23 +1002,19 @@
   flex-direction: row;
   margin-right: 30px;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
     margin: 0 0 25px 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree {
     margin-right: 25px;
+    cursor: unset;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree:hover {
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #picLiThreeLocation {
   display: none;
@@ -935,6 +1031,7 @@
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation {
   color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiThree #pLiThreeLocation {
@@ -955,23 +1052,19 @@
   flex-direction: row;
   margin-right: 25px;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
     margin: 0 0 25px 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour {
     font-size: 14px;
+    cursor: unset;
   }
-}
-#navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour:hover {
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #picLiFourLocation {
   display: none;
@@ -988,6 +1081,7 @@
 }
 #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation {
   color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 767px) {
   #navBar #navBarJumpingListsAndSchedule #navBarUl #navBarLiFour #pLiFourLocation {
@@ -1016,10 +1110,7 @@
   background-color: rgb(40, 40, 40);
   align-content: center;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
@@ -1027,6 +1118,7 @@
     width: 177px;
     height: 42px;
     padding: 0 20px 0 8px;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -1035,6 +1127,7 @@
     width: 185px;
     height: 45px;
     padding: 0 20px 0 8px;
+    cursor: unset;
   }
 }
 @media (min-width: 300px) and (max-width: 549.9px) {
@@ -1042,6 +1135,7 @@
     margin: 0 0 25px 17px;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 550px) and (max-width: 599.9px) {
@@ -1049,6 +1143,7 @@
     margin: 0 0 70px 128px !important;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 600px) and (max-width: 699.9px) {
@@ -1056,6 +1151,7 @@
     margin: 0 0 70px 170px !important;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 700px) and (max-width: 767px) {
@@ -1063,11 +1159,13 @@
     margin: 0 0 70px 200px !important;
     transition: all 0.2s ease-in-out;
     opacity: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 772px) {
   #navBar #navBarJumpingListsAndSchedule #navBarSchedule {
     margin-right: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1022.9px) {
@@ -1075,12 +1173,12 @@
     width: 172px;
     height: 45px;
     padding: 0;
+    cursor: unset;
   }
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule:hover {
   opacity: 0.8;
   filter: brightness(90%);
-  cursor: pointer;
 }
 #navBar #navBarJumpingListsAndSchedule #navBarSchedule #holderNavBarSchedule {
   width: 45px;
@@ -1201,10 +1299,6 @@
   transition: all 0.2s ease;
   cursor: pointer;
   z-index: 1;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 345px) {
   #topOne #topOnePrevButton {
@@ -1214,6 +1308,7 @@
     position: absolute;
     top: 8.5em;
     right: 5em;
+    cursor: unset;
   }
 }
 @media (min-width: 345px) and (max-width: 399px) {
@@ -1223,6 +1318,7 @@
     position: absolute;
     top: 8.5em;
     right: 5.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 455px) {
@@ -1232,6 +1328,7 @@
     position: absolute;
     top: 9em;
     right: 7em;
+    cursor: unset;
   }
 }
 @media (min-width: 455px) and (max-width: 510px) {
@@ -1241,6 +1338,7 @@
     position: absolute;
     top: 9em;
     right: 8em;
+    cursor: unset;
   }
 }
 @media (min-width: 510px) and (max-width: 600px) {
@@ -1250,6 +1348,7 @@
     position: absolute;
     top: 9em;
     right: 8.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 600px) and (max-width: 680px) {
@@ -1259,6 +1358,7 @@
     position: absolute;
     top: 9em;
     right: 9.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 680px) and (max-width: 767px) {
@@ -1268,6 +1368,12 @@
     position: absolute;
     top: 9em;
     right: 11em;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topOne #topOnePrevButton {
+    cursor: unset;
   }
 }
 #topOne #topOnePrevButton:hover {
@@ -2125,10 +2231,6 @@
   transition: all 0.2s ease;
   cursor: pointer;
   z-index: 101;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 345px) {
   #topOne #topOneNextButton {
@@ -2138,6 +2240,7 @@
     position: absolute;
     top: 8.5em;
     left: 4.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 345px) and (max-width: 399px) {
@@ -2147,6 +2250,7 @@
     position: absolute;
     top: 8.5em;
     left: 5.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 455px) {
@@ -2156,6 +2260,7 @@
     position: absolute;
     top: 9em;
     left: 7em;
+    cursor: unset;
   }
 }
 @media (min-width: 455px) and (max-width: 510px) {
@@ -2165,6 +2270,7 @@
     position: absolute;
     top: 9em;
     left: 8em;
+    cursor: unset;
   }
 }
 @media (min-width: 510px) and (max-width: 600px) {
@@ -2174,6 +2280,7 @@
     position: absolute;
     top: 9em;
     left: 8.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 600px) and (max-width: 680px) {
@@ -2183,6 +2290,7 @@
     position: absolute;
     top: 9em;
     left: 9.5em;
+    cursor: unset;
   }
 }
 @media (min-width: 680px) and (max-width: 767px) {
@@ -2192,6 +2300,12 @@
     position: absolute;
     top: 9em;
     left: 11em;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topOne #topOneNextButton {
+    cursor: unset;
   }
 }
 #topOne #topOneNextButton:hover {
@@ -2294,10 +2408,6 @@
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder:hover {
   filter: brightness(90%);
@@ -2309,6 +2419,7 @@
     height: 60px;
     bottom: -10px;
     left: -10px;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
@@ -2317,6 +2428,7 @@
     height: 65px;
     bottom: -25px;
     left: -25px;
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -2325,6 +2437,7 @@
     height: 65px;
     bottom: -20px;
     left: -20px;
+    cursor: unset;
   }
 }
 #topTwo #topTwoLeftSec #topTwoLeftSecMainPhoto #topTwoLeftSecSvgHolder #topTwoLeftSecSvg {
@@ -2436,19 +2549,22 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
   border-radius: 10px 10px 0px 0px;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
     border-radius: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
     border-radius: 0;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown {
+    cursor: unset;
   }
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecThreeHolder #pTopTwoMidSecThreeShown #showMidSecThreeHolder {
@@ -2487,10 +2603,21 @@
   font-size: 14px;
   border-bottom: 0.5px solid rgb(55, 55, 55);
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown {
+    cursor: unset;
+  }
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFourHolder #pTopTwoMidSecFourShown #showMidSecFourHolder {
   position: absolute;
@@ -2546,19 +2673,22 @@
   cursor: pointer;
   border-bottom: unset;
   border-radius: 0px 0px 10px 10px;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
     border-radius: 0;
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
     border-radius: 0;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown {
+    cursor: unset;
   }
 }
 #topTwo #topTwoMidSec #pTopTwoMidSecFiveHolder #pTopTwoMidSecFiveShown #showMidSecFiveHolder {
@@ -2922,57 +3052,61 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 @media (min-width: 300px) and (max-width: 339px) {
   #midOne #midOneVideo {
     height: 160px;
     transform: translate(0, 50%);
+    cursor: unset;
   }
 }
 @media (min-width: 339px) and (max-width: 379px) {
   #midOne #midOneVideo {
     height: 180px;
     transform: translate(0, 40%);
+    cursor: unset;
   }
 }
 @media (min-width: 379px) and (max-width: 399px) {
   #midOne #midOneVideo {
     height: 195px;
     transform: translate(0, 30%);
+    cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 449px) {
   #midOne #midOneVideo {
     height: 215px;
     transform: translate(0, 50%);
+    cursor: unset;
   }
 }
 @media (min-width: 449px) and (max-width: 499px) {
   #midOne #midOneVideo {
     height: 230px;
     transform: translate(0, 45%);
+    cursor: unset;
   }
 }
 @media (min-width: 499px) and (max-width: 599px) {
   #midOne #midOneVideo {
     height: 250px;
     transform: translate(0, 40%);
+    cursor: unset;
   }
 }
 @media (min-width: 599px) and (max-width: 767px) {
   #midOne #midOneVideo {
     height: 280px;
     transform: translate(0, 32%);
+    cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midOne #midOneVideo {
     height: 300px;
     transform: translate(0, 50%);
+    cursor: unset;
   }
 }
 @media (min-width: 1023px) and (max-width: 1149px) {
@@ -3507,15 +3641,28 @@
   background-color: rgb(40, 40, 40);
   border-radius: 10px;
   transition: all 0.2s ease;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+    cursor: unset;
+  }
 }
 #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder #pMidTwoThree {
   color: rgb(210, 210, 210);
   text-align: center;
   font-weight: 500;
   transition: all 0.2s ease;
-}
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder:hover {
-  cursor: pointer;
 }
 #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
   width: 160px;
@@ -3525,6 +3672,22 @@
   background-color: rgb(40, 40, 40);
   border-radius: 10px;
   transition: all 0.2s ease;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
+    cursor: unset;
+  }
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
@@ -3542,9 +3705,6 @@
   font-weight: 500;
   transition: all 0.2s ease;
 }
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder:hover {
-  cursor: pointer;
-}
 #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
   width: 160px;
   height: 50px;
@@ -3553,6 +3713,22 @@
   background-color: rgb(40, 40, 40);
   border-radius: 10px;
   transition: all 0.2s ease;
+  cursor: pointer;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+    cursor: unset;
+  }
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
@@ -3569,9 +3745,6 @@
   text-align: center;
   font-weight: 500;
   transition: all 0.2s ease;
-}
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder:hover {
-  cursor: pointer;
 }
 
 * {

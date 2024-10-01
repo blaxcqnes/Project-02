@@ -84,10 +84,6 @@
         border-radius: 100px;
         cursor: pointer;
         transition: all 0.2s ease;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
 
         &:hover {
           filter: brightness(90%);
@@ -99,6 +95,7 @@
           height: 60px;
           bottom: -10px;
           left: -10px;
+          cursor: unset;
         }
 
         @include breakPoints(mobile) {
@@ -106,6 +103,7 @@
           height: 65px;
           bottom: -25px;
           left: -25px;
+          cursor: unset;
         }
 
         @include breakPoints(tablet) {
@@ -113,6 +111,7 @@
           height: 65px;
           bottom: -20px;
           left: -20px;
+          cursor: unset;
         }
 
         #topTwoLeftSecSvg {
@@ -218,17 +217,19 @@
         border-bottom: 0.5px solid rgb(55, 55, 55);
         cursor: pointer;
         border-radius: 10px 10px 0px 0px;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
 
         @include breakPoints(small) {
           border-radius: 0;
+          cursor: unset;
         }
 
         @include breakPoints(mobile) {
           border-radius: 0;
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
         }
 
         #showMidSecThreeHolder {
@@ -271,10 +272,18 @@
         font-size: 14px;
         border-bottom: 0.5px solid rgb(55, 55, 55);
         cursor: pointer;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
 
         #showMidSecFourHolder {
           position: absolute;
@@ -331,17 +340,19 @@
         cursor: pointer;
         border-bottom: unset;
         border-radius: 0px 0px 10px 10px;
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
 
         @include breakPoints(small) {
           border-radius: 0;
+          cursor: unset;
         }
 
         @include breakPoints(mobile) {
           border-radius: 0;
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
         }
 
         #showMidSecFiveHolder {
