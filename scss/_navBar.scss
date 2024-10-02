@@ -230,9 +230,9 @@
       }
     }
 
-    label:active::after {
-      width: 35px;
-    }
+    // label:active::after {
+    //   width: 35px;
+    // } // temporary uncommented, restore if errors found
 
     #navBarButton {
       display: flex;

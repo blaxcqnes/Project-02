@@ -55,12 +55,17 @@ let pTopTwoMidSecFiveHidden = document.querySelector(
 let midOne = document.querySelector('#midOne');
 
 let midTwo = document.querySelector('#midTwo');
-let pMidTwoThreeHolder = document.querySelector('#pMidTwoThreeHolder');
-let pMidTwoThree = document.querySelector('#pMidTwoThree');
-let pMidTwoFourHolder = document.querySelector('#pMidTwoFourHolder');
-let pMidTwoFour = document.querySelector('#pMidTwoFour');
-let pMidTwoFiveHolder = document.querySelector('#pMidTwoThreeHolder');
-let pMidTwoFive = document.querySelector('#pMidTwoThree');
+// left midSection
+let pMidTwoTwo = document.querySelector('#pMidTwoTwo');
+
+// right midSection
+let forSwitcherMidTwoOne = document.querySelector('#forSwitcherMidTwoOne');
+let forSwitcherMidTwoTwo = document.querySelector('#forSwitcherMidTwoTwo');
+let forSwitcherMidTwoThree = document.querySelector('#forSwitcherMidTwoThree');
+
+let switcherMidTwoOne = document.querySelector('#switcherMidTwoOne');
+let switcherMidTwoTwo = document.querySelector('#switcherMidTwoTwo');
+let switcherMidTwoThree = document.querySelector('#switcherMidTwoThree');
 
 ///////////////////////////////////////////////////////
 
@@ -1034,53 +1039,182 @@ lightModeToggle.addEventListener('click', function () {
 });
 //////////////////////////////////////
 
-// midTwo - rightMidTwo section
+// leftMidTwo
 
 lightModeToggle.addEventListener('click', function () {
-  let pMidTwoTwoLight = document.querySelector('#pMidTwoTwo').style.color;
-  let pMidTwoThreeHolderLight = document.querySelector('#pMidTwoThreeHolder')
-    .style.backgroundColor;
-  let pMidTwoFourHolderLight =
-    document.querySelector('#pMidTwoFourHolder').style.backgroundColor;
-  let pMidTwoFiveHolderLight =
-    document.querySelector('#pMidTwoFiveHolder').style.backgroundColor;
-
-  let pMidTwoThreeLight = document.querySelector('#pMidTwoThree').style.color;
-  let pMidTwoFourLight = document.querySelector('#pMidTwoFour').style.color;
-  let pMidTwoFiveLight = document.querySelector('#pMidTwoFive').style.color;
+  let pMidTwoTwoColorLight = document.querySelector('#pMidTwoTwo').style.color;
 
   document.querySelector('#pMidTwoTwo').style.color =
-    pMidTwoTwoLight === 'rgb(110, 110, 110)'
+    pMidTwoTwoColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+// rightMidTwo section
+
+lightModeToggle.addEventListener('click', function () {
+  let forSwitcherMidTwoOneLight = document.querySelector(
+    '#forSwitcherMidTwoOne'
+  ).style.backgroundColor;
+  let forSwitcherMidTwoTwoLight = document.querySelector(
+    '#forSwitcherMidTwoTwo'
+  ).style.backgroundColor;
+  let forSwitcherMidTwoThreeLight = document.querySelector(
+    '#forSwitcherMidTwoThree'
+  ).style.backgroundColor;
+
+  let forSwitcherMidTwoOneLightColor = document.querySelector(
+    '#forSwitcherMidTwoOne'
+  ).style.color;
+  let forSwitcherMidTwoTwoLightColor = document.querySelector(
+    '#forSwitcherMidTwoTwo'
+  ).style.color;
+  let forSwitcherMidTwoThreeLightColor = document.querySelector(
+    '#forSwitcherMidTwoThree'
+  ).style.color;
+
+  document.querySelector('#forSwitcherMidTwoOne').style.backgroundColor =
+    forSwitcherMidTwoOneLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#forSwitcherMidTwoOne').style.color =
+    forSwitcherMidTwoOneLightColor === 'rgb(0, 0, 0)'
+      ? 'rgb(255, 255, 255)'
+      : 'rgb(0, 0, 0)';
+
+  document.querySelector('#forSwitcherMidTwoTwo').style.backgroundColor =
+    forSwitcherMidTwoTwoLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#forSwitcherMidTwoTwo').style.color =
+    forSwitcherMidTwoTwoLightColor === 'rgb(0, 0, 0)'
+      ? 'rgb(255, 255, 255)'
+      : 'rgb(0, 0, 0)';
+
+  document.querySelector('#forSwitcherMidTwoThree').style.backgroundColor =
+    forSwitcherMidTwoThreeLight === 'rgb(215, 215, 215)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(215, 215, 215)';
+
+  document.querySelector('#forSwitcherMidTwoThree').style.color =
+    forSwitcherMidTwoThreeLightColor === 'rgb(0, 0, 0)'
+      ? 'rgb(255, 255, 255)'
+      : 'rgb(0, 0, 0)';
+});
+
+forSwitcherMidTwoOne.addEventListener('click', function () {
+  switcherMidTwoTwo.checked = false;
+  switcherMidTwoThree.checked = false;
+});
+
+forSwitcherMidTwoTwo.addEventListener('click', function () {
+  switcherMidTwoOne.checked = false;
+  switcherMidTwoThree.checked = false;
+});
+
+forSwitcherMidTwoThree.addEventListener('click', function () {
+  switcherMidTwoOne.checked = false;
+  switcherMidTwoTwo.checked = false;
+});
+
+//////////////////////////////////////
+
+// bottomMidTwo
+
+lightModeToggle.addEventListener('click', function () {
+  let bottomMidTwoContainerLight = document.querySelector(
+    '#bottomMidTwoContainer'
+  ).style.backgroundColor;
+
+  let bottomMidTwoHolderOneBbLight = document.querySelector(
+    '#bottomMidTwoHolderOne'
+  ).style.borderBottom;
+  let bottomMidTwoHolderTwoBbLight = document.querySelector(
+    '#bottomMidTwoHolderTwo'
+  ).style.borderBottom;
+  let bottomMidTwoHolderThreeBbLight = document.querySelector(
+    '#bottomMidTwoHolderThree'
+  ).style.borderBottom;
+
+  let pBottomMidTwoOneColorLight =
+    document.querySelector('#pBottomMidTwoOne').style.color;
+  let pBottomMidTwoTwoColorLight =
+    document.querySelector('#pBottomMidTwoTwo').style.color;
+  let pBottomMidTwoThreeColorLight = document.querySelector(
+    '#pBottomMidTwoThree'
+  ).style.color;
+  let pBottomMidTwoFourColorLight =
+    document.querySelector('#pBottomMidTwoFour').style.color;
+  let pBottomMidTwoFiveColorLight =
+    document.querySelector('#pBottomMidTwoFive').style.color;
+  let pBottomMidTwoSixColorLight =
+    document.querySelector('#pBottomMidTwoSix').style.color;
+  let pBottomMidTwoSevenColorLight = document.querySelector(
+    '#pBottomMidTwoSeven'
+  ).style.color;
+  let pBottomMidTwoEightColorLight = document.querySelector(
+    '#pBottomMidTwoEight'
+  ).style.color;
+
+  document.querySelector('#bottomMidTwoContainer').style.backgroundColor =
+    bottomMidTwoContainerLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#bottomMidTwoHolderOne').style.borderBottom =
+    bottomMidTwoHolderOneBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#bottomMidTwoHolderTwo').style.borderBottom =
+    bottomMidTwoHolderTwoBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#bottomMidTwoHolderThree').style.borderBottom =
+    bottomMidTwoHolderThreeBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pBottomMidTwoOne').style.color =
+    pBottomMidTwoOneColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pMidTwoThreeHolder').style.backgroundColor =
-    pMidTwoThreeHolderLight === 'rgb(215, 215, 215)'
-      ? 'rgb(40, 40, 40)'
-      : 'rgb(215, 215, 215)';
+  document.querySelector('#pBottomMidTwoTwo').style.color =
+    pBottomMidTwoTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pMidTwoFourHolder').style.backgroundColor =
-    pMidTwoFourHolderLight === 'rgb(215, 215, 215)'
-      ? 'rgb(40, 40, 40)'
-      : 'rgb(215, 215, 215)';
+  document.querySelector('#pBottomMidTwoThree').style.color =
+    pBottomMidTwoThreeColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pMidTwoFiveHolder').style.backgroundColor =
-    pMidTwoFiveHolderLight === 'rgb(215, 215, 215)'
-      ? 'rgb(40, 40, 40)'
-      : 'rgb(215, 215, 215)';
+  document.querySelector('#pBottomMidTwoFour').style.color =
+    pBottomMidTwoFourColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pMidTwoThree').style.color =
-    pMidTwoThreeLight === 'rgb(45, 45, 45)'
-      ? 'rgb(210, 210, 210)'
-      : 'rgb(45, 45, 45)';
+  document.querySelector('#pBottomMidTwoFive').style.color =
+    pBottomMidTwoFiveColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pMidTwoFour').style.color =
-    pMidTwoFourLight === 'rgb(45, 45, 45)'
-      ? 'rgb(210, 210, 210)'
-      : 'rgb(45, 45, 45)';
+  document.querySelector('#pBottomMidTwoSix').style.color =
+    pBottomMidTwoSixColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pMidTwoFive').style.color =
-    pMidTwoFiveLight === 'rgb(45, 45, 45)'
-      ? 'rgb(210, 210, 210)'
-      : 'rgb(45, 45, 45)';
+  document.querySelector('#pBottomMidTwoSeven').style.color =
+    pBottomMidTwoSevenColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoEight').style.color =
+    pBottomMidTwoEightColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
 });

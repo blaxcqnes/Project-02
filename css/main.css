@@ -802,9 +802,6 @@
   opacity: 1;
   filter: brightness(100%);
 }
-#navBar #toggle label:active::after {
-  width: 35px;
-}
 #navBar #toggle #navBarButton {
   display: flex;
   align-content: center;
@@ -3616,9 +3613,16 @@
     margin-top: 35px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
+@media (min-width: 399px) and (max-width: 599px) {
   #midTwo #headerMidTwo #rightMidTwo {
     flex-direction: column;
+    align-self: center;
+    margin-top: 35px;
+  }
+}
+@media (min-width: 599px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo {
+    flex-direction: row;
     align-self: center;
     margin-top: 35px;
   }
@@ -3634,117 +3638,323 @@
     align-self: end;
   }
 }
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoOne {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
   width: 160px;
   height: 50px;
   align-content: center;
   background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   transition: all 0.2s ease;
   cursor: pointer;
+  text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
     cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
     cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
     cursor: unset;
   }
 }
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoThreeHolder #pMidTwoThree {
-  color: rgb(210, 210, 210);
-  text-align: center;
-  font-weight: 500;
-  transition: all 0.2s ease;
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoOne:checked + #forSwitcherMidTwoOne {
+  background-color: rgb(243, 85, 37) !important;
 }
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-  width: 160px;
-  height: 50px;
-  align-content: center;
-  margin-left: 20px;
-  background-color: rgb(40, 40, 40);
-  border-radius: 10px;
-  transition: all 0.2s ease;
-  cursor: pointer;
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoTwo {
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-    cursor: unset;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-    cursor: unset;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-    cursor: unset;
-  }
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-    margin: 20px 0 0 0;
-  }
-}
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder {
-    margin: 20px 0 0 0;
-  }
-}
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFourHolder #pMidTwoFour {
-  color: rgb(210, 210, 210);
-  text-align: center;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+#midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
   width: 160px;
   height: 50px;
   align-content: center;
   margin-left: 20px;
   background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   transition: all 0.2s ease;
   cursor: pointer;
+  text-align: center;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
+    margin: 20px 0 0 0;
     cursor: unset;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+@media (min-width: 399px) and (max-width: 599px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
+    margin: 20px 0 0 0;
+    cursor: unset;
+  }
+}
+@media (min-width: 599px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
+    margin: 0 0 0 10px;
     cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
     cursor: unset;
   }
 }
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoTwo:checked + #forSwitcherMidTwoTwo {
+  background-color: rgb(243, 85, 37) !important;
+}
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoThree {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
+  width: 160px;
+  height: 50px;
+  align-content: center;
+  margin-left: 20px;
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
     margin: 20px 0 0 0;
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 599px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
+    margin: 20px 0 0 0;
+    cursor: unset;
+  }
+}
+@media (min-width: 599px) and (max-width: 767px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
+    margin: 0 0 0 10px;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
+    cursor: unset;
+  }
+}
+#midTwo #headerMidTwo #rightMidTwo #switcherMidTwoThree:checked + #forSwitcherMidTwoThree {
+  background-color: rgb(243, 85, 37) !important;
+}
+#midTwo #bottomMidTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 90px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo {
+    flex-direction: column;
+    margin-top: 30px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder {
-    margin: 20px 0 0 0;
+  #midTwo #bottomMidTwo {
+    flex-direction: column;
+    margin-top: 30px;
   }
 }
-#midTwo #headerMidTwo #rightMidTwo #pMidTwoFiveHolder #pMidTwoFive {
-  color: rgb(210, 210, 210);
-  text-align: center;
-  font-weight: 500;
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo {
+    flex-direction: row;
+    margin-top: 30px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 27%;
+  padding: 30px 45px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
   transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 100%;
+    margin: 50px 0 0 0;
+    padding: 30px 30px;
+    align-self: center;
+    border-radius: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 90%;
+    margin-top: 50px;
+    align-self: center;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 90%;
+    margin-top: 50px;
+    align-self: center;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 48%;
+    margin: 50px 0 0 10px;
+    align-self: start;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 48%;
+    margin: 50px 0 0 10px;
+    align-self: start;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 45%;
+    margin: 50px 0 0 10px;
+    align-self: start;
+    padding: 30px 22px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1099px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 32%;
+    margin-top: 50px;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1099px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+    width: 31%;
+    margin-top: 50px;
+    padding: 30px 35px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoOne {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoOne {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoTwo {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoTwo {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoThree {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoThree {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoFour {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoFour {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoFive {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoFive {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoSix {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoSix {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoSeven {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoSeven {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoEight {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoEight {
+    font-size: 14px;
+  }
 }
 
 * {
