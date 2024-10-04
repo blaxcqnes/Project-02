@@ -67,6 +67,11 @@ let switcherMidTwoOne = document.querySelector('#switcherMidTwoOne');
 let switcherMidTwoTwo = document.querySelector('#switcherMidTwoTwo');
 let switcherMidTwoThree = document.querySelector('#switcherMidTwoThree');
 
+let bottomMidTwo = document.querySelector('#bottomMidTwo');
+let bottomMidTwoForAppartment = document.querySelector(
+  '#bottomMidTwoForAppartment'
+);
+
 ///////////////////////////////////////////////////////
 
 lightModeToggle.addEventListener('click', function () {
@@ -1104,19 +1109,24 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(0, 0, 0)';
 });
 
+switcherMidTwoOne.checked = true;
+
 forSwitcherMidTwoOne.addEventListener('click', function () {
   switcherMidTwoTwo.checked = false;
   switcherMidTwoThree.checked = false;
+  bottomMidTwoForAppartment.style.opacity = '1';
 });
 
 forSwitcherMidTwoTwo.addEventListener('click', function () {
   switcherMidTwoOne.checked = false;
   switcherMidTwoThree.checked = false;
+  bottomMidTwoForAppartment.style.opacity = '0';
 });
 
 forSwitcherMidTwoThree.addEventListener('click', function () {
   switcherMidTwoOne.checked = false;
   switcherMidTwoTwo.checked = false;
+  bottomMidTwoForAppartment.style.opacity = '0';
 });
 
 //////////////////////////////////////

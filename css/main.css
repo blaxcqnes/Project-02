@@ -3763,31 +3763,44 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   margin-top: 90px;
+  transition: all 0.5s ease;
+  z-index: -1;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midTwo #bottomMidTwo {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 60px !important;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #midTwo #bottomMidTwo {
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 70px !important;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #midTwo #bottomMidTwo {
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 70px !important;
   }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  transition: all 0.2s ease;
 }
 #midTwo #bottomMidTwo #bottomMidTwoContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 27%;
+  margin-left: 20px;
   padding: 30px 45px;
   background-color: rgb(28, 28, 28);
   border-radius: 10px;
@@ -3796,7 +3809,7 @@
 @media (min-width: 300px) and (max-width: 399px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 100%;
-    margin: 50px 0 0 0;
+    margin: 0 0 0 0;
     padding: 30px 30px;
     align-self: center;
     border-radius: unset;
@@ -3805,7 +3818,7 @@
 @media (min-width: 399px) and (max-width: 499px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 90%;
-    margin-top: 50px;
+    margin-top: 0;
     align-self: center;
     padding: 30px 35px;
   }
@@ -3813,7 +3826,7 @@
 @media (min-width: 499px) and (max-width: 599px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 90%;
-    margin-top: 50px;
+    margin-top: 0;
     align-self: center;
     padding: 30px 50px;
   }
@@ -3821,7 +3834,7 @@
 @media (min-width: 599px) and (max-width: 699px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 48%;
-    margin: 50px 0 0 10px;
+    margin: 0 0 0 10px;
     align-self: start;
     padding: 30px 20px;
   }
@@ -3829,7 +3842,7 @@
 @media (min-width: 699px) and (max-width: 767px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 48%;
-    margin: 50px 0 0 10px;
+    margin: 0 0 0 10px;
     align-self: start;
     padding: 30px 20px;
   }
@@ -3837,7 +3850,7 @@
 @media (min-width: 767px) and (max-width: 1023px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 45%;
-    margin: 50px 0 0 10px;
+    margin: 0 0 0 10px;
     align-self: start;
     padding: 30px 22px;
   }
@@ -3845,14 +3858,14 @@
 @media (min-width: 1023px) and (max-width: 1099px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 32%;
-    margin-top: 50px;
+    margin-top: 0;
     padding: 30px 30px;
   }
 }
 @media (min-width: 1099px) and (max-width: 1439px) {
   #midTwo #bottomMidTwo #bottomMidTwoContainer {
     width: 31%;
-    margin-top: 50px;
+    margin-top: 0;
     padding: 30px 35px;
   }
 }

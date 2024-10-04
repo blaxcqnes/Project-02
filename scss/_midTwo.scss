@@ -236,21 +236,32 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    max-height: fit-content;
     margin-top: 90px;
+    transition: all 0.5s ease;
+    z-index: -1;
 
     @include breakPoints(small) {
       flex-direction: column;
-      margin-top: 30px;
+      margin-top: 60px !important;
     }
 
     @include breakPoints(mobile) {
       flex-direction: column;
-      margin-top: 30px;
+      margin-top: 70px !important;
     }
 
     @include breakPoints(tablet) {
       flex-direction: row;
-      margin-top: 30px;
+      margin-top: 70px !important;
+    }
+
+    #bottomMidTwoForAppartment {
+      display: flex;
+      flex-direction: row;
+      width: inherit;
+      max-height: fit-content;
+      transition: all 0.2s ease;
     }
 
     #bottomMidTwoContainer {
@@ -258,6 +269,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 27%;
+      margin-left: 20px;
       padding: 30px 45px;
       background-color: rgb(28, 28, 28);
       border-radius: 10px;
@@ -265,7 +277,7 @@
 
       @include breakPoints(small) {
         width: 100%;
-        margin: 50px 0 0 0;
+        margin: 0 0 0 0;
         padding: 30px 30px;
         align-self: center;
         border-radius: unset;
@@ -273,48 +285,48 @@
 
       @media (min-width: 399px) and (max-width: 499px) {
         width: 90%;
-        margin-top: 50px;
+        margin-top: 0;
         align-self: center;
         padding: 30px 35px;
       }
 
       @media (min-width: 499px) and (max-width: 599px) {
         width: 90%;
-        margin-top: 50px;
+        margin-top: 0;
         align-self: center;
         padding: 30px 50px;
       }
 
       @media (min-width: 599px) and (max-width: 699px) {
         width: 48%;
-        margin: 50px 0 0 10px;
+        margin: 0 0 0 10px;
         align-self: start;
         padding: 30px 20px;
       }
 
       @media (min-width: 699px) and (max-width: 767px) {
         width: 48%;
-        margin: 50px 0 0 10px;
+        margin: 0 0 0 10px;
         align-self: start;
         padding: 30px 20px;
       }
 
       @include breakPoints(tablet) {
         width: 45%;
-        margin: 50px 0 0 10px;
+        margin: 0 0 0 10px;
         align-self: start;
         padding: 30px 22px;
       }
 
       @media (min-width: 1023px) and (max-width: 1099px) {
         width: 32%;
-        margin-top: 50px;
+        margin-top: 0;
         padding: 30px 30px;
       }
 
       @media (min-width: 1099px) and (max-width: 1439px) {
         width: 31%;
-        margin-top: 50px;
+        margin-top: 0;
         padding: 30px 35px;
       }
 
