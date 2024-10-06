@@ -84,14 +84,14 @@
       flex-direction: row;
       transition: all 0.2s ease;
 
-      @include breakPoints(small) {
+      @media (min-width: 300px) and (max-width: 459px) {
         flex-direction: column;
         align-self: center;
         margin-top: 35px;
       }
 
-      @media (min-width: 399px) and (max-width: 599px) {
-        flex-direction: column;
+      @media (min-width: 459px) and (max-width: 599px) {
+        flex-direction: row;
         align-self: center;
         margin-top: 35px;
       }
@@ -128,11 +128,18 @@
         cursor: pointer;
         text-align: center;
 
-        @include breakPoints(small) {
+        @media (min-width: 300px) and (max-width: 459px) {
           cursor: unset;
         }
 
-        @include breakPoints(mobile) {
+        @media (min-width: 459px) and (max-width: 529px) {
+          width: 140px;
+          font-size: 14px;
+          cursor: unset;
+        }
+
+        @media (min-width: 529px) and (max-width: 599px) {
+          width: 150px;
           cursor: unset;
         }
 
@@ -163,18 +170,25 @@
         cursor: pointer;
         text-align: center;
 
-        @include breakPoints(small) {
+        @media (min-width: 300px) and (max-width: 459px) {
           margin: 20px 0 0 0;
           cursor: unset;
         }
 
-        @media (min-width: 399px) and (max-width: 599px) {
-          margin: 20px 0 0 0;
+        @media (min-width: 459px) and (max-width: 529px) {
+          margin: 0 0 0 10px;
+          width: 140px;
+          font-size: 14px;
+          cursor: unset;
+        }
+
+        @media (min-width: 529px) and (max-width: 599px) {
+          width: 150px;
           cursor: unset;
         }
 
         @media (min-width: 599px) and (max-width: 767px) {
-          margin: 0 0 0 10px;
+          margin: 0 0 0 15px;
           cursor: unset;
         }
 
@@ -205,18 +219,25 @@
         cursor: pointer;
         text-align: center;
 
-        @include breakPoints(small) {
+        @media (min-width: 300px) and (max-width: 459px) {
           margin: 20px 0 0 0;
           cursor: unset;
         }
 
-        @media (min-width: 399px) and (max-width: 599px) {
-          margin: 20px 0 0 0;
+        @media (min-width: 459px) and (max-width: 529px) {
+          margin: 0 0 0 10px;
+          width: 140px;
+          font-size: 14px;
+          cursor: unset;
+        }
+
+        @media (min-width: 529px) and (max-width: 599px) {
+          width: 150px;
           cursor: unset;
         }
 
         @media (min-width: 599px) and (max-width: 767px) {
-          margin: 0 0 0 10px;
+          margin: 0 0 0 15px;
           cursor: unset;
         }
 
@@ -233,13 +254,12 @@
 
   #bottomMidTwo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     max-height: fit-content;
     margin-top: 90px;
     transition: all 0.5s ease;
-    z-index: -1;
 
     @include breakPoints(small) {
       flex-direction: column;
@@ -259,177 +279,1350 @@
     #bottomMidTwoForAppartment {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
       width: inherit;
       max-height: fit-content;
       transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include breakPoints(mobile) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 767px) and (max-width: 939px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 939px) and (max-width: 1023px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      #bottomMidTwoForAppContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 27%;
+        margin-left: 20px;
+        padding: 30px 45px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 10px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 100%;
+          margin: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 92%;
+          margin: 0;
+          padding: 30px 35px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 50px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 74%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 67%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 65%;
+          margin: 0;
+          padding: 30px 22px;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          width: 41%;
+          margin-left: 10px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 31%;
+          margin-top: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 32%;
+          margin-top: 0;
+          padding: 30px 35px;
+        }
+
+        #bottomMidTwoForAppHolderOne {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForAppOne {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForAppTwo {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForAppHolderTwo {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForAppThree {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForAppFour {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForAppHolderThree {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForAppFive {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForAppSix {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoHolderFour {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForAppSeven {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForAppEight {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      #picBmtForAppartment {
+        width: 520px;
+        height: 395px;
+        background-image: url('../images/midTwo/midTwoOne.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 280px;
+          margin-top: 30px;
+          background-position-x: 55%;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 320px;
+          margin-top: 30px;
+          background-position-x: 55%;
+        }
+
+        @media (min-width: 399px) and (max-width: 449px) {
+          width: 370px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 449px) and (max-width: 499px) {
+          width: 410px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 450px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin-inline: 5px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 450px;
+          margin-left: 20px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 490px;
+          margin-left: 20px;
+          background-position-x: 65%;
+        }
+      }
+
+      #detailsBmtForAppartmentContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 23%;
+        margin-top: 40px;
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 90%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 90%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 90%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin: 50px 0 0 20px;
+          width: 90%;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          margin-inline: 20px;
+          width: 30%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 26%;
+          margin-inline: 20px;
+        }
+
+        #pBmtForAppOne {
+          color: rgb(150, 150, 150);
+          font-weight: 700;
+        }
+
+        #pBmtForAppTwo {
+          color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #pBmtForAppThree {
+          color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #midTwoForAppSchedule {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 210px;
+          height: 45px;
+          position: relative;
+          margin-top: 30px;
+          padding: 0 20px 0 20px;
+          border-radius: 50px;
+          background-color: rgb(40, 40, 40);
+          align-content: center;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          z-index: 1;
+
+          @include breakPoints(small) {
+            display: flex;
+            width: 177px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(mobile) {
+            display: flex;
+            width: 185px;
+            height: 45px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(tablet) {
+            cursor: unset;
+          }
+
+          &:hover {
+            opacity: 0.8;
+            filter: brightness(90%);
+          }
+
+          #holderMidTwoForAppSchedule {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            left: 0;
+            background-color: rgb(55, 55, 55);
+            border-radius: 50px;
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              width: 42px;
+              height: 42px;
+            }
+
+            @media (min-width: 767px) and (max-width: 1022.9px) {
+              width: 43px;
+              height: 43px;
+            }
+
+            #picMidTwoForAppSchedule {
+              width: 25px;
+              height: 25px;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              background-image: url('../images/svgs/midTwo/calendar.svg');
+              transition: all 0.2s ease;
+
+              @include breakPoints(small) {
+                width: 22px;
+                height: 22px;
+              }
+
+              @include breakPoints(mobile) {
+                width: 22px;
+                height: 22px;
+                top: 11px;
+                left: 11px;
+              }
+
+              @media (min-width: 767px) and (max-width: 1022.9px) {
+                width: 23px;
+                height: 23px;
+                top: 9.5px;
+                left: 10px;
+              }
+            }
+          }
+
+          #pMidTwoForAppSchedule {
+            margin-left: 55px;
+            font-size: 14px;
+            color: rgb(150, 150, 150);
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              font-size: 12px;
+            }
+
+            @include breakPoints(mobile) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
     }
 
-    #bottomMidTwoContainer {
+    #bottomMidTwoForVilla {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-evenly;
-      width: 27%;
-      margin-left: 20px;
-      padding: 30px 45px;
-      background-color: rgb(28, 28, 28);
-      border-radius: 10px;
+      width: inherit;
+      max-height: fit-content;
+      position: absolute;
       transition: all 0.2s ease;
 
       @include breakPoints(small) {
-        width: 100%;
-        margin: 0 0 0 0;
-        padding: 30px 30px;
-        align-self: center;
-        border-radius: unset;
-      }
-
-      @media (min-width: 399px) and (max-width: 499px) {
-        width: 90%;
-        margin-top: 0;
-        align-self: center;
-        padding: 30px 35px;
-      }
-
-      @media (min-width: 499px) and (max-width: 599px) {
-        width: 90%;
-        margin-top: 0;
-        align-self: center;
-        padding: 30px 50px;
-      }
-
-      @media (min-width: 599px) and (max-width: 699px) {
-        width: 48%;
-        margin: 0 0 0 10px;
-        align-self: start;
-        padding: 30px 20px;
-      }
-
-      @media (min-width: 699px) and (max-width: 767px) {
-        width: 48%;
-        margin: 0 0 0 10px;
-        align-self: start;
-        padding: 30px 20px;
-      }
-
-      @include breakPoints(tablet) {
-        width: 45%;
-        margin: 0 0 0 10px;
-        align-self: start;
-        padding: 30px 22px;
-      }
-
-      @media (min-width: 1023px) and (max-width: 1099px) {
-        width: 32%;
-        margin-top: 0;
-        padding: 30px 30px;
-      }
-
-      @media (min-width: 1099px) and (max-width: 1439px) {
-        width: 31%;
-        margin-top: 0;
-        padding: 30px 35px;
-      }
-
-      #bottomMidTwoHolderOne {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        padding-bottom: 35px;
-        border-bottom: 0.5px solid rgb(55, 55, 55);
+      }
+
+      @include breakPoints(mobile) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 767px) and (max-width: 939px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 939px) and (max-width: 1023px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      #bottomMidTwoForVillaContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 27%;
+        margin-left: 20px;
+        padding: 30px 45px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 10px;
         transition: all 0.2s ease;
 
-        #pBottomMidTwoOne {
-          color: rgb(150, 150, 150);
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 100%;
+          margin: 0;
+          padding: 30px 30px;
+        }
 
-          @include breakPoints(small) {
-            font-size: 14px;
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 92%;
+          margin: 0;
+          padding: 30px 35px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 50px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 74%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 67%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 65%;
+          margin: 0;
+          padding: 30px 22px;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          width: 41%;
+          margin-left: 10px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 31%;
+          margin-top: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 32%;
+          margin-top: 0;
+          padding: 30px 35px;
+        }
+
+        #bottomMidTwoForVillaHolderOne {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForVillaOne {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForVillaTwo {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
           }
         }
 
-        #pBottomMidTwoTwo {
-          color: rgb(112, 112, 112);
+        #bottomMidTwoForVillaHolderTwo {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
 
-          @include breakPoints(small) {
-            font-size: 14px;
+          #pBottomMidTwoForVillaThree {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForVillaFour {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForVillaHolderThree {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForVillaFive {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForVillaSix {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForVillaHolderFour {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForVillaSeven {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForVillaEight {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
           }
         }
       }
 
-      #bottomMidTwoHolderTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
-        padding-bottom: 35px;
-        border-bottom: 0.5px solid rgb(55, 55, 55);
+      #picBmtForVilla {
+        width: 520px;
+        height: 395px;
+        background-image: url('../images/midTwo/midTwoTwo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
         transition: all 0.2s ease;
 
-        #pBottomMidTwoThree {
-          color: rgb(150, 150, 150);
-
-          @include breakPoints(small) {
-            font-size: 14px;
-          }
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 280px;
+          margin-top: 30px;
+          background-position-x: 55%;
         }
 
-        #pBottomMidTwoFour {
-          color: rgb(112, 112, 112);
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 320px;
+          margin-top: 30px;
+          background-position-x: 55%;
+        }
 
-          @include breakPoints(small) {
-            font-size: 14px;
-          }
+        @media (min-width: 399px) and (max-width: 449px) {
+          width: 370px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 449px) and (max-width: 499px) {
+          width: 410px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 450px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin-inline: 5px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 450px;
+          margin-left: 20px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 490px;
+          margin-left: 20px;
+          background-position-x: 65%;
         }
       }
 
-      #bottomMidTwoHolderThree {
+      #detailsBmtForVillaContainer {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
-        padding-bottom: 35px;
-        border-bottom: 0.5px solid rgb(55, 55, 55);
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 23%;
+        margin-top: 40px;
         transition: all 0.2s ease;
 
-        #pBottomMidTwoFive {
+        @include breakPoints(small) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 90%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 90%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 90%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin: 50px 0 0 20px;
+          width: 90%;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          margin-inline: 20px;
+          width: 30%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 26%;
+          margin-inline: 20px;
+        }
+
+        #pBmtForVillaOne {
           color: rgb(150, 150, 150);
+          font-weight: 700;
+        }
+
+        #pBmtForVillaTwo {
+          color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #pBmtForVillaThree {
+          color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #midTwoForVillaSchedule {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 210px;
+          height: 45px;
+          position: relative;
+          margin-top: 30px;
+          padding: 0 20px 0 20px;
+          border-radius: 50px;
+          background-color: rgb(40, 40, 40);
+          align-content: center;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          z-index: 1;
 
           @include breakPoints(small) {
+            display: flex;
+            width: 177px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(mobile) {
+            display: flex;
+            width: 185px;
+            height: 45px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(tablet) {
+            cursor: unset;
+          }
+
+          &:hover {
+            opacity: 0.8;
+            filter: brightness(90%);
+          }
+
+          #holderMidTwoForVillaSchedule {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            left: 0;
+            background-color: rgb(55, 55, 55);
+            border-radius: 50px;
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              width: 42px;
+              height: 42px;
+            }
+
+            @media (min-width: 767px) and (max-width: 1022.9px) {
+              width: 43px;
+              height: 43px;
+            }
+
+            #picMidTwoForVillaSchedule {
+              width: 25px;
+              height: 25px;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              background-image: url('../images/svgs/midTwo/calendar.svg');
+              transition: all 0.2s ease;
+
+              @include breakPoints(small) {
+                width: 22px;
+                height: 22px;
+              }
+
+              @include breakPoints(mobile) {
+                width: 22px;
+                height: 22px;
+                top: 11px;
+                left: 11px;
+              }
+
+              @media (min-width: 767px) and (max-width: 1022.9px) {
+                width: 23px;
+                height: 23px;
+                top: 9.5px;
+                left: 10px;
+              }
+            }
+          }
+
+          #pMidTwoForVillaSchedule {
+            margin-left: 55px;
             font-size: 14px;
+            color: rgb(150, 150, 150);
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              font-size: 12px;
+            }
+
+            @include breakPoints(mobile) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    //new
+    #bottomMidTwoForPentHouse {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: inherit;
+      max-height: fit-content;
+      position: absolute;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include breakPoints(mobile) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 767px) and (max-width: 939px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 939px) and (max-width: 1023px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      #bottomMidTwoForPentHouseContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 27%;
+        margin-left: 20px;
+        padding: 30px 45px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 10px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 100%;
+          margin: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 92%;
+          margin: 0;
+          padding: 30px 35px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin: 0;
+          padding: 30px 50px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 74%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 67%;
+          margin: 0;
+          padding: 30px 20px;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 65%;
+          margin: 0;
+          padding: 30px 22px;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          width: 41%;
+          margin-left: 10px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 31%;
+          margin-top: 0;
+          padding: 30px 30px;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 32%;
+          margin-top: 0;
+          padding: 30px 35px;
+        }
+
+        #bottomMidTwoForPentHouseHolderOne {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForPentHouseOne {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForPentHouseTwo {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
           }
         }
 
-        #pBottomMidTwoSix {
-          color: rgb(112, 112, 112);
+        #bottomMidTwoForPentHouseHolderTwo {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
 
-          @include breakPoints(small) {
-            font-size: 14px;
+          #pBottomMidTwoForPentHouseThree {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForPentHouseFour {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForPentHouseHolderThree {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          padding-bottom: 35px;
+          border-bottom: 0.5px solid rgb(55, 55, 55);
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForPentHouseFive {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForPentHouseSix {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #bottomMidTwoForPentHouseHolderFour {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 35px;
+          transition: all 0.2s ease;
+
+          #pBottomMidTwoForPentHouseSeven {
+            color: rgb(150, 150, 150);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
+          }
+
+          #pBottomMidTwoForPentHouseEight {
+            color: rgb(112, 112, 112);
+
+            @include breakPoints(small) {
+              font-size: 14px;
+            }
           }
         }
       }
 
-      #bottomMidTwoHolderFour {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
+      #picBmtForPentHouse {
+        width: 520px;
+        height: 395px;
+        background-image: url('../images/midTwo/midTwoThree.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.2s ease;
 
-        #pBottomMidTwoSeven {
-          color: rgb(150, 150, 150);
-
-          @include breakPoints(small) {
-            font-size: 14px;
-          }
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 280px;
+          margin-top: 30px;
+          background-position-x: 55%;
         }
 
-        #pBottomMidTwoEight {
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 320px;
+          margin-top: 30px;
+          background-position-x: 55%;
+        }
+
+        @media (min-width: 399px) and (max-width: 449px) {
+          width: 370px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 449px) and (max-width: 499px) {
+          width: 410px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 450px;
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          margin-top: 30px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin-inline: 5px;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          width: 450px;
+          margin-left: 20px;
+          background-position-x: 60%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 490px;
+          margin-left: 20px;
+          background-position-x: 65%;
+        }
+      }
+
+      #detailsBmtForPentHouseContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 23%;
+        margin-top: 40px;
+        transition: all 0.2s ease;
+
+        @include breakPoints(small) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 90%;
+          margin-top: 30px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 90%;
+        }
+
+        @media (min-width: 699px) and (max-width: 767px) {
+          width: 90%;
+        }
+
+        @media (min-width: 767px) and (max-width: 939px) {
+          width: 90%;
+        }
+
+        @media (min-width: 939px) and (max-width: 1023px) {
+          margin: 50px 0 0 20px;
+          width: 90%;
+        }
+
+        @media (min-width: 1023px) and (max-width: 1149px) {
+          margin-inline: 20px;
+          width: 30%;
+        }
+
+        @media (min-width: 1149px) and (max-width: 1439px) {
+          width: 26%;
+          margin-inline: 20px;
+        }
+
+        #pBmtForPentHouseOne {
+          color: rgb(150, 150, 150);
+          font-weight: 700;
+        }
+
+        #pBmtForPentHouseTwo {
           color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #pBmtForPentHouseThree {
+          color: rgb(112, 112, 112);
+          font-size: 15px;
+          margin-top: 20px;
+        }
+
+        #midTwoForPentHouseSchedule {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 210px;
+          height: 45px;
+          position: relative;
+          margin-top: 30px;
+          padding: 0 20px 0 20px;
+          border-radius: 50px;
+          background-color: rgb(40, 40, 40);
+          align-content: center;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          z-index: 1;
 
           @include breakPoints(small) {
+            display: flex;
+            width: 177px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(mobile) {
+            display: flex;
+            width: 185px;
+            height: 45px;
+            padding: 0 20px 0 8px;
+            cursor: unset;
+          }
+
+          @include breakPoints(tablet) {
+            cursor: unset;
+          }
+
+          &:hover {
+            opacity: 0.8;
+            filter: brightness(90%);
+          }
+
+          #holderMidTwoForPentHouseSchedule {
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            left: 0;
+            background-color: rgb(55, 55, 55);
+            border-radius: 50px;
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              width: 42px;
+              height: 42px;
+            }
+
+            @media (min-width: 767px) and (max-width: 1022.9px) {
+              width: 43px;
+              height: 43px;
+            }
+
+            #picMidTwoForPentHouseSchedule {
+              width: 25px;
+              height: 25px;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              background-image: url('../images/svgs/midTwo/calendar.svg');
+              transition: all 0.2s ease;
+
+              @include breakPoints(small) {
+                width: 22px;
+                height: 22px;
+              }
+
+              @include breakPoints(mobile) {
+                width: 22px;
+                height: 22px;
+                top: 11px;
+                left: 11px;
+              }
+
+              @media (min-width: 767px) and (max-width: 1022.9px) {
+                width: 23px;
+                height: 23px;
+                top: 9.5px;
+                left: 10px;
+              }
+            }
+          }
+
+          #pMidTwoForPentHouseSchedule {
+            margin-left: 55px;
             font-size: 14px;
+            color: rgb(150, 150, 150);
+            transition: all 0.2s ease;
+
+            @include breakPoints(small) {
+              font-size: 12px;
+            }
+
+            @include breakPoints(mobile) {
+              font-size: 13px;
+            }
           }
         }
       }

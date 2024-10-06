@@ -71,6 +71,10 @@ let bottomMidTwo = document.querySelector('#bottomMidTwo');
 let bottomMidTwoForAppartment = document.querySelector(
   '#bottomMidTwoForAppartment'
 );
+let bottomMidTwoForVilla = document.querySelector('#bottomMidTwoForVilla');
+let bottomMidTwoForPentHouse = document.querySelector(
+  '#bottomMidTwoForPentHouse'
+);
 
 ///////////////////////////////////////////////////////
 
@@ -354,7 +358,7 @@ lightModeToggle.addEventListener('click', function () {
 // navBarSchedule, holderNavBarSchedule & pNavBarSchedule section
 
 lightModeToggle.addEventListener('click', function () {
-  let = navBarScheduleLight =
+  let navBarScheduleLight =
     document.querySelector('#navBarSchedule').style.backgroundColor;
 
   document.querySelector('#navBarSchedule').style.backgroundColor =
@@ -364,7 +368,7 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 lightModeToggle.addEventListener('click', function () {
-  let = holderNavBarScheduleLight = document.querySelector(
+  let holderNavBarScheduleLight = document.querySelector(
     '#holderNavBarSchedule'
   ).style.backgroundColor;
 
@@ -1110,10 +1114,14 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 switcherMidTwoOne.checked = true;
+bottomMidTwoForVilla.style.opacity = '0';
+bottomMidTwoForPentHouse.style.opacity = '0';
 
 forSwitcherMidTwoOne.addEventListener('click', function () {
   switcherMidTwoTwo.checked = false;
   switcherMidTwoThree.checked = false;
+  bottomMidTwoForVilla.style.opacity = '0';
+  bottomMidTwoForPentHouse.style.opacity = '0';
   bottomMidTwoForAppartment.style.opacity = '1';
 });
 
@@ -1121,12 +1129,16 @@ forSwitcherMidTwoTwo.addEventListener('click', function () {
   switcherMidTwoOne.checked = false;
   switcherMidTwoThree.checked = false;
   bottomMidTwoForAppartment.style.opacity = '0';
+  bottomMidTwoForPentHouse.style.opacity = '0';
+  bottomMidTwoForVilla.style.opacity = '1';
 });
 
 forSwitcherMidTwoThree.addEventListener('click', function () {
   switcherMidTwoOne.checked = false;
   switcherMidTwoTwo.checked = false;
   bottomMidTwoForAppartment.style.opacity = '0';
+  bottomMidTwoForVilla.style.opacity = '0';
+  bottomMidTwoForPentHouse.style.opacity = '1';
 });
 
 //////////////////////////////////////
@@ -1134,97 +1146,465 @@ forSwitcherMidTwoThree.addEventListener('click', function () {
 // bottomMidTwo
 
 lightModeToggle.addEventListener('click', function () {
-  let bottomMidTwoContainerLight = document.querySelector(
-    '#bottomMidTwoContainer'
+  let bottomMidTwoForAppContainerLight = document.querySelector(
+    '#bottomMidTwoForAppContainer'
   ).style.backgroundColor;
 
-  let bottomMidTwoHolderOneBbLight = document.querySelector(
-    '#bottomMidTwoHolderOne'
+  let bottomMidTwoForAppHolderOneBbLight = document.querySelector(
+    '#bottomMidTwoForAppHolderOne'
   ).style.borderBottom;
-  let bottomMidTwoHolderTwoBbLight = document.querySelector(
-    '#bottomMidTwoHolderTwo'
+  let bottomMidTwoForAppHolderTwoBbLight = document.querySelector(
+    '#bottomMidTwoForAppHolderTwo'
   ).style.borderBottom;
-  let bottomMidTwoHolderThreeBbLight = document.querySelector(
-    '#bottomMidTwoHolderThree'
+  let bottomMidTwoForAppHolderThreeBbLight = document.querySelector(
+    '#bottomMidTwoForAppHolderThree'
   ).style.borderBottom;
 
-  let pBottomMidTwoOneColorLight =
-    document.querySelector('#pBottomMidTwoOne').style.color;
-  let pBottomMidTwoTwoColorLight =
-    document.querySelector('#pBottomMidTwoTwo').style.color;
-  let pBottomMidTwoThreeColorLight = document.querySelector(
-    '#pBottomMidTwoThree'
+  let pBottomMidTwoForAppOneColorLight = document.querySelector(
+    '#pBottomMidTwoForAppOne'
   ).style.color;
-  let pBottomMidTwoFourColorLight =
-    document.querySelector('#pBottomMidTwoFour').style.color;
-  let pBottomMidTwoFiveColorLight =
-    document.querySelector('#pBottomMidTwoFive').style.color;
-  let pBottomMidTwoSixColorLight =
-    document.querySelector('#pBottomMidTwoSix').style.color;
-  let pBottomMidTwoSevenColorLight = document.querySelector(
-    '#pBottomMidTwoSeven'
+  let pBottomMidTwoForAppTwoColorLight = document.querySelector(
+    '#pBottomMidTwoForAppTwo'
   ).style.color;
-  let pBottomMidTwoEightColorLight = document.querySelector(
-    '#pBottomMidTwoEight'
+  let pBottomMidTwoForAppThreeColorLight = document.querySelector(
+    '#pBottomMidTwoForAppThree'
+  ).style.color;
+  let pBottomMidTwoForAppFourColorLight = document.querySelector(
+    '#pBottomMidTwoForAppFour'
+  ).style.color;
+  let pBottomMidTwoForAppFiveColorLight = document.querySelector(
+    '#pBottomMidTwoForAppFive'
+  ).style.color;
+  let pBottomMidTwoForAppSixColorLight = document.querySelector(
+    '#pBottomMidTwoForAppSix'
+  ).style.color;
+  let pBottomMidTwoForAppSevenColorLight = document.querySelector(
+    '#pBottomMidTwoForAppSeven'
+  ).style.color;
+  let pBottomMidTwoForAppEightColorLight = document.querySelector(
+    '#pBottomMidTwoForAppEight'
   ).style.color;
 
-  document.querySelector('#bottomMidTwoContainer').style.backgroundColor =
-    bottomMidTwoContainerLight === 'rgb(228, 228, 228)'
+  let pBmtForAppOneColorLight =
+    document.querySelector('#pBmtForAppOne').style.color;
+  let pBmtForAppTwoColorLight =
+    document.querySelector('#pBmtForAppTwo').style.color;
+  let pBmtForAppThreeColorLight =
+    document.querySelector('#pBmtForAppThree').style.color;
+
+  let bottomMidTwoForVillaContainerLight = document.querySelector(
+    '#bottomMidTwoForVillaContainer'
+  ).style.backgroundColor;
+
+  let bottomMidTwoForVillaHolderOneBbLight = document.querySelector(
+    '#bottomMidTwoForVillaHolderOne'
+  ).style.borderBottom;
+  let bottomMidTwoForVillaHolderTwoBbLight = document.querySelector(
+    '#bottomMidTwoForVillaHolderTwo'
+  ).style.borderBottom;
+  let bottomMidTwoForVillaHolderThreeBbLight = document.querySelector(
+    '#bottomMidTwoForVillaHolderThree'
+  ).style.borderBottom;
+
+  let pBottomMidTwoForVillaOneColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaOne'
+  ).style.color;
+  let pBottomMidTwoForVillaTwoColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaTwo'
+  ).style.color;
+  let pBottomMidTwoForVillaThreeColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaThree'
+  ).style.color;
+  let pBottomMidTwoForVillaFourColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaFour'
+  ).style.color;
+  let pBottomMidTwoForVillaFiveColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaFive'
+  ).style.color;
+  let pBottomMidTwoForVillaSixColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaSix'
+  ).style.color;
+  let pBottomMidTwoForVillaSevenColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaSeven'
+  ).style.color;
+  let pBottomMidTwoForVillaEightColorLight = document.querySelector(
+    '#pBottomMidTwoForVillaEight'
+  ).style.color;
+
+  let pBmtForVillaOneColorLight =
+    document.querySelector('#pBmtForVillaOne').style.color;
+  let pBmtForVillaTwoColorLight =
+    document.querySelector('#pBmtForVillaTwo').style.color;
+  let pBmtForVillaThreeColorLight =
+    document.querySelector('#pBmtForVillaThree').style.color;
+
+  let bottomMidTwoForPentHouseContainerLight = document.querySelector(
+    '#bottomMidTwoForPentHouseContainer'
+  ).style.backgroundColor;
+
+  let bottomMidTwoForPentHouseHolderOneBbLight = document.querySelector(
+    '#bottomMidTwoForPentHouseHolderOne'
+  ).style.borderBottom;
+  let bottomMidTwoForPentHouseHolderTwoBbLight = document.querySelector(
+    '#bottomMidTwoForPentHouseHolderTwo'
+  ).style.borderBottom;
+  let bottomMidTwoForPentHouseHolderThreeBbLight = document.querySelector(
+    '#bottomMidTwoForPentHouseHolderThree'
+  ).style.borderBottom;
+
+  let pBottomMidTwoForPentHouseOneColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseOne'
+  ).style.color;
+  let pBottomMidTwoForPentHouseTwoColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseTwo'
+  ).style.color;
+  let pBottomMidTwoForPentHouseThreeColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseThree'
+  ).style.color;
+  let pBottomMidTwoForPentHouseFourColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseFour'
+  ).style.color;
+  let pBottomMidTwoForPentHouseFiveColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseFive'
+  ).style.color;
+  let pBottomMidTwoForPentHouseSixColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseSix'
+  ).style.color;
+  let pBottomMidTwoForPentHouseSevenColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseSeven'
+  ).style.color;
+  let pBottomMidTwoForPentHouseEightColorLight = document.querySelector(
+    '#pBottomMidTwoForPentHouseEight'
+  ).style.color;
+
+  let pBmtForPentHouseOneColorLight = document.querySelector(
+    '#pBmtForPentHouseOne'
+  ).style.color;
+  let pBmtForPentHouseTwoColorLight = document.querySelector(
+    '#pBmtForPentHouseTwo'
+  ).style.color;
+  let pBmtForPentHouseThreeColorLight = document.querySelector(
+    '#pBmtForPentHouseThree'
+  ).style.color;
+
+  let midTwoForAppScheduleLight = document.querySelector(
+    '#midTwoForAppSchedule'
+  ).style.backgroundColor;
+  let holderMidTwoForAppScheduleLight = document.querySelector(
+    '#holderMidTwoForAppSchedule'
+  ).style.backgroundColor;
+  let pMidTwoForAppScheduleLight = document.querySelector(
+    '#pMidTwoForAppSchedule'
+  ).style.color;
+
+  let midTwoForVillaScheduleLight = document.querySelector(
+    '#midTwoForVillaSchedule'
+  ).style.backgroundColor;
+  let holderMidTwoForVillaScheduleLight = document.querySelector(
+    '#holderMidTwoForVillaSchedule'
+  ).style.backgroundColor;
+  let pMidTwoForVillaScheduleLight = document.querySelector(
+    '#pMidTwoForVillaSchedule'
+  ).style.color;
+
+  let midTwoForPentHouseScheduleLight = document.querySelector(
+    '#midTwoForPentHouseSchedule'
+  ).style.backgroundColor;
+  let holderMidTwoForPentHouseScheduleLight = document.querySelector(
+    '#holderMidTwoForPentHouseSchedule'
+  ).style.backgroundColor;
+  let pMidTwoForPentHouseScheduleLight = document.querySelector(
+    '#pMidTwoForPentHouseSchedule'
+  ).style.color;
+
+  document.querySelector('#bottomMidTwoForAppContainer').style.backgroundColor =
+    bottomMidTwoForAppContainerLight === 'rgb(228, 228, 228)'
       ? 'rgb(28, 28, 28)'
       : 'rgb(228, 228, 228)';
 
-  document.querySelector('#bottomMidTwoHolderOne').style.borderBottom =
-    bottomMidTwoHolderOneBbLight === '0.5px solid rgb(200, 200, 200)'
+  document.querySelector('#bottomMidTwoForAppHolderOne').style.borderBottom =
+    bottomMidTwoForAppHolderOneBbLight === '0.5px solid rgb(200, 200, 200)'
       ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
 
-  document.querySelector('#bottomMidTwoHolderTwo').style.borderBottom =
-    bottomMidTwoHolderTwoBbLight === '0.5px solid rgb(200, 200, 200)'
+  document.querySelector('#bottomMidTwoForAppHolderTwo').style.borderBottom =
+    bottomMidTwoForAppHolderTwoBbLight === '0.5px solid rgb(200, 200, 200)'
       ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
 
-  document.querySelector('#bottomMidTwoHolderThree').style.borderBottom =
-    bottomMidTwoHolderThreeBbLight === '0.5px solid rgb(200, 200, 200)'
+  document.querySelector('#bottomMidTwoForAppHolderThree').style.borderBottom =
+    bottomMidTwoForAppHolderThreeBbLight === '0.5px solid rgb(200, 200, 200)'
       ? '0.5px solid rgb(55, 55, 55)'
       : '0.5px solid rgb(200, 200, 200)';
 
-  document.querySelector('#pBottomMidTwoOne').style.color =
-    pBottomMidTwoOneColorLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pBottomMidTwoForAppOne').style.color =
+    pBottomMidTwoForAppOneColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pBottomMidTwoTwo').style.color =
-    pBottomMidTwoTwoColorLight === 'rgb(150, 150, 150)'
+  document.querySelector('#pBottomMidTwoForAppTwo').style.color =
+    pBottomMidTwoForAppTwoColorLight === 'rgb(150, 150, 150)'
       ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pBottomMidTwoThree').style.color =
-    pBottomMidTwoThreeColorLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pBottomMidTwoForAppThree').style.color =
+    pBottomMidTwoForAppThreeColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pBottomMidTwoFour').style.color =
-    pBottomMidTwoFourColorLight === 'rgb(150, 150, 150)'
+  document.querySelector('#pBottomMidTwoForAppFour').style.color =
+    pBottomMidTwoForAppFourColorLight === 'rgb(150, 150, 150)'
       ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pBottomMidTwoFive').style.color =
-    pBottomMidTwoFiveColorLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pBottomMidTwoForAppFive').style.color =
+    pBottomMidTwoForAppFiveColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pBottomMidTwoSix').style.color =
-    pBottomMidTwoSixColorLight === 'rgb(150, 150, 150)'
+  document.querySelector('#pBottomMidTwoForAppSix').style.color =
+    pBottomMidTwoForAppSixColorLight === 'rgb(150, 150, 150)'
       ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
 
-  document.querySelector('#pBottomMidTwoSeven').style.color =
-    pBottomMidTwoSevenColorLight === 'rgb(110, 110, 110)'
+  document.querySelector('#pBottomMidTwoForAppSeven').style.color =
+    pBottomMidTwoForAppSevenColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
 
-  document.querySelector('#pBottomMidTwoEight').style.color =
-    pBottomMidTwoEightColorLight === 'rgb(150, 150, 150)'
+  document.querySelector('#pBottomMidTwoForAppEight').style.color =
+    pBottomMidTwoForAppEightColorLight === 'rgb(150, 150, 150)'
       ? 'rgb(112, 112, 112)'
       : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForAppOne').style.color =
+    pBmtForAppOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBmtForAppTwo').style.color =
+    pBmtForAppTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForAppThree').style.color =
+    pBmtForAppThreeColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector(
+    '#bottomMidTwoForVillaContainer'
+  ).style.backgroundColor =
+    bottomMidTwoForVillaContainerLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#bottomMidTwoForVillaHolderOne').style.borderBottom =
+    bottomMidTwoForVillaHolderOneBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#bottomMidTwoForVillaHolderTwo').style.borderBottom =
+    bottomMidTwoForVillaHolderTwoBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector(
+    '#bottomMidTwoForVillaHolderThree'
+  ).style.borderBottom =
+    bottomMidTwoForVillaHolderThreeBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pBottomMidTwoForVillaOne').style.color =
+    pBottomMidTwoForVillaOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForVillaTwo').style.color =
+    pBottomMidTwoForVillaTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForVillaThree').style.color =
+    pBottomMidTwoForVillaThreeColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForVillaFour').style.color =
+    pBottomMidTwoForVillaFourColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForVillaFive').style.color =
+    pBottomMidTwoForVillaFiveColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForVillaSix').style.color =
+    pBottomMidTwoForVillaSixColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForVillaSeven').style.color =
+    pBottomMidTwoForVillaSevenColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForVillaEight').style.color =
+    pBottomMidTwoForVillaEightColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForVillaOne').style.color =
+    pBmtForVillaOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBmtForVillaTwo').style.color =
+    pBmtForVillaTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForVillaThree').style.color =
+    pBmtForVillaThreeColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector(
+    '#bottomMidTwoForPentHouseContainer'
+  ).style.backgroundColor =
+    bottomMidTwoForPentHouseContainerLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector(
+    '#bottomMidTwoForPentHouseHolderOne'
+  ).style.borderBottom =
+    bottomMidTwoForPentHouseHolderOneBbLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector(
+    '#bottomMidTwoForPentHouseHolderTwo'
+  ).style.borderBottom =
+    bottomMidTwoForPentHouseHolderTwoBbLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector(
+    '#bottomMidTwoForPentHouseHolderThree'
+  ).style.borderBottom =
+    bottomMidTwoForPentHouseHolderThreeBbLight ===
+    '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseOne').style.color =
+    pBottomMidTwoForPentHouseOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseTwo').style.color =
+    pBottomMidTwoForPentHouseTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseThree').style.color =
+    pBottomMidTwoForPentHouseThreeColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseFour').style.color =
+    pBottomMidTwoForPentHouseFourColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseFive').style.color =
+    pBottomMidTwoForPentHouseFiveColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseSix').style.color =
+    pBottomMidTwoForPentHouseSixColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseSeven').style.color =
+    pBottomMidTwoForPentHouseSevenColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBottomMidTwoForPentHouseEight').style.color =
+    pBottomMidTwoForPentHouseEightColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForPentHouseOne').style.color =
+    pBmtForPentHouseOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBmtForPentHouseTwo').style.color =
+    pBmtForPentHouseTwoColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#pBmtForPentHouseThree').style.color =
+    pBmtForPentHouseThreeColorLight === 'rgb(150, 150, 150)'
+      ? 'rgb(112, 112, 112)'
+      : 'rgb(150, 150, 150)';
+
+  document.querySelector('#midTwoForAppSchedule').style.backgroundColor =
+    midTwoForAppScheduleLight === 'rgb(207, 207, 207)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(207, 207, 207)';
+
+  document.querySelector('#holderMidTwoForAppSchedule').style.backgroundColor =
+    holderMidTwoForAppScheduleLight === 'rgb(175, 175, 175)'
+      ? 'rgb(55, 55, 55)'
+      : 'rgb(175, 175, 175)';
+
+  document.querySelector('#pMidTwoForAppSchedule').style.color =
+    pMidTwoForAppScheduleLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#midTwoForVillaSchedule').style.backgroundColor =
+    midTwoForVillaScheduleLight === 'rgb(207, 207, 207)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(207, 207, 207)';
+
+  document.querySelector(
+    '#holderMidTwoForVillaSchedule'
+  ).style.backgroundColor =
+    holderMidTwoForVillaScheduleLight === 'rgb(175, 175, 175)'
+      ? 'rgb(55, 55, 55)'
+      : 'rgb(175, 175, 175)';
+
+  document.querySelector('#pMidTwoForVillaSchedule').style.color =
+    pMidTwoForVillaScheduleLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#midTwoForPentHouseSchedule').style.backgroundColor =
+    midTwoForPentHouseScheduleLight === 'rgb(207, 207, 207)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(207, 207, 207)';
+
+  document.querySelector(
+    '#holderMidTwoForPentHouseSchedule'
+  ).style.backgroundColor =
+    holderMidTwoForPentHouseScheduleLight === 'rgb(175, 175, 175)'
+      ? 'rgb(55, 55, 55)'
+      : 'rgb(175, 175, 175)';
+
+  document.querySelector('#pMidTwoForPentHouseSchedule').style.color =
+    pMidTwoForPentHouseScheduleLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
 });
+
+//////////////////////////////////////

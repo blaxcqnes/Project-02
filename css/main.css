@@ -348,7 +348,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-image: url("../images/svgs/navBar/calendar.svg");
+  background-image: url("../images/svgs/header/calendar.svg");
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -2723,7 +2723,7 @@
   background-color: rgb(28, 28, 28);
   border-radius: 10px;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 349px) {
   #topTwo #topTwoRightSec {
     width: inherit;
     margin-top: 50px;
@@ -2731,36 +2731,32 @@
     border-radius: unset;
   }
 }
-@media (min-width: 399px) and (max-width: 499px) {
+@media (min-width: 349px) and (max-width: 499px) {
   #topTwo #topTwoRightSec {
-    width: inherit;
+    width: 90%;
     margin-top: 50px;
     padding: 30px 50px;
-    border-radius: unset;
   }
 }
 @media (min-width: 499px) and (max-width: 599px) {
   #topTwo #topTwoRightSec {
-    width: inherit;
+    width: 90%;
     margin-top: 50px;
     padding: 30px 90px;
-    border-radius: unset;
   }
 }
 @media (min-width: 599px) and (max-width: 699px) {
   #topTwo #topTwoRightSec {
-    width: inherit;
+    width: 90%;
     margin-top: 50px;
     padding: 30px 130px;
-    border-radius: unset;
   }
 }
 @media (min-width: 699px) and (max-width: 767px) {
   #topTwo #topTwoRightSec {
-    width: inherit;
+    width: 90%;
     margin-top: 50px;
     padding: 30px 170px;
-    border-radius: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -3606,16 +3602,16 @@
   flex-direction: row;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 459px) {
   #midTwo #headerMidTwo #rightMidTwo {
     flex-direction: column;
     align-self: center;
     margin-top: 35px;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 459px) and (max-width: 599px) {
   #midTwo #headerMidTwo #rightMidTwo {
-    flex-direction: column;
+    flex-direction: row;
     align-self: center;
     margin-top: 35px;
   }
@@ -3654,13 +3650,21 @@
   cursor: pointer;
   text-align: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 459px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
     cursor: unset;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
+@media (min-width: 459px) and (max-width: 529px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
+    width: 140px;
+    font-size: 14px;
+    cursor: unset;
+  }
+}
+@media (min-width: 529px) and (max-width: 599px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoOne {
+    width: 150px;
     cursor: unset;
   }
 }
@@ -3689,21 +3693,29 @@
   cursor: pointer;
   text-align: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 459px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
     margin: 20px 0 0 0;
     cursor: unset;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 459px) and (max-width: 529px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 10px;
+    width: 140px;
+    font-size: 14px;
+    cursor: unset;
+  }
+}
+@media (min-width: 529px) and (max-width: 599px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
+    width: 150px;
     cursor: unset;
   }
 }
 @media (min-width: 599px) and (max-width: 767px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoTwo {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
     cursor: unset;
   }
 }
@@ -3732,21 +3744,29 @@
   cursor: pointer;
   text-align: center;
 }
-@media (min-width: 300px) and (max-width: 399px) {
+@media (min-width: 300px) and (max-width: 459px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
     margin: 20px 0 0 0;
     cursor: unset;
   }
 }
-@media (min-width: 399px) and (max-width: 599px) {
+@media (min-width: 459px) and (max-width: 529px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 10px;
+    width: 140px;
+    font-size: 14px;
+    cursor: unset;
+  }
+}
+@media (min-width: 529px) and (max-width: 599px) {
+  #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
+    width: 150px;
     cursor: unset;
   }
 }
 @media (min-width: 599px) and (max-width: 767px) {
   #midTwo #headerMidTwo #rightMidTwo #forSwitcherMidTwoThree {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 15px;
     cursor: unset;
   }
 }
@@ -3760,14 +3780,13 @@
 }
 #midTwo #bottomMidTwo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   max-height: -moz-fit-content;
   max-height: fit-content;
   margin-top: 90px;
   transition: all 0.5s ease;
-  z-index: -1;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #midTwo #bottomMidTwo {
@@ -3790,12 +3809,38 @@
 #midTwo #bottomMidTwo #bottomMidTwoForAppartment {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   width: inherit;
   max-height: -moz-fit-content;
   max-height: fit-content;
   transition: all 0.2s ease;
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer {
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -3806,70 +3851,76 @@
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-@media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
     width: 100%;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 30px 30px;
-    align-self: center;
-    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 90%;
+    margin: 0;
+    padding: 30px 30px;
   }
 }
 @media (min-width: 399px) and (max-width: 499px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 90%;
-    margin-top: 0;
-    align-self: center;
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 92%;
+    margin: 0;
     padding: 30px 35px;
   }
 }
 @media (min-width: 499px) and (max-width: 599px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
     width: 90%;
-    margin-top: 0;
-    align-self: center;
+    margin: 0;
     padding: 30px 50px;
   }
 }
 @media (min-width: 599px) and (max-width: 699px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 48%;
-    margin: 0 0 0 10px;
-    align-self: start;
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 74%;
+    margin: 0;
     padding: 30px 20px;
   }
 }
 @media (min-width: 699px) and (max-width: 767px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 48%;
-    margin: 0 0 0 10px;
-    align-self: start;
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 67%;
+    margin: 0;
     padding: 30px 20px;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 45%;
-    margin: 0 0 0 10px;
-    align-self: start;
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 65%;
+    margin: 0;
     padding: 30px 22px;
   }
 }
-@media (min-width: 1023px) and (max-width: 1099px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 32%;
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 41%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 31%;
     margin-top: 0;
     padding: 30px 30px;
   }
 }
-@media (min-width: 1099px) and (max-width: 1439px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer {
-    width: 31%;
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer {
+    width: 32%;
     margin-top: 0;
     padding: 30px 35px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderOne {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3878,23 +3929,23 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoOne {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderOne #pBottomMidTwoForAppOne {
   color: rgb(150, 150, 150);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoOne {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderOne #pBottomMidTwoForAppOne {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoTwo {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderOne #pBottomMidTwoForAppTwo {
   color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderOne #pBottomMidTwoTwo {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderOne #pBottomMidTwoForAppTwo {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderTwo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3904,23 +3955,23 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoThree {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderTwo #pBottomMidTwoForAppThree {
   color: rgb(150, 150, 150);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoThree {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderTwo #pBottomMidTwoForAppThree {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoFour {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderTwo #pBottomMidTwoForAppFour {
   color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderTwo #pBottomMidTwoFour {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderTwo #pBottomMidTwoForAppFour {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderThree {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3930,43 +3981,1268 @@
   border-bottom: 0.5px solid rgb(55, 55, 55);
   transition: all 0.2s ease;
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoFive {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderThree #pBottomMidTwoForAppFive {
   color: rgb(150, 150, 150);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoFive {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderThree #pBottomMidTwoForAppFive {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoSix {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderThree #pBottomMidTwoForAppSix {
   color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderThree #pBottomMidTwoSix {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoForAppHolderThree #pBottomMidTwoForAppSix {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoHolderFour {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
+  transition: all 0.2s ease;
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoSeven {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoHolderFour #pBottomMidTwoForAppSeven {
   color: rgb(150, 150, 150);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoSeven {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoHolderFour #pBottomMidTwoForAppSeven {
     font-size: 14px;
   }
 }
-#midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoEight {
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoHolderFour #pBottomMidTwoForAppEight {
   color: rgb(112, 112, 112);
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #midTwo #bottomMidTwo #bottomMidTwoContainer #bottomMidTwoHolderFour #pBottomMidTwoEight {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #bottomMidTwoForAppContainer #bottomMidTwoHolderFour #pBottomMidTwoForAppEight {
     font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+  width: 520px;
+  height: 395px;
+  background-image: url("../images/midTwo/midTwoOne.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 280px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 320px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 399px) and (max-width: 449px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 370px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 449px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 410px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 450px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    margin-inline: 5px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 450px;
+    margin-left: 20px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #picBmtForAppartment {
+    width: 490px;
+    margin-left: 20px;
+    background-position-x: 65%;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 23%;
+  margin-top: 40px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    margin: 50px 0 0 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    margin-inline: 20px;
+    width: 30%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer {
+    width: 26%;
+    margin-inline: 20px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #pBmtForAppOne {
+  color: rgb(150, 150, 150);
+  font-weight: 700;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #pBmtForAppTwo {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #pBmtForAppThree {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 210px;
+  height: 45px;
+  position: relative;
+  margin-top: 30px;
+  padding: 0 20px 0 20px;
+  border-radius: 50px;
+  background-color: rgb(40, 40, 40);
+  align-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule {
+    display: flex;
+    width: 177px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule {
+    display: flex;
+    width: 185px;
+    height: 45px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule {
+    cursor: unset;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule:hover {
+  opacity: 0.8;
+  filter: brightness(90%);
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  background-color: rgb(55, 55, 55);
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule {
+    width: 43px;
+    height: 43px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule #picMidTwoForAppSchedule {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-image: url("../images/svgs/midTwo/calendar.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule #picMidTwoForAppSchedule {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule #picMidTwoForAppSchedule {
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #holderMidTwoForAppSchedule #picMidTwoForAppSchedule {
+    width: 23px;
+    height: 23px;
+    top: 9.5px;
+    left: 10px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #pMidTwoForAppSchedule {
+  margin-left: 55px;
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #pMidTwoForAppSchedule {
+    font-size: 12px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForAppartment #detailsBmtForAppartmentContainer #midTwoForAppSchedule #pMidTwoForAppSchedule {
+    font-size: 13px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: inherit;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 27%;
+  margin-left: 20px;
+  padding: 30px 45px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 90%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 92%;
+    margin: 0;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 90%;
+    margin: 0;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 74%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 67%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 65%;
+    margin: 0;
+    padding: 30px 22px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 41%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 31%;
+    margin-top: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer {
+    width: 32%;
+    margin-top: 0;
+    padding: 30px 35px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderOne #pBottomMidTwoForVillaOne {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderOne #pBottomMidTwoForVillaOne {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderOne #pBottomMidTwoForVillaTwo {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderOne #pBottomMidTwoForVillaTwo {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderTwo #pBottomMidTwoForVillaThree {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderTwo #pBottomMidTwoForVillaThree {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderTwo #pBottomMidTwoForVillaFour {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderTwo #pBottomMidTwoForVillaFour {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderThree #pBottomMidTwoForVillaFive {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderThree #pBottomMidTwoForVillaFive {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderThree #pBottomMidTwoForVillaSix {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderThree #pBottomMidTwoForVillaSix {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderFour #pBottomMidTwoForVillaSeven {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderFour #pBottomMidTwoForVillaSeven {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderFour #pBottomMidTwoForVillaEight {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #bottomMidTwoForVillaContainer #bottomMidTwoForVillaHolderFour #pBottomMidTwoForVillaEight {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+  width: 520px;
+  height: 395px;
+  background-image: url("../images/midTwo/midTwoTwo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 280px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 320px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 399px) and (max-width: 449px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 370px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 449px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 410px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 450px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    margin-inline: 5px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 450px;
+    margin-left: 20px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #picBmtForVilla {
+    width: 490px;
+    margin-left: 20px;
+    background-position-x: 65%;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 23%;
+  margin-top: 40px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    margin: 50px 0 0 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    margin-inline: 20px;
+    width: 30%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer {
+    width: 26%;
+    margin-inline: 20px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #pBmtForVillaOne {
+  color: rgb(150, 150, 150);
+  font-weight: 700;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #pBmtForVillaTwo {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #pBmtForVillaThree {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 210px;
+  height: 45px;
+  position: relative;
+  margin-top: 30px;
+  padding: 0 20px 0 20px;
+  border-radius: 50px;
+  background-color: rgb(40, 40, 40);
+  align-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule {
+    display: flex;
+    width: 177px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule {
+    display: flex;
+    width: 185px;
+    height: 45px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule {
+    cursor: unset;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule:hover {
+  opacity: 0.8;
+  filter: brightness(90%);
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  background-color: rgb(55, 55, 55);
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule {
+    width: 43px;
+    height: 43px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule #picMidTwoForVillaSchedule {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-image: url("../images/svgs/midTwo/calendar.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule #picMidTwoForVillaSchedule {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule #picMidTwoForVillaSchedule {
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #holderMidTwoForVillaSchedule #picMidTwoForVillaSchedule {
+    width: 23px;
+    height: 23px;
+    top: 9.5px;
+    left: 10px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #pMidTwoForVillaSchedule {
+  margin-left: 55px;
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #pMidTwoForVillaSchedule {
+    font-size: 12px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForVilla #detailsBmtForVillaContainer #midTwoForVillaSchedule #pMidTwoForVillaSchedule {
+    font-size: 13px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: inherit;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 27%;
+  margin-left: 20px;
+  padding: 30px 45px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 90%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 92%;
+    margin: 0;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 90%;
+    margin: 0;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 74%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 67%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 65%;
+    margin: 0;
+    padding: 30px 22px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 41%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 31%;
+    margin-top: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer {
+    width: 32%;
+    margin-top: 0;
+    padding: 30px 35px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderOne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderOne #pBottomMidTwoForPentHouseOne {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderOne #pBottomMidTwoForPentHouseOne {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderOne #pBottomMidTwoForPentHouseTwo {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderOne #pBottomMidTwoForPentHouseTwo {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderTwo #pBottomMidTwoForPentHouseThree {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderTwo #pBottomMidTwoForPentHouseThree {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderTwo #pBottomMidTwoForPentHouseFour {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderTwo #pBottomMidTwoForPentHouseFour {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderThree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderThree #pBottomMidTwoForPentHouseFive {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderThree #pBottomMidTwoForPentHouseFive {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderThree #pBottomMidTwoForPentHouseSix {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderThree #pBottomMidTwoForPentHouseSix {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderFour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  transition: all 0.2s ease;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderFour #pBottomMidTwoForPentHouseSeven {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderFour #pBottomMidTwoForPentHouseSeven {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderFour #pBottomMidTwoForPentHouseEight {
+  color: rgb(112, 112, 112);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #bottomMidTwoForPentHouseContainer #bottomMidTwoForPentHouseHolderFour #pBottomMidTwoForPentHouseEight {
+    font-size: 14px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+  width: 520px;
+  height: 395px;
+  background-image: url("../images/midTwo/midTwoThree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 280px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 320px;
+    margin-top: 30px;
+    background-position-x: 55%;
+  }
+}
+@media (min-width: 399px) and (max-width: 449px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 370px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 449px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 410px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 450px;
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    margin-top: 30px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    margin-inline: 5px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 450px;
+    margin-left: 20px;
+    background-position-x: 60%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #picBmtForPentHouse {
+    width: 490px;
+    margin-left: 20px;
+    background-position-x: 65%;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 23%;
+  margin-top: 40px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 90%;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    margin: 50px 0 0 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    margin-inline: 20px;
+    width: 30%;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer {
+    width: 26%;
+    margin-inline: 20px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #pBmtForPentHouseOne {
+  color: rgb(150, 150, 150);
+  font-weight: 700;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #pBmtForPentHouseTwo {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #pBmtForPentHouseThree {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+  margin-top: 20px;
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 210px;
+  height: 45px;
+  position: relative;
+  margin-top: 30px;
+  padding: 0 20px 0 20px;
+  border-radius: 50px;
+  background-color: rgb(40, 40, 40);
+  align-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule {
+    display: flex;
+    width: 177px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule {
+    display: flex;
+    width: 185px;
+    height: 45px;
+    padding: 0 20px 0 8px;
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule {
+    cursor: unset;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule:hover {
+  opacity: 0.8;
+  filter: brightness(90%);
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  background-color: rgb(55, 55, 55);
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule {
+    width: 43px;
+    height: 43px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule #picMidTwoForPentHouseSchedule {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-image: url("../images/svgs/midTwo/calendar.svg");
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule #picMidTwoForPentHouseSchedule {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule #picMidTwoForPentHouseSchedule {
+    width: 22px;
+    height: 22px;
+    top: 11px;
+    left: 11px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1022.9px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #holderMidTwoForPentHouseSchedule #picMidTwoForPentHouseSchedule {
+    width: 23px;
+    height: 23px;
+    top: 9.5px;
+    left: 10px;
+  }
+}
+#midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #pMidTwoForPentHouseSchedule {
+  margin-left: 55px;
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #pMidTwoForPentHouseSchedule {
+    font-size: 12px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #pMidTwoForPentHouseSchedule {
+    font-size: 13px;
   }
 }
 

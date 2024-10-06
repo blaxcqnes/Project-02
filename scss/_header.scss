@@ -224,7 +224,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        background-image: url('../images/svgs/navBar/calendar.svg');
+        background-image: url('../images/svgs/header/calendar.svg');
         transition: all 0.2s ease;
 
         @include breakPoints(small) {

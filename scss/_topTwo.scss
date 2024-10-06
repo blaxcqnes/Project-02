@@ -395,39 +395,35 @@
     background-color: rgb(28, 28, 28);
     border-radius: 10px;
 
-    @include breakPoints(small) {
+    @media (min-width: 300px) and (max-width: 349px) {
       width: inherit;
       margin-top: 50px;
       padding: 30px 50px;
       border-radius: unset;
     }
 
-    @media (min-width: 399px) and (max-width: 499px) {
-      width: inherit;
+    @media (min-width: 349px) and (max-width: 499px) {
+      width: 90%;
       margin-top: 50px;
       padding: 30px 50px;
-      border-radius: unset;
     }
 
     @media (min-width: 499px) and (max-width: 599px) {
-      width: inherit;
+      width: 90%;
       margin-top: 50px;
       padding: 30px 90px;
-      border-radius: unset;
     }
 
     @media (min-width: 599px) and (max-width: 699px) {
-      width: inherit;
+      width: 90%;
       margin-top: 50px;
       padding: 30px 130px;
-      border-radius: unset;
     }
 
     @media (min-width: 699px) and (max-width: 767px) {
-      width: inherit;
+      width: 90%;
       margin-top: 50px;
       padding: 30px 170px;
-      border-radius: unset;
     }
 
     @include breakPoints(tablet) {
