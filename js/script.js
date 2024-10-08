@@ -76,6 +76,8 @@ let bottomMidTwoForPentHouse = document.querySelector(
   '#bottomMidTwoForPentHouse'
 );
 
+let bottomOne = document.querySelector('#bottomOne');
+
 ///////////////////////////////////////////////////////
 
 lightModeToggle.addEventListener('click', function () {
@@ -314,6 +316,12 @@ function expand() {
   });
 
   midTwo.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+  });
+
+  bottomOne.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
