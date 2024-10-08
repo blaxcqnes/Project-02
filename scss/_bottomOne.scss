@@ -1,7 +1,7 @@
 #bottomOne {
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 130px;
   margin-bottom: 15em; //remove when sec's completed
   transition: all 0.3s ease;
 
@@ -30,6 +30,16 @@
       color: rgb(243, 85, 37);
       font-weight: 700;
       transition: all 0.3s ease;
+
+      @include breakPoints(small) {
+        align-self: start;
+        padding: 0 30px;
+      }
+
+      @include breakPoints(mobile) {
+        align-self: start;
+        padding: 0 60px;
+      }
     }
 
     #pTitleBmOneTwo {
@@ -39,11 +49,11 @@
       transition: all 0.3s ease;
 
       @include breakPoints(small) {
-        padding: 0 10px;
+        padding: 0 30px;
       }
 
       @include breakPoints(mobile) {
-        padding: 0 10px;
+        padding: 0 60px;
       }
     }
   }
@@ -51,13 +61,18 @@
   #detailsBmOneContainer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 3rem;
     width: 100%;
     margin-top: 80px;
-    padding-inline: 20px;
+    padding-inline: 15px;
     transition: all 0.3s ease;
 
     @media (min-width: 300px) and (max-width: 349px) {
       flex-direction: column;
+      row-gap: 1rem;
       width: 100%;
       margin-top: 45px;
       padding: 0;
@@ -65,20 +80,50 @@
 
     @media (min-width: 349px) and (max-width: 399px) {
       flex-direction: column;
+      row-gap: 1rem;
       width: 90%;
       margin-top: 45px;
       padding: 0;
     }
 
-    @include breakPoints(mobile) {
+    @media (min-width: 399px) and (max-width: 649px) {
       flex-direction: column;
+      row-gap: 1rem;
       width: 90%;
       margin-top: 45px;
       padding: 0;
     }
 
-    @include breakPoints(tablet) {
-      padding-inline: 10px;
+    @media (min-width: 649px) and (max-width: 699px) {
+      flex-direction: row;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      padding: 0;
+    }
+
+    @media (min-width: 699px) and (max-width: 767px) {
+      flex-direction: row;
+      column-gap: 2rem;
+      row-gap: 1rem;
+      padding: 0;
+    }
+
+    @media (min-width: 767px) and (max-width: 799px) {
+      column-gap: 1rem;
+      row-gap: 1rem;
+      padding: 0;
+    }
+
+    @media (min-width: 799px) and (max-width: 819px) {
+      column-gap: 2rem;
+      row-gap: 1rem;
+      padding: 0;
+    }
+
+    @media (min-width: 819px) and (max-width: 909px) {
+      column-gap: 2.5rem;
+      row-gap: 1rem;
+      padding: 0;
     }
 
     #detailsBmOneOne {
@@ -102,8 +147,17 @@
         border-radius: 10px;
       }
 
-      @include breakPoints(mobile) {
+      @media (min-width: 399px) and (max-width: 649px) {
         width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
         padding: 70px 0 40px 0;
         border-radius: 10px;
         overflow: hidden;
@@ -131,6 +185,11 @@
         @media (min-width: 349px) and (max-width: 399px) {
           width: 280px;
           background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
         }
 
         @include breakPoints(tablet) {
@@ -242,35 +301,1070 @@
           }
         }
       }
+
+      #detailsBmOneOneButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
+      }
     }
 
-    #detailsBmOneOneButton {
-      width: 180px;
-      margin-top: 40px;
-      height: 45px;
-      align-self: center;
-      background-color: rgb(75, 75, 75);
-      color: rgb(220, 220, 220);
-      border-radius: 100px;
-      border: none;
-      cursor: pointer;
+    #detailsBmOneTwo {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
       transition: all 0.3s ease;
 
-      @include breakPoints(small) {
-        cursor: unset;
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
       }
 
-      @include breakPoints(mobile) {
-        cursor: unset;
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 399px) and (max-width: 649px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
       }
 
       @include breakPoints(tablet) {
-        cursor: unset;
+        width: 360px;
       }
 
-      &:hover {
-        opacity: 0.5;
-        filter: brightness(90%);
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneTwo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxTwo {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsTwo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddTwo {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedTwo {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedTwo {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathTwo {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathTwo {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaTwo {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaTwo {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorTwo {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorTwo {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingTwo {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingTwo {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      #detailsBmOneTwoButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
+      }
+    }
+
+    #detailsBmOneThree {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 399px) and (max-width: 649px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include breakPoints(tablet) {
+        width: 360px;
+      }
+
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneThree.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxThree {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsThree {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddThree {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedThree {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedThree {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathThree {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathThree {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaThree {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaThree {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorThree {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorThree {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingThree {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingThree {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      #detailsBmOneThreeButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
+      }
+    }
+
+    #detailsBmOneFour {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 399px) and (max-width: 649px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include breakPoints(tablet) {
+        width: 360px;
+      }
+
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneFour.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxFour {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsFour {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddFour {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedFour {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedFour {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathFour {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathFour {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaFour {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaFour {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorFour {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorFour {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingFour {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingFour {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      #detailsBmOneFourButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
+      }
+    }
+
+    #detailsBmOneFive {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 399px) and (max-width: 649px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include breakPoints(tablet) {
+        width: 360px;
+      }
+
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneFive.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxFive {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsFive {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddFive {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedFive {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedFive {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathFive {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathFive {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaFive {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaFive {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorFive {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorFive {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingFive {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingFive {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      #detailsBmOneFiveButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
+      }
+    }
+
+    #detailsBmOneSix {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @media (min-width: 399px) and (max-width: 649px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media (min-width: 649px) and (max-width: 767px) {
+        column-gap: 10px;
+        row-gap: 40px;
+        width: 280px;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include breakPoints(tablet) {
+        width: 360px;
+      }
+
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneSix.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 649px) and (max-width: 767px) {
+          width: 255px;
+          background-position-x: center;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxSix {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsSix {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddSix {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedSix {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedSix {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathSix {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathSix {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaSix {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaSix {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorSix {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorSix {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingSix {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingSix {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      #detailsBmOneSixButton {
+        width: 180px;
+        margin-top: 40px;
+        height: 45px;
+        align-self: center;
+        background-color: rgb(75, 75, 75);
+        color: rgb(220, 220, 220);
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        @include breakPoints(small) {
+          cursor: unset;
+        }
+
+        @include breakPoints(mobile) {
+          cursor: unset;
+        }
+
+        @include breakPoints(tablet) {
+          cursor: unset;
+        }
+
+        &:hover {
+          opacity: 0.5;
+          filter: brightness(90%);
+        }
       }
     }
   }

@@ -1658,6 +1658,193 @@ lightModeToggle.addEventListener('click', function () {
     '#detailsBmOneOneButton'
   ).style.color;
 
+  //////////////////////////////////////
+
+  let detailsBmOneTwoLight =
+    document.querySelector('#detailsBmOneTwo').style.backgroundColor;
+
+  let pLuxTwoLight = document.querySelector('#pLuxTwo').style.backgroundColor;
+  let pLuxTwoColorLight = document.querySelector('#pLuxTwo').style.color;
+
+  let detailsAddAndSpecsTwoLight = document.querySelector(
+    '#detailsAddAndSpecsTwo'
+  ).style.borderBottom;
+
+  let pAddTwoLight = document.querySelector('#pAddTwo').style.color;
+
+  let pBedTwoLight = document.querySelector('#pBedTwo').style.color;
+  let spanBedTwoLight = document.querySelector('#spanBedTwo').style.color;
+
+  let pBathTwoLight = document.querySelector('#pBathTwo').style.color;
+  let spanBathTwoLight = document.querySelector('#spanBathTwo').style.color;
+
+  let pAreaTwoLight = document.querySelector('#pAreaTwo').style.color;
+  let spanAreaTwoLight = document.querySelector('#spanAreaTwo').style.color;
+
+  let pFloorTwoLight = document.querySelector('#pFloorTwo').style.color;
+  let spanFloorTwoLight = document.querySelector('#spanFloorTwo').style.color;
+
+  let pParkingTwoLight = document.querySelector('#pParkingTwo').style.color;
+  let spanParkingTwoLight =
+    document.querySelector('#spanParkingTwo').style.color;
+
+  let detailsBmOneTwoButtonLight = document.querySelector(
+    '#detailsBmOneTwoButton'
+  ).style.backgroundColor;
+  let detailsBmOneTwoButtonColorLight = document.querySelector(
+    '#detailsBmOneTwoButton'
+  ).style.color;
+
+  //////////////////////////////////////
+
+  let detailsBmOneThreeLight =
+    document.querySelector('#detailsBmOneThree').style.backgroundColor;
+
+  let pLuxThreeLight =
+    document.querySelector('#pLuxThree').style.backgroundColor;
+  let pLuxThreeColorLight = document.querySelector('#pLuxThree').style.color;
+
+  let detailsAddAndSpecsThreeLight = document.querySelector(
+    '#detailsAddAndSpecsThree'
+  ).style.borderBottom;
+
+  let pAddThreeLight = document.querySelector('#pAddThree').style.color;
+
+  let pBedThreeLight = document.querySelector('#pBedThree').style.color;
+  let spanBedThreeLight = document.querySelector('#spanBedThree').style.color;
+
+  let pBathThreeLight = document.querySelector('#pBathThree').style.color;
+  let spanBathThreeLight = document.querySelector('#spanBathThree').style.color;
+
+  let pAreaThreeLight = document.querySelector('#pAreaThree').style.color;
+  let spanAreaThreeLight = document.querySelector('#spanAreaThree').style.color;
+
+  let pFloorThreeLight = document.querySelector('#pFloorThree').style.color;
+  let spanFloorThreeLight =
+    document.querySelector('#spanFloorThree').style.color;
+
+  let pParkingThreeLight = document.querySelector('#pParkingThree').style.color;
+  let spanParkingThreeLight =
+    document.querySelector('#spanParkingThree').style.color;
+
+  let detailsBmOneThreeButtonLight = document.querySelector(
+    '#detailsBmOneThreeButton'
+  ).style.backgroundColor;
+  let detailsBmOneThreeButtonColorLight = document.querySelector(
+    '#detailsBmOneThreeButton'
+  ).style.color;
+
+  //////////////////////////////////////
+
+  let detailsBmOneFourLight =
+    document.querySelector('#detailsBmOneFour').style.backgroundColor;
+
+  let pLuxFourLight = document.querySelector('#pLuxFour').style.backgroundColor;
+  let pLuxFourColorLight = document.querySelector('#pLuxFour').style.color;
+
+  let detailsAddAndSpecsFourLight = document.querySelector(
+    '#detailsAddAndSpecsFour'
+  ).style.borderBottom;
+
+  let pAddFourLight = document.querySelector('#pAddFour').style.color;
+
+  let pBedFourLight = document.querySelector('#pBedFour').style.color;
+  let spanBedFourLight = document.querySelector('#spanBedFour').style.color;
+
+  let pBathFourLight = document.querySelector('#pBathFour').style.color;
+  let spanBathFourLight = document.querySelector('#spanBathFour').style.color;
+
+  let pAreaFourLight = document.querySelector('#pAreaFour').style.color;
+  let spanAreaFourLight = document.querySelector('#spanAreaFour').style.color;
+
+  let pFloorFourLight = document.querySelector('#pFloorFour').style.color;
+  let spanFloorFourLight = document.querySelector('#spanFloorFour').style.color;
+
+  let pParkingFourLight = document.querySelector('#pParkingFour').style.color;
+  let spanParkingFourLight =
+    document.querySelector('#spanParkingFour').style.color;
+
+  let detailsBmOneFourButtonLight = document.querySelector(
+    '#detailsBmOneFourButton'
+  ).style.backgroundColor;
+  let detailsBmOneFourButtonColorLight = document.querySelector(
+    '#detailsBmOneFourButton'
+  ).style.color;
+
+  //////////////////////////////////////
+
+  let detailsBmOneFiveLight =
+    document.querySelector('#detailsBmOneFive').style.backgroundColor;
+
+  let pLuxFiveLight = document.querySelector('#pLuxFive').style.backgroundColor;
+  let pLuxFiveColorLight = document.querySelector('#pLuxFive').style.color;
+
+  let detailsAddAndSpecsFiveLight = document.querySelector(
+    '#detailsAddAndSpecsFive'
+  ).style.borderBottom;
+
+  let pAddFiveLight = document.querySelector('#pAddFive').style.color;
+
+  let pBedFiveLight = document.querySelector('#pBedFive').style.color;
+  let spanBedFiveLight = document.querySelector('#spanBedFive').style.color;
+
+  let pBathFiveLight = document.querySelector('#pBathFive').style.color;
+  let spanBathFiveLight = document.querySelector('#spanBathFive').style.color;
+
+  let pAreaFiveLight = document.querySelector('#pAreaFive').style.color;
+  let spanAreaFiveLight = document.querySelector('#spanAreaFive').style.color;
+
+  let pFloorFiveLight = document.querySelector('#pFloorFive').style.color;
+  let spanFloorFiveLight = document.querySelector('#spanFloorFive').style.color;
+
+  let pParkingFiveLight = document.querySelector('#pParkingFive').style.color;
+  let spanParkingFiveLight =
+    document.querySelector('#spanParkingFive').style.color;
+
+  let detailsBmOneFiveButtonLight = document.querySelector(
+    '#detailsBmOneFiveButton'
+  ).style.backgroundColor;
+  let detailsBmOneFiveButtonColorLight = document.querySelector(
+    '#detailsBmOneFiveButton'
+  ).style.color;
+
+  //////////////////////////////////////
+
+  let detailsBmOneSixLight =
+    document.querySelector('#detailsBmOneSix').style.backgroundColor;
+
+  let pLuxSixLight = document.querySelector('#pLuxSix').style.backgroundColor;
+  let pLuxSixColorLight = document.querySelector('#pLuxSix').style.color;
+
+  let detailsAddAndSpecsSixLight = document.querySelector(
+    '#detailsAddAndSpecsSix'
+  ).style.borderBottom;
+
+  let pAddSixLight = document.querySelector('#pAddSix').style.color;
+
+  let pBedSixLight = document.querySelector('#pBedSix').style.color;
+  let spanBedSixLight = document.querySelector('#spanBedSix').style.color;
+
+  let pBathSixLight = document.querySelector('#pBathSix').style.color;
+  let spanBathSixLight = document.querySelector('#spanBathSix').style.color;
+
+  let pAreaSixLight = document.querySelector('#pAreaSix').style.color;
+  let spanAreaSixLight = document.querySelector('#spanAreaSix').style.color;
+
+  let pFloorSixLight = document.querySelector('#pFloorSix').style.color;
+  let spanFloorSixLight = document.querySelector('#spanFloorSix').style.color;
+
+  let pParkingSixLight = document.querySelector('#pParkingSix').style.color;
+  let spanParkingSixLight =
+    document.querySelector('#spanParkingSix').style.color;
+
+  let detailsBmOneSixButtonLight = document.querySelector(
+    '#detailsBmOneSixButton'
+  ).style.backgroundColor;
+  let detailsBmOneSixButtonColorLight = document.querySelector(
+    '#detailsBmOneSixButton'
+  ).style.color;
+
   document.querySelector('#pTitleBmOneTwo').style.color =
     pTitleBmOneTwoLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
@@ -1745,6 +1932,431 @@ lightModeToggle.addEventListener('click', function () {
 
   document.querySelector('#detailsBmOneOneButton').style.color =
     detailsBmOneOneButtonColorLight === 'rgb(45, 45, 45)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#detailsBmOneTwo').style.backgroundColor =
+    detailsBmOneTwoLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pLuxTwo').style.backgroundColor =
+    pLuxTwoLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#pLuxTwo').style.color =
+    pLuxTwoColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#detailsAddAndSpecsTwo').style.borderBottom =
+    detailsAddAndSpecsTwoLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pAddTwo').style.color =
+    pAddTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBedTwo').style.color =
+    pBedTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBedTwo').style.color =
+    spanBedTwoLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pBathTwo').style.color =
+    pBathTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBathTwo').style.color =
+    spanBathTwoLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pAreaTwo').style.color =
+    pAreaTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanAreaTwo').style.color =
+    spanAreaTwoLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pFloorTwo').style.color =
+    pFloorTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanFloorTwo').style.color =
+    spanFloorTwoLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pParkingTwo').style.color =
+    pParkingTwoLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanParkingTwo').style.color =
+    spanParkingTwoLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#detailsBmOneTwoButton').style.backgroundColor =
+    detailsBmOneTwoButtonLight === 'rgb(180, 180, 180)'
+      ? 'rgb(75, 75, 75)'
+      : 'rgb(180, 180, 180)';
+
+  document.querySelector('#detailsBmOneTwoButton').style.color =
+    detailsBmOneTwoButtonColorLight === 'rgb(45, 45, 45)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#detailsBmOneThree').style.backgroundColor =
+    detailsBmOneThreeLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pLuxThree').style.backgroundColor =
+    pLuxThreeLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#pLuxThree').style.color =
+    pLuxThreeColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#detailsAddAndSpecsThree').style.borderBottom =
+    detailsAddAndSpecsThreeLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pAddThree').style.color =
+    pAddThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBedThree').style.color =
+    pBedThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBedThree').style.color =
+    spanBedThreeLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pBathThree').style.color =
+    pBathThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBathThree').style.color =
+    spanBathThreeLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pAreaThree').style.color =
+    pAreaThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanAreaThree').style.color =
+    spanAreaThreeLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pFloorThree').style.color =
+    pFloorThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanFloorThree').style.color =
+    spanFloorThreeLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pParkingThree').style.color =
+    pParkingThreeLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanParkingThree').style.color =
+    spanParkingThreeLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#detailsBmOneThreeButton').style.backgroundColor =
+    detailsBmOneThreeButtonLight === 'rgb(180, 180, 180)'
+      ? 'rgb(75, 75, 75)'
+      : 'rgb(180, 180, 180)';
+
+  document.querySelector('#detailsBmOneThreeButton').style.color =
+    detailsBmOneThreeButtonColorLight === 'rgb(45, 45, 45)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#detailsBmOneFour').style.backgroundColor =
+    detailsBmOneFourLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pLuxFour').style.backgroundColor =
+    pLuxFourLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#pLuxFour').style.color =
+    pLuxFourColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#detailsAddAndSpecsFour').style.borderBottom =
+    detailsAddAndSpecsFourLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pAddFour').style.color =
+    pAddFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBedFour').style.color =
+    pBedFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBedFour').style.color =
+    spanBedFourLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pBathFour').style.color =
+    pBathFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBathFour').style.color =
+    spanBathFourLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pAreaFour').style.color =
+    pAreaFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanAreaFour').style.color =
+    spanAreaFourLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pFloorFour').style.color =
+    pFloorFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanFloorFour').style.color =
+    spanFloorFourLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pParkingFour').style.color =
+    pParkingFourLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanParkingFour').style.color =
+    spanParkingFourLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#detailsBmOneFourButton').style.backgroundColor =
+    detailsBmOneFourButtonLight === 'rgb(180, 180, 180)'
+      ? 'rgb(75, 75, 75)'
+      : 'rgb(180, 180, 180)';
+
+  document.querySelector('#detailsBmOneFourButton').style.color =
+    detailsBmOneFourButtonColorLight === 'rgb(45, 45, 45)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#detailsBmOneFive').style.backgroundColor =
+    detailsBmOneFiveLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pLuxFive').style.backgroundColor =
+    pLuxFiveLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#pLuxFive').style.color =
+    pLuxFiveColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#detailsAddAndSpecsFive').style.borderBottom =
+    detailsAddAndSpecsFiveLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pAddFive').style.color =
+    pAddFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBedFive').style.color =
+    pBedFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBedFive').style.color =
+    spanBedFiveLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pBathFive').style.color =
+    pBathFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBathFive').style.color =
+    spanBathFiveLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pAreaFive').style.color =
+    pAreaFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanAreaFive').style.color =
+    spanAreaFiveLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pFloorFive').style.color =
+    pFloorFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanFloorFive').style.color =
+    spanFloorFiveLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pParkingFive').style.color =
+    pParkingFiveLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanParkingFive').style.color =
+    spanParkingFiveLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#detailsBmOneFiveButton').style.backgroundColor =
+    detailsBmOneFiveButtonLight === 'rgb(180, 180, 180)'
+      ? 'rgb(75, 75, 75)'
+      : 'rgb(180, 180, 180)';
+
+  document.querySelector('#detailsBmOneFiveButton').style.color =
+    detailsBmOneFiveButtonColorLight === 'rgb(45, 45, 45)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(45, 45, 45)';
+
+  document.querySelector('#detailsBmOneSix').style.backgroundColor =
+    detailsBmOneSixLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pLuxSix').style.backgroundColor =
+    pLuxSixLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
+
+  document.querySelector('#pLuxSix').style.color =
+    pLuxSixColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
+
+  document.querySelector('#detailsAddAndSpecsSix').style.borderBottom =
+    detailsAddAndSpecsSixLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pAddSix').style.color =
+    pAddSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pBedSix').style.color =
+    pBedSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBedSix').style.color =
+    spanBedSixLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pBathSix').style.color =
+    pBathSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanBathSix').style.color =
+    spanBathSixLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pAreaSix').style.color =
+    pAreaSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanAreaSix').style.color =
+    spanAreaSixLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pFloorSix').style.color =
+    pFloorSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanFloorSix').style.color =
+    spanFloorSixLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#pParkingSix').style.color =
+    pParkingSixLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#spanParkingSix').style.color =
+    spanParkingSixLight === 'rgb(100, 100, 100)'
+      ? 'rgb(170, 170, 170)'
+      : 'rgb(100, 100, 100)';
+
+  document.querySelector('#detailsBmOneSixButton').style.backgroundColor =
+    detailsBmOneSixButtonLight === 'rgb(180, 180, 180)'
+      ? 'rgb(75, 75, 75)'
+      : 'rgb(180, 180, 180)';
+
+  document.querySelector('#detailsBmOneSixButton').style.color =
+    detailsBmOneSixButtonColorLight === 'rgb(45, 45, 45)'
       ? 'rgb(220, 220, 220)'
       : 'rgb(45, 45, 45)';
 });

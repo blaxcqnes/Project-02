@@ -5250,7 +5250,7 @@
 #bottomOne {
   display: flex;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 130px;
   margin-bottom: 15em;
   transition: all 0.3s ease;
 }
@@ -5283,6 +5283,18 @@
   font-weight: 700;
   transition: all 0.3s ease;
 }
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #titleBottomOne #pTitleBmOneOne {
+    align-self: start;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #titleBottomOne #pTitleBmOneOne {
+    align-self: start;
+    padding: 0 60px;
+  }
+}
 #bottomOne #titleBottomOne #pTitleBmOneTwo {
   color: rgb(150, 150, 150);
   font-size: 30px;
@@ -5291,25 +5303,31 @@
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #bottomOne #titleBottomOne #pTitleBmOneTwo {
-    padding: 0 10px;
+    padding: 0 30px;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
   #bottomOne #titleBottomOne #pTitleBmOneTwo {
-    padding: 0 10px;
+    padding: 0 60px;
   }
 }
 #bottomOne #detailsBmOneContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 3rem;
   width: 100%;
   margin-top: 80px;
-  padding-inline: 20px;
+  padding-inline: 15px;
   transition: all 0.3s ease;
 }
 @media (min-width: 300px) and (max-width: 349px) {
   #bottomOne #detailsBmOneContainer {
     flex-direction: column;
+    row-gap: 1rem;
     width: 100%;
     margin-top: 45px;
     padding: 0;
@@ -5318,22 +5336,61 @@
 @media (min-width: 349px) and (max-width: 399px) {
   #bottomOne #detailsBmOneContainer {
     flex-direction: column;
+    row-gap: 1rem;
     width: 90%;
     margin-top: 45px;
     padding: 0;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
+@media (min-width: 399px) and (max-width: 649px) {
   #bottomOne #detailsBmOneContainer {
     flex-direction: column;
+    row-gap: 1rem;
     width: 90%;
     margin-top: 45px;
     padding: 0;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 649px) and (max-width: 699px) {
   #bottomOne #detailsBmOneContainer {
-    padding-inline: 10px;
+    flex-direction: row;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer {
+    flex-direction: row;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 799px) {
+  #bottomOne #detailsBmOneContainer {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0;
+  }
+}
+@media (min-width: 799px) and (max-width: 819px) {
+  #bottomOne #detailsBmOneContainer {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 0;
+  }
+}
+@media (min-width: 819px) and (max-width: 909px) {
+  #bottomOne #detailsBmOneContainer {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 1rem;
+    padding: 0;
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneOne {
@@ -5359,9 +5416,20 @@
     border-radius: 10px;
   }
 }
-@media (min-width: 399px) and (max-width: 767px) {
+@media (min-width: 399px) and (max-width: 649px) {
   #bottomOne #detailsBmOneContainer #detailsBmOneOne {
     width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
     padding: 70px 0 40px 0;
     border-radius: 10px;
     overflow: hidden;
@@ -5392,6 +5460,12 @@
   #bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
     width: 280px;
     background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
+    width: 255px;
+    background-position-x: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -5490,7 +5564,7 @@
   color: rgb(170, 170, 170);
   font-weight: 500;
 }
-#bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton {
   width: 180px;
   margin-top: 40px;
   height: 45px;
@@ -5503,21 +5577,1031 @@
   transition: all 0.3s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
-  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton {
     cursor: unset;
   }
 }
 @media (min-width: 399px) and (max-width: 767px) {
-  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton {
     cursor: unset;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton {
     cursor: unset;
   }
 }
-#bottomOne #detailsBmOneContainer #detailsBmOneOneButton:hover {
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 649px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneTwo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #picDetails {
+    width: 255px;
+    background-position-x: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #pTypeHolder #pLuxTwo {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pAddTwo {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pBedTwo {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pBedTwo #spanBedTwo {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pBathTwo {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pBathTwo #spanBathTwo {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pAreaTwo {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pAreaTwo #spanAreaTwo {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pFloorTwo {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pFloorTwo #spanFloorTwo {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pParkingTwo {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsAddAndSpecsTwo #pSpecsHolder #pParkingTwo #spanParkingTwo {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 649px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneThree.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #picDetails {
+    width: 255px;
+    background-position-x: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #pTypeHolder #pLuxThree {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pAddThree {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pBedThree {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pBedThree #spanBedThree {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pBathThree {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pBathThree #spanBathThree {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pAreaThree {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pAreaThree #spanAreaThree {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pFloorThree {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pFloorThree #spanFloorThree {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pParkingThree {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsAddAndSpecsThree #pSpecsHolder #pParkingThree #spanParkingThree {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 649px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneFour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #picDetails {
+    width: 255px;
+    background-position-x: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #pTypeHolder #pLuxFour {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pAddFour {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pBedFour {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pBedFour #spanBedFour {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pBathFour {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pBathFour #spanBathFour {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pAreaFour {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pAreaFour #spanAreaFour {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pFloorFour {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pFloorFour #spanFloorFour {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pParkingFour {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsAddAndSpecsFour #pSpecsHolder #pParkingFour #spanParkingFour {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 649px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneFive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #picDetails {
+    width: 255px;
+    background-position-x: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #pTypeHolder #pLuxFive {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pAddFive {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pBedFive {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pBedFive #spanBedFive {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pBathFive {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pBathFive #spanBathFive {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pAreaFive {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pAreaFive #spanAreaFive {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pFloorFive {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pFloorFive #spanFloorFive {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pParkingFive {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsAddAndSpecsFive #pSpecsHolder #pParkingFive #spanParkingFive {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 649px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 40px;
+    width: 280px;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneSix.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 649px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #picDetails {
+    width: 255px;
+    background-position-x: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #pTypeHolder #pLuxSix {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pAddSix {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pBedSix {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pBedSix #spanBedSix {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pBathSix {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pBathSix #spanBathSix {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pAreaSix {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pAreaSix #spanAreaSix {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pFloorSix {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pFloorSix #spanFloorSix {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pParkingSix {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsAddAndSpecsSix #pSpecsHolder #pParkingSix #spanParkingSix {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton:hover {
   opacity: 0.5;
   filter: brightness(90%);
 }
@@ -5542,4 +6626,5 @@ body {
   height: auto;
   background-color: rgb(25, 25, 25);
   transition: all 0.2s ease;
+  scrollbar-color: red green;
 }/*# sourceMappingURL=main.css.map */
