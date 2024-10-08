@@ -1,0 +1,277 @@
+#bottomOne {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 15em; //remove when sec's completed
+  transition: all 0.3s ease;
+
+  @include breakPoints(small) {
+    margin-top: 110px;
+    align-items: center;
+  }
+
+  @include breakPoints(mobile) {
+    margin-top: 90px;
+    align-items: center;
+  }
+
+  @include breakPoints(tablet) {
+    margin-top: 110px;
+  }
+
+  #titleBottomOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+
+    #pTitleBmOneOne {
+      color: rgb(243, 85, 37);
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    #pTitleBmOneTwo {
+      color: rgb(150, 150, 150);
+      font-size: 30px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      @include breakPoints(small) {
+        padding: 0 10px;
+      }
+
+      @include breakPoints(mobile) {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  #detailsBmOneContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 80px;
+    padding-inline: 20px;
+    transition: all 0.3s ease;
+
+    @media (min-width: 300px) and (max-width: 349px) {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 45px;
+      padding: 0;
+    }
+
+    @media (min-width: 349px) and (max-width: 399px) {
+      flex-direction: column;
+      width: 90%;
+      margin-top: 45px;
+      padding: 0;
+    }
+
+    @include breakPoints(mobile) {
+      flex-direction: column;
+      width: 90%;
+      margin-top: 45px;
+      padding: 0;
+    }
+
+    @include breakPoints(tablet) {
+      padding-inline: 10px;
+    }
+
+    #detailsBmOneOne {
+      display: flex;
+      flex-direction: column;
+      width: 410px;
+      padding: 40px 0;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: unset;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+      }
+
+      @include breakPoints(mobile) {
+        width: auto;
+        padding: 70px 0 40px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @include breakPoints(tablet) {
+        width: 360px;
+      }
+
+      #picDetails {
+        width: 350px;
+        height: 260px;
+        align-self: center;
+        background-image: url('../images/bottomOne/bottomOneOne.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 260px;
+          background-position-x: right;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 280px;
+          background-position-x: right;
+        }
+
+        @include breakPoints(tablet) {
+          width: 310px;
+        }
+      }
+
+      #pTypeHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 15px;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        #pLuxOne {
+          padding: 5px 20px;
+          background-color: rgb(120, 65, 50);
+          color: rgb(220, 220, 220);
+          font-size: 13px;
+          font-weight: 700;
+          border-radius: 5px;
+        }
+
+        #pPrice {
+          color: rgb(243, 85, 37);
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      #detailsAddAndSpecsOne {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 0 15px 40px 15px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.3s ease;
+
+        #pAddOne {
+          color: rgb(150, 150, 150);
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        #pSpecsHolder {
+          display: flex;
+          flex-direction: row;
+          width: fit-content;
+          column-gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          transition: all 0.3s ease;
+
+          #pBedOne {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBedOne {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pBathOne {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanBathOne {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pAreaOne {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanAreaOne {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pFloorOne {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanFloorOne {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+
+          #pParkingOne {
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            font-weight: 400;
+
+            #spanParkingOne {
+              color: rgb(170, 170, 170);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    #detailsBmOneOneButton {
+      width: 180px;
+      margin-top: 40px;
+      height: 45px;
+      align-self: center;
+      background-color: rgb(75, 75, 75);
+      color: rgb(220, 220, 220);
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      @include breakPoints(small) {
+        cursor: unset;
+      }
+
+      @include breakPoints(mobile) {
+        cursor: unset;
+      }
+
+      @include breakPoints(tablet) {
+        cursor: unset;
+      }
+
+      &:hover {
+        opacity: 0.5;
+        filter: brightness(90%);
+      }
+    }
+  }
+}

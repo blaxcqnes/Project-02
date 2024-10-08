@@ -18,10 +18,6 @@
   z-index: 100;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 #container #backToTop:hover {
   filter: brightness(90%);
@@ -3521,7 +3517,6 @@
   flex-direction: column;
   width: inherit;
   margin-top: 30px;
-  margin-bottom: 15em;
   transition: all 0.2s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -5250,6 +5245,281 @@
   #midTwo #bottomMidTwo #bottomMidTwoForPentHouse #detailsBmtForPentHouseContainer #midTwoForPentHouseSchedule #pMidTwoForPentHouseSchedule {
     font-size: 13px;
   }
+}
+
+#bottomOne {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 15em;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne {
+    margin-top: 110px;
+    align-items: center;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne {
+    margin-top: 90px;
+    align-items: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne {
+    margin-top: 110px;
+  }
+}
+#bottomOne #titleBottomOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+#bottomOne #titleBottomOne #pTitleBmOneOne {
+  color: rgb(243, 85, 37);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+#bottomOne #titleBottomOne #pTitleBmOneTwo {
+  color: rgb(150, 150, 150);
+  font-size: 30px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #titleBottomOne #pTitleBmOneTwo {
+    padding: 0 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #titleBottomOne #pTitleBmOneTwo {
+    padding: 0 10px;
+  }
+}
+#bottomOne #detailsBmOneContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 80px;
+  padding-inline: 20px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 45px;
+    padding: 0;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 45px;
+    padding: 0;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 45px;
+    padding: 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer {
+    padding-inline: 10px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  padding: 40px 0;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: unset;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne {
+    width: auto;
+    padding: 70px 0 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne {
+    width: 360px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
+  width: 350px;
+  height: 260px;
+  align-self: center;
+  background-image: url("../images/bottomOne/bottomOneOne.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
+    width: 260px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
+    width: 280px;
+    background-position-x: right;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOne #picDetails {
+    width: 310px;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #pTypeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 15px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #pTypeHolder #pLuxOne {
+  padding: 5px 20px;
+  background-color: rgb(120, 65, 50);
+  color: rgb(220, 220, 220);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #pTypeHolder #pPrice {
+  color: rgb(243, 85, 37);
+  font-size: 20px;
+  font-weight: 600;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  padding: 0 15px 40px 15px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pAddOne {
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder {
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pBedOne {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pBedOne #spanBedOne {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pBathOne {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pBathOne #spanBathOne {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pAreaOne {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pAreaOne #spanAreaOne {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pFloorOne {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pFloorOne #spanFloorOne {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pParkingOne {
+  font-size: 15px;
+  color: rgb(150, 150, 150);
+  font-weight: 400;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsAddAndSpecsOne #pSpecsHolder #pParkingOne #spanParkingOne {
+  color: rgb(170, 170, 170);
+  font-weight: 500;
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+  width: 180px;
+  margin-top: 40px;
+  height: 45px;
+  align-self: center;
+  background-color: rgb(75, 75, 75);
+  color: rgb(220, 220, 220);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomOne #detailsBmOneContainer #detailsBmOneOneButton {
+    cursor: unset;
+  }
+}
+#bottomOne #detailsBmOneContainer #detailsBmOneOneButton:hover {
+  opacity: 0.5;
+  filter: brightness(90%);
 }
 
 * {
