@@ -457,16 +457,31 @@
       align-self: center;
       margin-top: 20px;
       padding: 10px;
-      background-color: rgb(40, 40, 40);
+      background-color: rgb(120, 65, 50);
       border: none;
-      color: rgb(195 195 195);
+      color: rgb(220, 220, 220);
+      font-weight: 500;
       border-radius: 100px;
       transition: all 0.2s ease;
+      cursor: pointer;
 
       @include breakPoints(small) {
         width: 150px;
         height: 45px;
         font-size: 13px;
+        cursor: unset;
+      }
+
+      @include breakPoints(mobile) {
+        cursor: unset;
+      }
+
+      @include breakPoints(tablet) {
+        cursor: unset;
+      }
+
+      &:hover {
+        filter: brightness(80%);
       }
     }
   }

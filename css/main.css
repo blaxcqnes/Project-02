@@ -7087,18 +7087,34 @@
   align-self: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(120, 65, 50);
   border: none;
-  color: rgb(195, 195, 195);
+  color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 @media (min-width: 300px) and (max-width: 399px) {
   #bottomTwo #mapAndInquiry #submitButton {
     width: 150px;
     height: 45px;
     font-size: 13px;
+    cursor: unset;
   }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomTwo #mapAndInquiry #submitButton {
+    cursor: unset;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomTwo #mapAndInquiry #submitButton {
+    cursor: unset;
+  }
+}
+#bottomTwo #mapAndInquiry #submitButton:hover {
+  filter: brightness(80%);
 }
 
 #footer {

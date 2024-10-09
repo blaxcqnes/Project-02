@@ -2508,14 +2508,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(80, 80, 80)';
 
   document.querySelector('#submitButton').style.backgroundColor =
-    submitButtonLight === 'rgb(210, 210, 210)'
-      ? 'rgb(40, 40, 40)'
-      : 'rgb(210, 210, 210)';
+    submitButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#submitButton').style.color =
-    submitButtonColorLight === 'rgb(65, 65, 65)'
-      ? 'rgb(195, 195, 195)'
-      : 'rgb(65, 65, 65)';
+    submitButtonColorLight === 'rgb(95, 95, 95)'
+      ? 'rgb(220, 220, 220)'
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#contactHolder').style.backgroundColor =
     contactHolderLight === 'rgb(228, 228, 228)'
