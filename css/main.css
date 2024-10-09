@@ -5250,8 +5250,7 @@
 #bottomOne {
   display: flex;
   flex-direction: column;
-  margin-top: 130px;
-  margin-bottom: 15em;
+  margin-top: 150px;
   transition: all 0.3s ease;
 }
 @media (min-width: 300px) and (max-width: 399px) {
@@ -5569,8 +5568,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -5592,8 +5592,7 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneOne #detailsBmOneOneButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneTwo {
   display: flex;
@@ -5771,8 +5770,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -5794,8 +5794,7 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneTwo #detailsBmOneTwoButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneThree {
   display: flex;
@@ -5973,8 +5972,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -5996,8 +5996,7 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneThree #detailsBmOneThreeButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneFour {
   display: flex;
@@ -6175,8 +6174,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -6198,8 +6198,7 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneFour #detailsBmOneFourButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneFive {
   display: flex;
@@ -6377,8 +6376,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -6400,8 +6400,7 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneFive #detailsBmOneFiveButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneSix {
   display: flex;
@@ -6579,8 +6578,9 @@
   margin-top: 40px;
   height: 45px;
   align-self: center;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(120, 65, 50);
   color: rgb(220, 220, 220);
+  font-weight: 500;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -6602,8 +6602,516 @@
   }
 }
 #bottomOne #detailsBmOneContainer #detailsBmOneSix #detailsBmOneSixButton:hover {
-  opacity: 0.5;
-  filter: brightness(90%);
+  filter: brightness(80%);
+}
+
+#bottomTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 230px;
+  position: relative;
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #bottomTwo {
+    margin-top: 150px;
+  }
+}
+#bottomTwo #bottomTwoBg {
+  width: inherit;
+  height: 550px;
+  position: absolute;
+  top: 0;
+  background-image: url("../images/bottomTwo/bottomTwoOne.jpg");
+  z-index: -1;
+}
+#bottomTwo #titleBottomTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+#bottomTwo #titleBottomTwo #pTitleBmTwoOne {
+  color: rgb(255, 113, 37);
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #titleBottomTwo #pTitleBmTwoOne {
+    align-self: start;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomTwo #titleBottomTwo #pTitleBmTwoOne {
+    align-self: start;
+    padding: 0 60px;
+  }
+}
+#bottomTwo #titleBottomTwo #pTitleBmTwoTwo {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #titleBottomTwo #pTitleBmTwoTwo {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 767px) {
+  #bottomTwo #titleBottomTwo #pTitleBmTwoTwo {
+    padding: 0 60px;
+  }
+}
+#bottomTwo #mapAndInquiry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 70px;
+  padding-inline: 10px;
+  margin-top: 100px;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomTwo #mapAndInquiry {
+    padding: 0;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  align-items: center;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomTwo #mapAndInquiry #mapContainer {
+    width: 100%;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #map {
+  width: 600px;
+  height: 500px;
+  align-self: start;
+  filter: invert(100%) grayscale(1);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  cursor: unset;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 275px;
+    height: 400px;
+    align-self: center;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 310px;
+    height: 400px;
+    align-self: center;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 365px;
+    height: 500px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 450px;
+    height: 550px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 500px;
+    height: 600px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1439px) {
+  #bottomTwo #mapAndInquiry #mapContainer #map {
+    width: 500px;
+    height: 400px;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder {
+    width: 100%;
+    border-radius: unset;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #picPhone {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/svgs/bottomTwo/phone.svg");
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #picPhone {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #picPhone {
+    width: 18px;
+    height: 18px;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #pPhone {
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #pPhone {
+    font-size: 14px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #phoneHolder #pPhone {
+    font-size: 16px;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #seperatorHolder {
+  color: rgb(150, 150, 150);
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #picEmail {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/svgs/bottomTwo/email.svg");
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #picEmail {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #picEmail {
+    width: 18px;
+    height: 18px;
+  }
+}
+#bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #pEmail {
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #pEmail {
+    font-size: 14px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder #pEmail {
+    font-size: 16px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 35%;
+  margin-left: 20px;
+  padding: 30px 45px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 349px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 349px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 90%;
+    margin: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 399px) and (max-width: 499px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 92%;
+    margin: 0;
+    padding: 30px 35px;
+  }
+}
+@media (min-width: 499px) and (max-width: 599px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 90%;
+    margin: 0;
+    padding: 30px 50px;
+  }
+}
+@media (min-width: 599px) and (max-width: 699px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 74%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 699px) and (max-width: 767px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 67%;
+    margin: 0;
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 939px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 55%;
+    margin: 0;
+    padding: 30px 22px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1023px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 50%;
+    margin-left: 10px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1149px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 35%;
+    margin-top: 0;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 1149px) and (max-width: 1439px) {
+  #bottomTwo #mapAndInquiry #inquiry {
+    width: 40%;
+    margin-top: 0;
+    padding: 30px 35px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne #pInquiryOne {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne #pInquiryOne {
+    font-size: 14px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1149px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne #pInquiryOne {
+    font-size: 15px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne #inquiryInputOne {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(40, 40, 40);
+  color: rgb(175, 175, 175);
+  border-radius: 100px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderOne #inquiryInputOne {
+    font-size: 14px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 25px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo #pInquiryTwo {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo #pInquiryTwo {
+    font-size: 14px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1149px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo #pInquiryTwo {
+    font-size: 15px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo #inquiryInputTwo {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(40, 40, 40);
+  color: rgb(175, 175, 175);
+  border-radius: 100px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderTwo #inquiryInputTwo {
+    font-size: 14px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 25px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree #pInquiryThree {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree #pInquiryThree {
+    font-size: 14px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1149px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree #pInquiryThree {
+    font-size: 15px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree #inquiryInputThree {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(40, 40, 40);
+  color: rgb(175, 175, 175);
+  border-radius: 100px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderThree #inquiryInputThree {
+    font-size: 14px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 25px;
+  padding-bottom: 35px;
+  transition: all 0.2s ease;
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour #pInquiryFour {
+  color: rgb(150, 150, 150);
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour #pInquiryFour {
+    font-size: 14px;
+  }
+}
+@media (min-width: 939px) and (max-width: 1149px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour #pInquiryFour {
+    font-size: 15px;
+  }
+}
+#bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour #inquiryInputFour {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  margin-top: 25px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(40, 40, 40);
+  color: rgb(175, 175, 175);
+  border-radius: 10px;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #inquiry #inquiryHolderFour #inquiryInputFour {
+    font-size: 14px;
+  }
+}
+#bottomTwo #mapAndInquiry #submitButton {
+  height: 50px;
+  width: 160px;
+  align-self: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(40, 40, 40);
+  border: none;
+  color: rgb(195, 195, 195);
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  #bottomTwo #mapAndInquiry #submitButton {
+    width: 150px;
+    height: 45px;
+    font-size: 13px;
+  }
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin-top: 75px;
+  font-size: 13px;
+  color: rgb(150, 150, 150);
+  border-top: 0.5px solid rgb(55, 55, 55);
+  transition: all 0.2s ease;
 }
 
 * {

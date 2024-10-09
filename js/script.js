@@ -77,6 +77,7 @@ let bottomMidTwoForPentHouse = document.querySelector(
 );
 
 let bottomOne = document.querySelector('#bottomOne');
+let bottomTwo = document.querySelector('#bottomTwo');
 
 ///////////////////////////////////////////////////////
 
@@ -88,8 +89,10 @@ lightModeToggle.addEventListener('click', function () {
 });
 
 window.onbeforeunload = function () {
-  location.reload();
   window.scrollTo(0, 0);
+  document.window.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  location.reload();
 };
 
 // backToTop section
@@ -322,6 +325,12 @@ function expand() {
   });
 
   bottomOne.addEventListener('click', function () {
+    navBarJumpingListsAndSchedule.style.maxHeight = '0';
+    navBarJumpingListsAndSchedule.style.opacity = '0';
+    navBarUl.style.opacity = '0';
+  });
+
+  bottomTwo.addEventListener('click', function () {
     navBarJumpingListsAndSchedule.style.maxHeight = '0';
     navBarJumpingListsAndSchedule.style.opacity = '0';
     navBarUl.style.opacity = '0';
@@ -1926,14 +1935,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneOneButton').style.backgroundColor =
-    detailsBmOneOneButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneOneButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneOneButton').style.color =
-    detailsBmOneOneButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneOneButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#detailsBmOneTwo').style.backgroundColor =
     detailsBmOneTwoLight === 'rgb(228, 228, 228)'
@@ -2011,14 +2020,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneTwoButton').style.backgroundColor =
-    detailsBmOneTwoButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneTwoButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneTwoButton').style.color =
-    detailsBmOneTwoButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneTwoButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#detailsBmOneThree').style.backgroundColor =
     detailsBmOneThreeLight === 'rgb(228, 228, 228)'
@@ -2096,14 +2105,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneThreeButton').style.backgroundColor =
-    detailsBmOneThreeButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneThreeButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneThreeButton').style.color =
-    detailsBmOneThreeButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneThreeButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#detailsBmOneFour').style.backgroundColor =
     detailsBmOneFourLight === 'rgb(228, 228, 228)'
@@ -2181,14 +2190,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneFourButton').style.backgroundColor =
-    detailsBmOneFourButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneFourButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneFourButton').style.color =
-    detailsBmOneFourButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneFourButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#detailsBmOneFive').style.backgroundColor =
     detailsBmOneFiveLight === 'rgb(228, 228, 228)'
@@ -2266,14 +2275,14 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneFiveButton').style.backgroundColor =
-    detailsBmOneFiveButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneFiveButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneFiveButton').style.color =
-    detailsBmOneFiveButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneFiveButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
 
   document.querySelector('#detailsBmOneSix').style.backgroundColor =
     detailsBmOneSixLight === 'rgb(228, 228, 228)'
@@ -2351,12 +2360,199 @@ lightModeToggle.addEventListener('click', function () {
       : 'rgb(100, 100, 100)';
 
   document.querySelector('#detailsBmOneSixButton').style.backgroundColor =
-    detailsBmOneSixButtonLight === 'rgb(180, 180, 180)'
-      ? 'rgb(75, 75, 75)'
-      : 'rgb(180, 180, 180)';
+    detailsBmOneSixButtonLight === 'rgb(255, 210, 180)'
+      ? 'rgb(120, 65, 50)'
+      : 'rgb(255, 210, 180)';
 
   document.querySelector('#detailsBmOneSixButton').style.color =
-    detailsBmOneSixButtonColorLight === 'rgb(45, 45, 45)'
+    detailsBmOneSixButtonColorLight === 'rgb(95, 95, 95)'
       ? 'rgb(220, 220, 220)'
-      : 'rgb(45, 45, 45)';
+      : 'rgb(95, 95, 95)';
+});
+
+//////////////////////////////////////
+
+// bottomTwo
+
+lightModeToggle.addEventListener('click', function () {
+  let mapLight = document.querySelector('#map').style.filter;
+
+  let inquiryLight = document.querySelector('#inquiry').style.backgroundColor;
+  let inquiryHolderOneBbLight =
+    document.querySelector('#inquiryHolderOne').style.borderBottom;
+  let pInquiryOneColorLight =
+    document.querySelector('#pInquiryOne').style.color;
+  let inquiryInputOneLight =
+    document.querySelector('#inquiryInputOne').style.backgroundColor;
+  let inquiryInputOneColorLight =
+    document.querySelector('#inquiryInputOne').style.color;
+
+  let inquiryHolderTwoBbLight =
+    document.querySelector('#inquiryHolderTwo').style.borderBottom;
+  let pInquiryTwoColorLight =
+    document.querySelector('#pInquiryTwo').style.color;
+  let inquiryInputTwoLight =
+    document.querySelector('#inquiryInputTwo').style.backgroundColor;
+  let inquiryInputTwoColorLight =
+    document.querySelector('#inquiryInputTwo').style.color;
+
+  let inquiryHolderThreeBbLight = document.querySelector('#inquiryHolderThree')
+    .style.borderBottom;
+  let pInquiryThreeColorLight =
+    document.querySelector('#pInquiryThree').style.color;
+  let inquiryInputThreeLight =
+    document.querySelector('#inquiryInputThree').style.backgroundColor;
+  let inquiryInputThreeColorLight =
+    document.querySelector('#inquiryInputThree').style.color;
+
+  let pInquiryFourColorLight =
+    document.querySelector('#pInquiryFour').style.color;
+  let inquiryInputFourLight =
+    document.querySelector('#inquiryInputFour').style.backgroundColor;
+  let inquiryInputFourColorLight =
+    document.querySelector('#inquiryInputFour').style.color;
+
+  let contactHolderLight =
+    document.querySelector('#contactHolder').style.backgroundColor;
+  let pPhoneColorLight = document.querySelector('#pPhone').style.color;
+  let seperatorHolderColorLight =
+    document.querySelector('#seperatorHolder').style.color;
+  let pEmailColorLight = document.querySelector('#pEmail').style.color;
+
+  let submitButtonLight =
+    document.querySelector('#submitButton').style.backgroundColor;
+  let submitButtonColorLight =
+    document.querySelector('#submitButton').style.color;
+
+  document.querySelector('#map').style.filter =
+    mapLight === 'unset' ? 'invert(100%) grayscale(1)' : 'unset';
+
+  document.querySelector('#inquiry').style.backgroundColor =
+    inquiryLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#inquiryHolderOne').style.borderBottom =
+    inquiryHolderOneBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pInquiryOne').style.color =
+    pInquiryOneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#inquiryInputOne').style.backgroundColor =
+    inquiryInputOneLight === 'rgb(210, 210, 210)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(210, 210, 210)';
+
+  document.querySelector('#inquiryInputOne').style.color =
+    inquiryInputOneColorLight === 'rgb(80, 80, 80)'
+      ? 'rgb(175, 175, 175)'
+      : 'rgb(80, 80, 80)';
+
+  document.querySelector('#inquiryHolderTwo').style.borderBottom =
+    inquiryHolderTwoBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pInquiryTwo').style.color =
+    pInquiryTwoColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#inquiryInputTwo').style.backgroundColor =
+    inquiryInputTwoLight === 'rgb(210, 210, 210)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(210, 210, 210)';
+
+  document.querySelector('#inquiryInputTwo').style.color =
+    inquiryInputTwoColorLight === 'rgb(80, 80, 80)'
+      ? 'rgb(175, 175, 175)'
+      : 'rgb(80, 80, 80)';
+
+  document.querySelector('#inquiryHolderThree').style.borderBottom =
+    inquiryHolderThreeBbLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#pInquiryThree').style.color =
+    pInquiryThreeColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#inquiryInputThree').style.backgroundColor =
+    inquiryInputThreeLight === 'rgb(210, 210, 210)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(210, 210, 210)';
+
+  document.querySelector('#inquiryInputThree').style.color =
+    inquiryInputThreeColorLight === 'rgb(80, 80, 80)'
+      ? 'rgb(175, 175, 175)'
+      : 'rgb(80, 80, 80)';
+
+  document.querySelector('#pInquiryFour').style.color =
+    pInquiryFourColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#inquiryInputFour').style.backgroundColor =
+    inquiryInputFourLight === 'rgb(210, 210, 210)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(210, 210, 210)';
+
+  document.querySelector('#inquiryInputFour').style.color =
+    inquiryInputFourColorLight === 'rgb(80, 80, 80)'
+      ? 'rgb(175, 175, 175)'
+      : 'rgb(80, 80, 80)';
+
+  document.querySelector('#submitButton').style.backgroundColor =
+    submitButtonLight === 'rgb(210, 210, 210)'
+      ? 'rgb(40, 40, 40)'
+      : 'rgb(210, 210, 210)';
+
+  document.querySelector('#submitButton').style.color =
+    submitButtonColorLight === 'rgb(65, 65, 65)'
+      ? 'rgb(195, 195, 195)'
+      : 'rgb(65, 65, 65)';
+
+  document.querySelector('#contactHolder').style.backgroundColor =
+    contactHolderLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
+
+  document.querySelector('#pPhone').style.color =
+    pPhoneColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#seperatorHolder').style.color =
+    seperatorHolderColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+
+  document.querySelector('#pEmail').style.color =
+    pEmailColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
+});
+
+//////////////////////////////////////
+
+// footer
+
+lightModeToggle.addEventListener('click', function () {
+  let footerBrLight = document.querySelector('#footer').style.borderTop;
+  let footerColorLight = document.querySelector('#footer').style.color;
+
+  document.querySelector('#footer').style.borderTop =
+    footerBrLight === '0.5px solid rgb(200, 200, 200)'
+      ? '0.5px solid rgb(55, 55, 55)'
+      : '0.5px solid rgb(200, 200, 200)';
+
+  document.querySelector('#footer').style.color =
+    footerColorLight === 'rgb(110, 110, 110)'
+      ? 'rgb(150, 150, 150)'
+      : 'rgb(110, 110, 110)';
 });

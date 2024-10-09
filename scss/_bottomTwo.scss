@@ -1,0 +1,473 @@
+#bottomTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: max-content;
+  margin-top: 230px;
+  position: relative;
+
+  @include breakPoints(tablet) {
+    margin-top: 150px;
+  }
+
+  #bottomTwoBg {
+    width: inherit;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    background-image: url('../images/bottomTwo/bottomTwoOne.jpg');
+    z-index: -1;
+  }
+
+  #titleBottomTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+
+    #pTitleBmTwoOne {
+      color: rgb(255, 113, 37);
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      @include breakPoints(small) {
+        align-self: start;
+        padding: 0 30px;
+      }
+
+      @include breakPoints(mobile) {
+        align-self: start;
+        padding: 0 60px;
+      }
+    }
+
+    #pTitleBmTwoTwo {
+      color: rgb(255, 255, 255);
+      font-size: 40px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+
+      @include breakPoints(small) {
+        padding: 0 30px;
+      }
+
+      @include breakPoints(mobile) {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  #mapAndInquiry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 70px;
+    padding-inline: 10px;
+    margin-top: 100px;
+
+    @media (min-width: 300px) and (max-width: 349px) {
+      padding: 0;
+    }
+
+    #mapContainer {
+      display: flex;
+      flex-direction: column;
+      row-gap: 70px;
+      align-items: center;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: 100%;
+      }
+
+      #map {
+        width: 600px;
+        height: 500px;
+        align-self: start;
+        filter: invert(100%) grayscale(1);
+        border-radius: 10px;
+        transition: all 0.2s ease;
+        cursor: unset;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 275px;
+          height: 400px;
+          align-self: center;
+        }
+
+        @media (min-width: 349px) and (max-width: 399px) {
+          width: 310px;
+          height: 400px;
+          align-self: center;
+        }
+
+        @media (min-width: 399px) and (max-width: 499px) {
+          width: 365px;
+          height: 500px;
+        }
+
+        @media (min-width: 499px) and (max-width: 599px) {
+          width: 450px;
+          height: 550px;
+        }
+
+        @media (min-width: 599px) and (max-width: 699px) {
+          width: 500px;
+          height: 600px;
+        }
+
+        @include breakPoints(laptop) {
+          width: 500px;
+          height: 400px;
+        }
+      }
+
+      #contactHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 10px;
+        align-items: center;
+        width: fit-content;
+        padding: 15px;
+        background-color: rgb(28, 28, 28);
+        border-radius: 100px;
+        transition: all 0.2s ease;
+
+        @media (min-width: 300px) and (max-width: 349px) {
+          width: 100%;
+          border-radius: unset;
+        }
+
+        #phoneHolder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 10px;
+
+          #picPhone {
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/svgs/bottomTwo/phone.svg');
+
+            @media (min-width: 300px) and (max-width: 399px) {
+              width: 17px;
+              height: 17px;
+            }
+
+            @media (min-width: 399px) and (max-width: 499px) {
+              width: 18px;
+              height: 18px;
+            }
+          }
+
+          #pPhone {
+            font-size: 18px;
+            color: rgb(150, 150, 150);
+            transition: all 0.2s ease;
+
+            @media (min-width: 300px) and (max-width: 399px) {
+              font-size: 14px;
+            }
+
+            @media (min-width: 399px) and (max-width: 499px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        #seperatorHolder {
+          color: rgb(150, 150, 150);
+        }
+
+        #emailHolder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 10px;
+
+          #picEmail {
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/svgs/bottomTwo/email.svg');
+
+            @media (min-width: 300px) and (max-width: 399px) {
+              width: 17px;
+              height: 17px;
+            }
+
+            @media (min-width: 399px) and (max-width: 499px) {
+              width: 18px;
+              height: 18px;
+            }
+          }
+
+          #pEmail {
+            font-size: 18px;
+            color: rgb(150, 150, 150);
+            transition: all 0.2s ease;
+
+            @media (min-width: 300px) and (max-width: 399px) {
+              font-size: 14px;
+            }
+
+            @media (min-width: 399px) and (max-width: 499px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    #inquiry {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 35%;
+      margin-left: 20px;
+      padding: 30px 45px;
+      background-color: rgb(28, 28, 28);
+      border-radius: 10px;
+      transition: all 0.2s ease;
+
+      @media (min-width: 300px) and (max-width: 349px) {
+        width: 100%;
+        margin: 0;
+        padding: 30px 30px;
+      }
+
+      @media (min-width: 349px) and (max-width: 399px) {
+        width: 90%;
+        margin: 0;
+        padding: 30px 30px;
+      }
+
+      @media (min-width: 399px) and (max-width: 499px) {
+        width: 92%;
+        margin: 0;
+        padding: 30px 35px;
+      }
+
+      @media (min-width: 499px) and (max-width: 599px) {
+        width: 90%;
+        margin: 0;
+        padding: 30px 50px;
+      }
+
+      @media (min-width: 599px) and (max-width: 699px) {
+        width: 74%;
+        margin: 0;
+        padding: 30px 20px;
+      }
+
+      @media (min-width: 699px) and (max-width: 767px) {
+        width: 67%;
+        margin: 0;
+        padding: 30px 20px;
+      }
+
+      @media (min-width: 767px) and (max-width: 939px) {
+        width: 55%;
+        margin: 0;
+        padding: 30px 22px;
+      }
+
+      @media (min-width: 939px) and (max-width: 1023px) {
+        width: 50%;
+        margin-left: 10px;
+        padding-top: 50px;
+      }
+
+      @media (min-width: 1023px) and (max-width: 1149px) {
+        width: 35%;
+        margin-top: 0;
+        padding: 30px 30px;
+      }
+
+      @media (min-width: 1149px) and (max-width: 1439px) {
+        width: 40%;
+        margin-top: 0;
+        padding: 30px 35px;
+      }
+
+      #inquiryHolderOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding-bottom: 35px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.2s ease;
+
+        #pInquiryOne {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+
+          @media (min-width: 939px) and (max-width: 1149px) {
+            font-size: 15px;
+          }
+        }
+
+        #inquiryInputOne {
+          width: 100%;
+          height: 45px;
+          margin-top: 25px;
+          padding-left: 10px;
+          outline: none;
+          border: none;
+          background-color: rgb(40, 40, 40);
+          color: rgb(175, 175, 175);
+          border-radius: 100px;
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #inquiryHolderTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 25px;
+        padding-bottom: 35px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.2s ease;
+
+        #pInquiryTwo {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+
+          @media (min-width: 939px) and (max-width: 1149px) {
+            font-size: 15px;
+          }
+        }
+
+        #inquiryInputTwo {
+          width: 100%;
+          height: 45px;
+          margin-top: 25px;
+          padding-left: 10px;
+          outline: none;
+          border: none;
+          background-color: rgb(40, 40, 40);
+          color: rgb(175, 175, 175);
+          border-radius: 100px;
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #inquiryHolderThree {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 25px;
+        padding-bottom: 35px;
+        border-bottom: 0.5px solid rgb(55, 55, 55);
+        transition: all 0.2s ease;
+
+        #pInquiryThree {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+
+          @media (min-width: 939px) and (max-width: 1149px) {
+            font-size: 15px;
+          }
+        }
+
+        #inquiryInputThree {
+          width: 100%;
+          height: 45px;
+          margin-top: 25px;
+          padding-left: 10px;
+          outline: none;
+          border: none;
+          background-color: rgb(40, 40, 40);
+          color: rgb(175, 175, 175);
+          border-radius: 100px;
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #inquiryHolderFour {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 25px;
+        padding-bottom: 35px;
+        transition: all 0.2s ease;
+
+        #pInquiryFour {
+          color: rgb(150, 150, 150);
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+
+          @media (min-width: 939px) and (max-width: 1149px) {
+            font-size: 15px;
+          }
+        }
+
+        #inquiryInputFour {
+          width: 100%;
+          height: 200px;
+          resize: none;
+          margin-top: 25px;
+          padding: 10px;
+          outline: none;
+          border: none;
+          background-color: rgb(40, 40, 40);
+          color: rgb(175, 175, 175);
+          border-radius: 10px;
+
+          @include breakPoints(small) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #submitButton {
+      height: 50px;
+      width: 160px;
+      align-self: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgb(40, 40, 40);
+      border: none;
+      color: rgb(195 195 195);
+      border-radius: 100px;
+      transition: all 0.2s ease;
+
+      @include breakPoints(small) {
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+      }
+    }
+  }
+}

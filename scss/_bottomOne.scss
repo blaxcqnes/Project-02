@@ -1,8 +1,7 @@
 #bottomOne {
   display: flex;
   flex-direction: column;
-  margin-top: 130px;
-  margin-bottom: 15em; //remove when sec's completed
+  margin-top: 150px;
   transition: all 0.3s ease;
 
   @include breakPoints(small) {
@@ -307,8 +306,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -327,8 +327,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
@@ -514,8 +513,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -534,8 +534,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
@@ -721,8 +720,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -741,8 +741,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
@@ -928,8 +927,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -948,8 +948,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
@@ -1135,8 +1134,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -1155,8 +1155,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
@@ -1342,8 +1341,9 @@
         margin-top: 40px;
         height: 45px;
         align-self: center;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(120, 65, 50);
         color: rgb(220, 220, 220);
+        font-weight: 500;
         border-radius: 100px;
         border: none;
         cursor: pointer;
@@ -1362,8 +1362,7 @@
         }
 
         &:hover {
-          opacity: 0.5;
-          filter: brightness(90%);
+          filter: brightness(80%);
         }
       }
     }
