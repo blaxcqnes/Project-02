@@ -6809,7 +6809,7 @@
 }
 #bottomTwo #mapAndInquiry #mapContainer #contactHolder #emailHolder {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
