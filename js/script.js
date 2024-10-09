@@ -2543,6 +2543,7 @@ lightModeToggle.addEventListener('click', function () {
 // footer
 
 lightModeToggle.addEventListener('click', function () {
+  let footerLight = document.querySelector('#footer').style.backgroundColor;
   let footerBrLight = document.querySelector('#footer').style.borderTop;
   let footerColorLight = document.querySelector('#footer').style.color;
 
@@ -2555,4 +2556,9 @@ lightModeToggle.addEventListener('click', function () {
     footerColorLight === 'rgb(110, 110, 110)'
       ? 'rgb(150, 150, 150)'
       : 'rgb(110, 110, 110)';
+
+  document.querySelector('#footer').style.backgroundColor =
+    footerLight === 'rgb(228, 228, 228)'
+      ? 'rgb(28, 28, 28)'
+      : 'rgb(228, 228, 228)';
 });
